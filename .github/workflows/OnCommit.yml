@@ -19,5 +19,6 @@ jobs:
           job_name: OnCommit
           username: ${{ secrets.JENKINS_USER }}
           api_token: ${{ secrets.JENKINS_TOKEN }}
+          start_timeout: "100"
           timeout: "1000"
           wait: true
