@@ -15,7 +15,7 @@ jobs:
       - name: Trigger OnCommit Jenkins
         uses: ftsamis/jenkins-githubaction@v2
         with:
-          url: https://71.231.11.163:8080
+          url: 71.231.11.163:8080
           job_name: OnCommit
           username: ${{ secrets.JENKINS_USER }}
           api_token: ${{ secrets.JENKINS_TOKEN }}
