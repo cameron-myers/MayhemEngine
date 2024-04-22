@@ -1,0 +1,36 @@
+{
+    "GameObject": {
+        "name": "ExplosiveWood",
+        "Transform": {
+            "translation": [
+                0.0,
+                0.0,
+                1
+            ],
+            "rotation": 180,
+            "scale": [
+                50.0,
+                50.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 0.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "Wood"
+        },
+        "Emitter": {
+            "SpawnRate": 1,
+            "ParticleLife": 0.5,
+            "SprayAngle": 360,
+            "MinSpeed": 1000,
+            "MaxSpeed": 5000,
+          "HiveMind": false,
+          "Fade": "Out",
+          "FadeTime": 0.1
+        },
+        "Audio": {},
+        "EmitterBehavior": "CannonHit"
+    }
+}

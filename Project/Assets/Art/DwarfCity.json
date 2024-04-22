@@ -1,0 +1,8 @@
+{
+  "SpriteSource": {
+    "name": "DwarfCity",
+    "path": "DwarfCity.png",
+    "numCols": 1,
+    "numRows": 3
+  }
+}

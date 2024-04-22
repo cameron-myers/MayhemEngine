@@ -1,0 +1,8 @@
+{
+  "SpriteSource": {
+    "name": "PT_Mono_Black",
+    "path": "PT_Mono_Black.png",
+    "numCols": 16,
+    "numRows": 16
+  }
+}

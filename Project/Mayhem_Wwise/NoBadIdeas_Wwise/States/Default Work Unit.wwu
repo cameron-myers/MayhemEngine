@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BCEEDF1E-A9DD-42A5-AC8A-B5B0651CC8E8}" SchemaVersion="103">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{BCEEDF1E-A9DD-42A5-AC8A-B5B0651CC8E8}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Pause" ID="{7F4B8733-E654-4BE9-BFDE-D08B3F93CB24}">
+					<ChildrenList>
+						<State Name="None" ID="{B6EEBE14-28CB-4469-8799-9C2905D04665}"/>
+						<State Name="Game_Paused" ID="{DA767637-FE77-429F-9900-D0AD622F51BC}"/>
+						<State Name="Game_Unpaused" ID="{1AC4E48D-CF87-4C19-8B7B-1BFDC59C2D27}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Game_Paused" ID="{DA767637-FE77-429F-9900-D0AD622F51BC}"/>
+							<EndState Name="Game_Unpaused" ID="{1AC4E48D-CF87-4C19-8B7B-1BFDC59C2D27}"/>
+							<Time>0.2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

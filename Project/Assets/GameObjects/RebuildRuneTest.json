@@ -1,0 +1,24 @@
+{
+    "GameObject": {
+        "name": "RebuildRuneTest",
+        "Transform": {
+            "translation": [
+                790.5,
+                301.5,
+                1.0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                300.0,
+                468.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "RebuildRuneTest"
+        }
+    }
+}

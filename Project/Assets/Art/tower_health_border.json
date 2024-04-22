@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "tower_health_border",
+        "path": "tower_health_border.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

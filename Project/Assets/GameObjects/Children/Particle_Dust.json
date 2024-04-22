@@ -1,0 +1,36 @@
+{
+    "GameObject": {
+        "name": "Particle_Dust",
+        "Transform": {
+            "translation": [
+                -30.0,
+                -11.0,
+                1
+            ],
+            "rotation": 180,
+            "scale": [
+                100.0,
+                100.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 0.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "particlegray"
+        },
+        "Emitter": {
+            "SpawnRate": 10,
+            "ParticleLife": 2,
+            "SprayAngle": 360,
+            "MinSpeed": 50,
+            "MaxSpeed": 75,
+            "HiveMind": false,
+            "Fade": "Out",
+            "FadeTime": 0.5
+        },
+        "Audio": {},
+        "EmitterBehavior": "EmitterKey"
+    }
+}

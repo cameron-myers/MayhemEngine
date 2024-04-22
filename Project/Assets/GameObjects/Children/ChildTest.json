@@ -1,0 +1,45 @@
+{
+  "GameObject":
+  { 
+    "name": "Child",
+
+    "Transform": {
+      
+      "translation": [ 0, 0, 1 ],
+      "rotation": 0.0,
+      "scale": [ 50.0, 50.0 ]
+    },
+
+    "Sprite": {
+      "frameIndex": 0,
+      "alpha": 1.0,
+      "RGB": [1.0,1.0,1.0],
+      "Mesh": "MainMesh",
+      "SpriteSource": "CoinButton"
+
+    },
+
+    "Animation": {
+      "FrameCount": 24,
+      "FrameDuration": 0.2,
+      "IsLooping": false,
+      "DiffAnimations": true
+    },
+
+    "Physics":
+    {
+
+    },
+    "Stats": [
+      {
+        "ListCount": 1,
+        "MaxHealth": 100,
+        "RespawnRate": 30
+      }
+    ],
+    "Collider": {
+      "Type": "Circle",
+      "RadiusMod": 10.0
+    }
+  }
+}

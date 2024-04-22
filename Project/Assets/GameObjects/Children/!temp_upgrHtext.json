@@ -1,0 +1,24 @@
+{
+  "GameObject": {
+    "name": "!temp_upgrHtext",
+
+    "Transform": {
+      "translation": [ -150, 0, 0 ],
+      "rotation": 0.0,
+      "scale": [ 60.0, 60.0 ]
+
+    },
+    "Sprite": {
+      "frameIndex": 0,
+      "alpha": 1.0,
+      "RGB": [1.0,1.0,1.0],
+      "Mesh": "TextMesh",
+      "SpriteSource": "PT_Mono_Black",
+      "Text": "Health Upgrade",
+      "TextMode": "Center"
+
+    },
+    "Audio": {
+    }
+  }
+  }

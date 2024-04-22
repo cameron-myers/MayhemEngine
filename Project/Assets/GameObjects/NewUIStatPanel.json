@@ -1,0 +1,25 @@
+{
+    "GameObject": {
+        "name": "NewUIStatPanel",
+        "Transform": {
+            "translation": [
+                126.0,
+                -400.5,
+                1.0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                798.0,
+                192.5
+            ]
+        },
+      "Sprite": {
+        "frameIndex": 0,
+        "alpha": 1.0,
+        "RGB": [1.0,1.0,1.0],
+        "Mesh": "MainMesh",
+        "SpriteSource": "Stat_Backgroud_V02"
+      },
+        "Audio": {}
+    }
+}

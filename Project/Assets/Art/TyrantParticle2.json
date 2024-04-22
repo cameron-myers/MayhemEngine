@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "TyrantParticle2",
+        "path": "Tyr_Explode_Particle002.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

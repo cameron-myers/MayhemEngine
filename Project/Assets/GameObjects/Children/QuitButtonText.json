@@ -1,0 +1,27 @@
+{
+    "GameObject": {
+        "name": "QuitButtonText",
+        "Transform": {
+            "translation": [
+                -54.5,
+                -3.0,
+                0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                50.0,
+                54.5
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "TextMesh",
+            "SpriteSource": "PT_Mono_Black",
+            "Text": "Quit",
+            "TextMode": "Center"
+        },
+        "Audio": {}
+    }
+}

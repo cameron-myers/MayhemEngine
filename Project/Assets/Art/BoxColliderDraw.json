@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "BoxColliderDraw",
+        "path": "white.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

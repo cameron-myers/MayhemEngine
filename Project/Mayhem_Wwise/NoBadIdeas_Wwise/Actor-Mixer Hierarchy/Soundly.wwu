@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EDD597B1-7077-41F2-98E0-13A4677B564B}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Soundly" ID="{EDD597B1-7077-41F2-98E0-13A4677B564B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Test1" ID="{B6EB2AF6-94F0-4815-BC8F-D9093FE33FDB}" ShortID="986773059">
+					<PropertyList>
+						<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
+						<Property Name="Soundly:FileID" Type="string" Value="SND32254"/>
+						<Property Name="Soundly:FileName" Type="string" Value="https://2-dot-soundly-server.appspot.com/?Type=GetFile&amp;SessionID=1664554412G1WBx3sXqTEkF53dDQ&amp;File=soundlyeu/1426367345Ff4sxqvM_wkFwG/SND32254/sfy_oRpTBAtrwbIvoECEGXnVHxryaQMEzW"/>
+						<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
+						<Property Name="Soundly:HandleStopTime" Type="string" Value="4.63671875"/>
+						<Property Name="Soundly:LibraryID" Type="string" Value="1426367345Ff4sxqvM_wkFwG"/>
+						<Property Name="Soundly:LibraryLocation" Type="string" Value="Cloud"/>
+						<Property Name="Soundly:PlaybackSpeed" Type="string" Value="1.0"/>
+						<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
+						<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
+						<Property Name="Soundly:RenderedFilePath" Type="string" Value="C:\Users\owner\Soundly Audio\Beeps, General, Announcement Tone, Public Places, Reverberant 04 SND32254.wav"/>
+						<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="96000"/>
+						<Property Name="Soundly:SelectionStartTime" Type="string" Value="0"/>
+						<Property Name="Soundly:SelectionStopTime" Type="string" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B98493D7-9629-4463-8CCE-2BF34C65BE8B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{973CDBA5-59DE-4698-A7FF-306A82139828}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Beeps, General, Announcement Tone, Public Places, Reverberant 04 SND32254" ID="{F35158D7-657B-4DB3-BC5F-BB5DF37A84E2}">
+							<PropertyList>
+								<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND32254"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Soundly Audio\Beeps, General, Announcement Tone, Public Places, Reverberant 04 SND32254.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="653888744"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Beeps, General, Announcement Tone, Public Places, Reverberant 04 SND32254" ID="{F35158D7-657B-4DB3-BC5F-BB5DF37A84E2}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

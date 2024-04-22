@@ -1,0 +1,28 @@
+{
+    "GameObject": {
+        "name": "NewUIGoldBox",
+        "Transform": {
+            "translation": [
+                -482.0,
+                -403.5,
+                1.0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                185.0,
+                227.5
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "Mesh": "MainMesh",
+            "SpriteSource": "GoldCount_V02"
+        }
+    }
+}

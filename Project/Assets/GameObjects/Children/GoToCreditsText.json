@@ -1,0 +1,27 @@
+{
+    "GameObject": {
+        "name": "GoToCreditsText",
+        "Transform": {
+            "translation": [
+                -144.0,
+                0.0,
+                0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                49.5,
+                54.5
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "TextMesh",
+            "SpriteSource": "PT_Mono_Black",
+            "Text": "Credit Menu",
+            "TextMode": "Center"
+        },
+        "Audio": {}
+    }
+}

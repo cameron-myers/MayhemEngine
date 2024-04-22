@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "checkbox",
+        "path": "Checkbox_V01.png",
+        "numCols": 1,
+        "numRows": 4
+    }
+}

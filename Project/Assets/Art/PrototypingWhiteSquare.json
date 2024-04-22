@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "PrototypingWhiteSquare",
+        "path": "PrototypingWhiteSquare.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

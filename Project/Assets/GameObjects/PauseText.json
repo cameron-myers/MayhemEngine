@@ -1,0 +1,27 @@
+{
+    "GameObject": {
+        "name": "PauseText",
+        "Transform": {
+            "translation": [
+                -134.0,
+                461.5,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                81.5,
+                97.5
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "PT_Mono_Black",
+            "Text": "Paused",
+            "TextMode": "Center"
+        },
+        "Audio": {}
+    }
+}

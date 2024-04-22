@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "StatBarHPMedium",
+        "path": "spritesheetHPMedium.png",
+        "numCols": 4,
+        "numRows": 1
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "health_bar_purple",
+        "path": "health_bar_purple.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

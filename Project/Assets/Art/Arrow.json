@@ -1,0 +1,8 @@
+ {
+  "SpriteSource": {
+    "name": "Arrow_spritesheet_V01",
+    "path": "Arrow_spritesheet_V01.png",
+    "numCols": 1,
+    "numRows": 3
+  }
+}

@@ -1,0 +1,43 @@
+{
+    "GameObject": {
+        "name": "NewUIUpgradeButtonSpeed",
+        "Transform": {
+            "translation": [
+                444.0,
+                -470.0,
+                1.0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                75.0,
+                75.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "Mesh": "MainMesh",
+            "SpriteSource": "NewUIUpgradeButton"
+        },
+        "Collider": {
+            "Type": "Box",
+            "WidthMod": 0.8,
+            "HeightMod": 0.8
+        },
+        "Animation": {
+            "FrameCount": 4,
+            "FrameDuration": 0.003,
+            "IsLooping": false,
+            "DiffAnimations": true
+        },
+        "Audio": {},
+        "Behavior": {
+            "Name": "UpgradeS"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "GameObject": {
+        "name": "GoblinBase",
+        "Transform": {
+            "translation": [
+                -760.0,
+                26.5,
+                1.0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                609.5,
+                773.5
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "GoblinBase"
+        },
+        "Audio": {}
+    }
+}

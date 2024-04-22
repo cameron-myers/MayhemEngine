@@ -1,0 +1,31 @@
+{
+    "GameObject": {
+        "name": "GremlinMidPropeller",
+        "Transform": {
+            "translation": [
+                -19.5,
+                7.5,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                30.0,
+                30.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "ZeppPropeller"
+        },
+        "Physics": {},
+        "Animation": {
+            "FrameCount": 4,
+            "FrameDuration": 0.1,
+            "IsLooping": true,
+            "DiffAnimations": false
+        }
+    }
+}

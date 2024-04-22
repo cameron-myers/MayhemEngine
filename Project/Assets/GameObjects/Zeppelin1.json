@@ -1,0 +1,94 @@
+{
+    "GameObject": {
+        "name": "Zeppelin1",
+        "Transform": {
+            "translation": [
+                0.0,
+                1000.0,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                152.0,
+                150.5
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "Mesh": "MainMesh",
+            "SpriteSource": "Gremlin"
+        },
+        "Animation": {
+            "FrameCount": 2,
+            "FrameDuration": 0.1,
+            "IsLooping": false,
+            "DiffAnimations": true
+        },
+        "Physics": {},
+        "Collider": {
+            "Type": "Circle",
+            "RadiusMod": 1.0
+        },
+        "Audio": {},
+        "Stats": [
+            {
+                "ListCount": 3,
+                "MaxHealth": 10,
+                "RespawnRate": 15,
+                "AttackDamage": 5,
+                "ReloadTime": 1,
+                "MaxSpeed": 100,
+                "Cost": 10
+            },
+            {
+                "MaxHealth": 15,
+                "AttackDamage": 10,
+                "MaxSpeed": 115
+            },
+            {
+                "MaxHealth": 20,
+                "AttackDamage": 20,
+                "MaxSpeed": 125
+            }
+        ],
+        "Behavior": 
+        {
+            "Name":"ZeppelinTypeS"
+        },
+        
+        "Children": [
+            "GremlinShadow",
+            "Cannon",
+            "GremlinPropeller",
+            "GremlinMidPropeller",
+            "GremlinWing",
+            "GremlinFlag",
+            "ZeppelinExplosion",
+            "Particle_Smoke",
+            "Particle_Gremlin1",
+            "Particle_Gremlin2",
+            "Particle_Gremlin3",
+            "Particle_Gremlin1",
+            "Particle_Gremlin2",
+            "Particle_Gremlin3",
+            "Particle_WoodDamage1",
+            "Particle_WoodDamage2",
+            "Particle_WoodDamage3",
+            "Particle_Gobbo1",
+            "Particle_SpawnCloud1",
+            "Particle_SpawnCloud2",
+            "Particle_SpawnCloud3",
+            "Particle_SpawnCloud4",
+            "Particle_SpawnCloud5",
+            "Particle_SpawnCloud6",
+            "healthbar_green",
+            "zeppelin_healthbar_border"
+        ]
+    }
+}

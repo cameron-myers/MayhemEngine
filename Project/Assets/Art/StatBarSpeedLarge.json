@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "StatBarSpeedLarge",
+        "path": "spritesheetSPLarge.png",
+        "numCols": 5,
+        "numRows": 1
+    }
+}

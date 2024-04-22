@@ -1,0 +1,35 @@
+{
+    "GameObject": {
+        "name": "TowerBallista",
+        "Transform": {
+            "translation": [
+                -2.5,
+                46.0,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                270.0,
+                270.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "WoodTowerBallista"
+        },
+        "Animation": {
+            "FrameCount": 208,
+            "FrameDuration": 0.0334,
+            "IsLooping": false,
+            "DiffAnimations": true
+        },
+        "Physics": {},
+        "Behavior":        
+        {
+            "Name":"Cannon"
+        }
+    }
+}

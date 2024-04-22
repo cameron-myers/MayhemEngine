@@ -1,0 +1,37 @@
+{
+  "GameObject": {
+    "name": "TowerCannon",
+
+    "Transform": {
+
+      "translation": [ 0, 79, 1 ],
+      "rotation": 0.0,
+      "scale": [ 270.0, 270.0 ]
+    },
+
+    "Sprite": {
+      "frameIndex": 0,
+      "alpha": 1.0,
+      "RGB": [1.0,1.0,1.0],
+      "Mesh": "MainMesh",
+      "SpriteSource": "StoneTowerCannon"
+
+    },
+
+    "Animation": {
+      "FrameCount": 344,
+      "FrameDuration": 0.0334,
+      "IsLooping": false,
+      "DiffAnimations": true
+    },
+
+    "Physics": {
+
+    },
+   
+    "Behavior":        
+    {
+        "Name":"Cannon"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "GameObject": {
+        "name": "VolumeSliderParent",
+        "Transform": {
+            "translation": [
+                -314.5,
+                33.5,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                238.5,
+                580.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "Mesh": "MainMesh",
+            "SpriteSource": "VolumeBackground"
+        },
+        "Children": [
+            "VolumeSliderChild"
+        ],
+        "Audio": {}
+    }
+}

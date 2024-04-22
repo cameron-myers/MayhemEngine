@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "Explosion",
+        "path": "Explosion.png",
+        "numCols": 7,
+        "numRows": 7
+    }
+}

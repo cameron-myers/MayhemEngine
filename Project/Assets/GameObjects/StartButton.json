@@ -1,0 +1,44 @@
+{
+    "GameObject": {
+        "name": "StartButton",
+        "Transform": {
+            "translation": [
+                11.0,
+                -123.5,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                536.0,
+                587.1
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "Mesh": "MainMesh",
+            "SpriteSource": "PlayButtonSheet"
+        },
+        "Animation": {
+            "FrameCount": 3,
+            "FrameDuration": 0.003,
+            "IsLooping": false,
+            "DiffAnimations": true
+        },
+        "Collider": {
+            "Type": "Box",
+            "WidthMod": 1,
+            "HeightMod": 0.4
+        },
+        "Audio": {},
+        "Behavior":        
+        {
+            "Name":"StartButton"
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "TyrantFlag",
+        "path": "TyrantFlag.png",
+        "numCols": 5,
+        "numRows": 5
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "GremlinSP",
+        "path": "Gremlin_SP.png",
+        "numCols": 1,
+        "numRows": 10
+    }
+}

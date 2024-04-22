@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "Wood",
+        "path": "ExplosiveWood.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "GameObject": {
+        "name": "StatBarDamageLarge",
+        "Transform": {
+            "translation": [
+                119.0,
+                -405.0,
+                1.0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                274.94000244140627,
+                51.63999938964844
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 2,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "StatBarDamageLarge"
+        },
+        "Collider": {
+            "Type": "Box",
+            "WidthMod": 1.0,
+            "HeightMod": 1.0
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "CoinButtonGoldIcon",
+        "path": "CoinButtonGoldIcon.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

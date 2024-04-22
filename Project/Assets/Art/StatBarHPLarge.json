@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "StatBarHPLarge",
+        "path": "spritesheetHPLarge.png",
+        "numCols": 5,
+        "numRows": 1
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "ZeppelinRushLogo",
+        "path": "ZeppelinRushLogo.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

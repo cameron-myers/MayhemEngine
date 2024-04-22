@@ -1,0 +1,7 @@
+{
+    "Mesh": {
+        "Name": "MainMesh",
+        "xHalfSize": 0.75,
+        "yHalfSize": 0.75
+    }
+}

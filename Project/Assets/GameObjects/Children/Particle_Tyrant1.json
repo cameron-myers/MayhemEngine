@@ -1,0 +1,34 @@
+{
+    "GameObject": {
+        "name": "Particle_Tyrant1",
+        "Transform": {
+            "translation": [
+                0,
+                0,
+                1
+            ],
+            "rotation": 180,
+            "scale": [
+                30.0,
+                30.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 0.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "TyrantParticle1"
+        },
+        "Emitter": {
+            "SpawnRate": 0.2,
+            "ParticleLife": 0.5,
+            "SprayAngle": 360,
+            "MinSpeed": 1000,
+            "MaxSpeed": 1000,
+            "HiveMind": false
+        },
+        "Audio": {},
+        "EmitterBehavior": "OnDeath"
+    }
+}

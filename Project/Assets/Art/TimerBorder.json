@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "TimerBorder",
+        "path": "TimerBorder.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

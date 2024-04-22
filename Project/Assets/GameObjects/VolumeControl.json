@@ -1,0 +1,34 @@
+{
+  "GameObject":
+  { 
+    "name": "VolumeControl",
+    
+    "Transform":
+     {
+      "translation": [ 500 , -300, 1 ],
+      "rotation": 0.0,
+      "scale": [ 300.0, 300.0 ]
+
+    },
+    "Sprite": {
+      "frameIndex": 0,
+      "alpha": 1.0,
+      "RGB": [1.0,1.0,1.0],
+      "Mesh": "MainMesh",
+      "SpriteSource": "VolumeSlider"
+
+    },
+    "Collider":
+    {
+      "Type":"Box",
+      "WidthMod": 0.5,
+      "HeightMod": 0.5
+    },
+    "Audio":
+    {
+
+    }
+
+
+  }
+}

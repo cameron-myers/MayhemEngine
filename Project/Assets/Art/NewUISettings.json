@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "NewUISettings",
+        "path": "Settings_spritesheet_V01.png",
+        "numCols": 1,
+        "numRows": 2
+    }
+}

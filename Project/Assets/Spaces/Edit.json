@@ -1,0 +1,33 @@
+{
+  "Objects": [
+    "GameBackground",
+    "LaneBackground",
+    "GoblinBase",
+    "DwarfCity",
+    "SpawnButtonTop",
+    "SpawnButtonMid",
+    "SpawnButtonBot",
+    "StoneTower",
+    "UIBackground",
+    "GoblinCap",
+    "GoblinTake",
+    "CoinButton",
+    "ZepSelectSButton",
+    "ZepSelectSBorder",
+    "ZepSelectMButton",
+    "ZepSelectMBorder",
+    "ZepSelectLButton",
+    "ZepSelectLBorder",
+    "UpgradeBorder",
+    "StatBarHPSmall",
+    "StatBarSpeedMedium",
+    "StatBarDamageLarge",
+    "TimerBackground",
+    "TimerMarks",
+    "TimerBorder",
+    "RoundTimer",
+    "WoodTower",
+    "GoldCounter"
+
+  ]
+}

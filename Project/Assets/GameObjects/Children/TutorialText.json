@@ -1,0 +1,27 @@
+{
+    "GameObject": {
+        "name": "TutorialText",
+        "Transform": {
+            "translation": [
+                -142.0,
+                1.0,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                50.0,
+                54.5
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "PT_Mono_Black",
+            "Text": "How To Play",
+            "TextMode": "Right"
+        },
+        "Audio": {}
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "UIBackground",
+        "path": "HorBackGround.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "NewUIGoldIcon",
+        "path": "Coin_V001.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

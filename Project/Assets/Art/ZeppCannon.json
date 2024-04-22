@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "ZeppCannon",
+        "path": "ZeppCannon.png",
+        "numCols": 22,
+        "numRows": 7
+    }
+}

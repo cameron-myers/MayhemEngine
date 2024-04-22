@@ -1,0 +1,24 @@
+{
+  "GameObject":
+  { 
+    "name": "LoseMenuBackground",
+    
+    "Transform":{"translation": [ 0 , -0, 1 ],"rotation": 0.0,"scale": [1905.0, 1020]},
+
+    "Sprite": {
+      "frameIndex": 0,
+      "alpha": 1.0,
+      "RGB": [1.0,1.0,1.0],
+      "Mesh": "MainMesh",
+      "SpriteSource": "Map BG Art"
+
+    },
+
+    "Audio": { },
+
+    "Behavior":        
+    {
+        "Name":"LoseMenuBackground"
+    }
+  }
+}

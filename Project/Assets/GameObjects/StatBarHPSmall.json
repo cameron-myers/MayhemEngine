@@ -1,0 +1,29 @@
+{
+    "GameObject": {
+        "name": "StatBarHPSmall",
+        "Transform": {
+            "translation": [
+                95.5,
+                -334.0,
+                1.0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                230.63999938964845,
+                52.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "StatBarHPSmall"
+        },
+        "Collider": {
+            "Type": "Box",
+            "WidthMod": 1.0,
+            "HeightMod": 1.0
+        }
+    }
+}

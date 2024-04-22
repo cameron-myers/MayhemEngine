@@ -1,0 +1,45 @@
+{
+    "GameObject": {
+        "name": "NewUISettings",
+        "Transform": {
+            "translation": [
+                922.5,
+                504.5,
+                1.0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                64.0,
+                64.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "NewUISettings"
+        },
+        "Collider":
+      {
+        "Type":"Box",
+        "WidthMod": 1.0,
+        "HeightMod": 1.0
+      },
+      "Audio":
+      {
+
+      },
+      "Animation": {
+        "FrameCount": 2,
+        "FrameDuration": 0.003,
+        "IsLooping": false,
+        "DiffAnimations": true
+      },
+
+        "Behavior":
+         {
+          "Name":"SettingsButton"
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "ZeppelinExplosion",
+        "path": "ZeppelinExplosion001.png",
+        "numCols": 9,
+        "numRows": 9
+    }
+}

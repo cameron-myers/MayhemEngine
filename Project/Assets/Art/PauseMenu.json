@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "PauseMenu",
+        "path": "PauseMenu.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "GobboParticle2",
+        "path": "Gobbo002.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

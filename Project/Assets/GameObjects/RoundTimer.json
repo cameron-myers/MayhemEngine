@@ -1,0 +1,28 @@
+{
+  "GameObject": {
+    "name": "Timer",
+
+    "Transform": {
+
+      "translation": [ 700, -400, 1 ],
+      "rotation": 0.0,
+      "scale": [ 32.8, 129.6 ]
+    },
+
+    "Sprite": {
+      "frameIndex": 0,
+      "alpha": 1.0,
+      "RGB": [1.0,1.0,1.0],
+      "Mesh": "MainMesh",
+      "SpriteSource": "Needle"
+
+    },
+    "Physics": {
+
+    },
+    "Behavior":        
+    {
+        "Name":"RoundTimer"
+    }
+  }
+}

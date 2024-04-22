@@ -1,0 +1,29 @@
+{
+    "GameObject": {
+        "name": "healthbar_purple",
+        "Transform": {
+            "translation": [
+                -49.5,
+                127.5,
+                1.0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                1.0,
+                14.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "Bar_Mesh",
+            "SpriteSource": "health_bar_purple"
+        },
+        "Physics": {},
+        "Behavior":        
+        {
+            "Name":"healthbar"
+        }
+    }
+}

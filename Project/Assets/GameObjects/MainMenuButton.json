@@ -1,0 +1,41 @@
+{
+    "GameObject":
+    { 
+      "name": "Button",
+      
+      "Transform":
+       {
+        "translation": [ 0 , 0, 1 ],
+        "rotation": 0.0,
+        "scale": [600.0, 450.0]
+  
+      },
+  
+      "Sprite": {
+        "frameIndex": 0,
+        "alpha": 1.0,
+        "RGB": [1.0,1.0,1.0],
+        "Mesh": "MainMesh",
+        "SpriteSource": "ButtonConcept"
+  
+      },
+      
+      "Collider":
+      {
+        "Type":"Box",
+        "WidthMod": 1.0,
+        "HeightMod": 1.0
+      },
+      "Children": [
+        "MainMenuText"
+      ],
+      "Audio":
+      {
+
+      },
+      "Behavior": 
+      {
+        "Name":"ToMainMenuButton"
+      }
+    }
+  }

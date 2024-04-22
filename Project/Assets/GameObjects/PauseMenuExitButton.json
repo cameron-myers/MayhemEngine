@@ -1,0 +1,43 @@
+{
+    "GameObject": {
+        "name": "PauseMenuExitButton",
+        "Transform": {
+            "translation": [
+                447.0,
+                460.5,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                160.0,
+                165.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "Mesh": "MainMesh",
+            "SpriteSource": "ExitButton"
+        },
+        "Animation": {
+            "FrameCount": 3,
+            "FrameDuration": 0.003,
+            "IsLooping": false,
+            "DiffAnimations": true
+        },
+        "Collider": {
+            "Type": "Box",
+            "WidthMod": 1.0,
+            "HeightMod": 1.0
+        },
+        "Audio": {},
+        "Behavior": {
+            "Name": "ResumeButton"
+        }
+    }
+}

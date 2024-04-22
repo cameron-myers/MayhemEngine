@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "StatBarDamageLarge",
+        "path": "spritesheetDMLarge.png",
+        "numCols": 5,
+        "numRows": 1
+    }
+}

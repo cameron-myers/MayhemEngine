@@ -1,0 +1,21 @@
+{
+    "GameObject": {
+        "name": "GoblinCap",
+
+        "Transform": {
+            "translation": [ -830, -380, 1 ],
+            "rotation": 0.0,
+          "scale": [ 218.0, 218.0 ]
+
+        },
+
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "GoblinCap"
+
+        }
+    }
+}

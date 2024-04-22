@@ -1,0 +1,36 @@
+{
+  "GameObject":
+  { 
+    "name": "GremlinWing",
+
+    "Transform": {
+      "translation": [ 0, 0, 1 ],
+      "rotation": 0.0,
+      "scale": [ 400.0, 400.0 ]
+    },
+
+    "Sprite": {
+      "frameIndex": 0,
+      "alpha": 1.0,
+      "RGB": [1.0,1.0,1.0],
+      "Mesh": "MainMesh",
+      "SpriteSource": "GremlinWing"
+
+    },
+
+    "Animation": {
+      "FrameCount": 31,
+      "FrameDuration": 0.035,
+      "IsLooping": true,
+        "DiffAnimations": false
+    },
+
+    "Physics":
+    {
+
+    },
+ 
+    "Audio":{}
+
+  }
+}

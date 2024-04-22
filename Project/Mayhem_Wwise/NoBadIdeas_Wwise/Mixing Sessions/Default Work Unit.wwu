@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3F0D7427-53EA-49DA-B662-9804ECA3683B}" SchemaVersion="103">
+	<MixingSessions>
+		<WorkUnit Name="Default Work Unit" ID="{3F0D7427-53EA-49DA-B662-9804ECA3683B}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Global Mix" ID="{C621A95B-D1E3-42AB-9085-0A8D2F1E4BF5}">
+					<ObjectList>
+						<ObjectRef Name="Music" ID="{5491EBA4-DC2C-48C3-8FF3-83EF29E5D4C5}" WorkUnitID="{973CDBA5-59DE-4698-A7FF-306A82139828}"/>
+						<ObjectRef Name="Ambient" ID="{B166A06A-0A46-43D8-B07C-4038CAB90741}" WorkUnitID="{973CDBA5-59DE-4698-A7FF-306A82139828}"/>
+						<ObjectRef Name="Tower" ID="{204AC3F2-F50D-4571-937D-039B67B6CE81}" WorkUnitID="{973CDBA5-59DE-4698-A7FF-306A82139828}"/>
+						<ObjectRef Name="UI" ID="{E49F5A8D-2B0F-427A-8C5F-ECE0A6EBBAE7}" WorkUnitID="{973CDBA5-59DE-4698-A7FF-306A82139828}"/>
+						<ObjectRef Name="Zeppelin" ID="{4D7E5333-0853-413D-9BA4-CA9F14BF7D52}" WorkUnitID="{973CDBA5-59DE-4698-A7FF-306A82139828}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
+	</MixingSessions>
+</WwiseDocument>

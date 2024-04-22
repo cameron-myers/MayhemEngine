@@ -1,0 +1,24 @@
+{
+    "GameObject": {
+        "name": "NewUIDeployCost",
+        "Transform": {
+            "translation": [
+                -136.5,
+                -492.0,
+                1.0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                140.0,
+                56.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "NewUIDeployCost"
+        }
+    }
+}

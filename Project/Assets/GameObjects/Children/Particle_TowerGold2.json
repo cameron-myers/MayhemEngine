@@ -1,0 +1,46 @@
+{
+    "GameObject": {
+        "name": "Particle_TowerGold2",
+        "Transform": {
+            "translation": [
+                0,
+                0,
+                1
+            ],
+            "rotation": 150,
+            "scale": [
+                0.01,
+                0.01
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 0.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "Coin_Rain"
+        },
+        "Animation": {
+            "FrameCount": 32,
+            "FrameDuration": 0.01,
+            "IsLooping": true,
+            "DiffAnimations": false
+        },
+        "Emitter": {
+            "SpawnRate": 0.2,
+            "ParticleLife": 1.0,
+            "SprayAngle": 1,
+            "MinSpeed": 500,
+            "MaxSpeed": 500,
+            "HiveMind": false,
+            "UniformAnimation": false,
+            "ScaleSetting": "In",
+            "ScaleMultiplier": 10000.0,
+            "ScaleTime": 0.1
+
+
+        },
+        "Audio": {},
+        "EmitterBehavior": "OnDeath"
+    }
+}

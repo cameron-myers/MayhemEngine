@@ -1,0 +1,67 @@
+{
+  "GameObject": {
+    "name": "WoodTower",
+
+    "Transform": {
+      "translation": [ -120, 35, 0 ],
+      "rotation": 0.0,
+      "scale": [ 300.0, 300.0 ]
+
+    },
+
+    "Sprite": {
+      "frameIndex": 0,
+      "alpha": 1.0,
+      "RGB": [1.0,1.0,1.0],
+      "Mesh": "MainMesh",
+      "SpriteSource": "WoodTower"
+
+    },
+
+    "Animation": {
+      "FrameCount": 2,
+      "FrameDuration": 0.2,
+      "IsLooping": false,
+      "DiffAnimations": true
+    },
+
+    "Physics": {
+
+    },
+    "Stats": [
+      {
+        "ListCount": 3,
+        "MaxHealth": 75,
+        "RespawnRate": 10,
+        "AttackDamage": 25,
+        "ReloadTime": 1
+      },
+      {
+        "MaxHealth": 125
+      },
+      {
+        "MaxHealth": 175
+      }
+
+    ],
+    
+    "Audio":
+    {
+    },
+    "Collider": {
+      "Type": "Circle",
+      "RadiusMod": 1.0
+    },
+    "Behavior":        
+    {
+        "Name":"WoodTower"
+    },
+
+    "Children":[
+      "WoodTowerExplosion",
+      "healthbar_purple",
+      "tower_healthbar_border"
+    ]
+
+  }
+}

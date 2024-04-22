@@ -1,0 +1,46 @@
+{
+    "GameObject": {
+        "name": "TutorialPauseMenu",
+        "Transform": {
+            "translation": [
+                10.0,
+                150.0,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                390.0,
+                340.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "Mesh": "MainMesh",
+            "SpriteSource": "GenericButton2"
+        },
+        "Animation": {
+            "FrameCount": 3,
+            "FrameDuration": 0.003,
+            "IsLooping": false,
+            "DiffAnimations": true
+        },
+        "Collider": {
+            "Type": "Box",
+            "WidthMod": 1.0,
+            "HeightMod": 0.4
+        },
+        "Children": [
+            "TutorialText"
+        ],
+        "Audio": {},
+        "Behavior": {
+            "Name": "TutorialButton"
+        }
+    }
+}

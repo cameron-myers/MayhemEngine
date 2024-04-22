@@ -1,0 +1,37 @@
+{
+    "GameObject": {
+        "name": "GoldScalingUp",
+        "Transform": {
+            "translation": [
+                500.0,
+                -100.0,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                50.0,
+                50.0
+            ]
+        },
+      "Sprite": {
+        "frameIndex": 0,
+        "alpha": 0.0,
+        "RGB": [1.0,1.0,1.0],
+        "Mesh": "MainMesh",
+        "SpriteSource": "particlemagic"
+      },
+      "Emitter": {
+        "SpawnRate": 100,
+        "ParticleLife": 3,
+        "PatternType": "Rotate",
+        "SprayAngle": 20,
+        "MinSpeed": 100,
+        "MaxSpeed": 150,
+        "ScaleSetting": "Pop",
+        "ScaleMultiplier": 4.0,
+        "ScaleTime": 2.9
+      },
+        "Audio": {},
+        "EmitterBehavior": "EmitterTest"
+    }
+}

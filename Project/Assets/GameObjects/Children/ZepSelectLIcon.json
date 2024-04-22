@@ -1,0 +1,24 @@
+{
+    "GameObject": {
+        "name": "ZepSelectLIcon",
+        "Transform": {
+            "translation": [
+                0.0,
+                0.0,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                58.0,
+                58.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "Tyrant"
+        }
+    }
+}

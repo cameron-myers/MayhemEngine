@@ -1,0 +1,31 @@
+{
+    "GameObject": {
+        "name": "FuelGaugeFill",
+        "Transform": {
+            "translation": [
+                1.5,
+                475.5,
+                1.0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                415.0,
+                200.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "Mesh": "Bar_Mesh",
+            "SpriteSource": "FuelGaugeFill"
+        },
+        "Behavior": {
+            "Name": "NewUITimer"
+        }
+    }
+}

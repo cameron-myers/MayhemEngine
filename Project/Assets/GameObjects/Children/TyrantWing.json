@@ -1,0 +1,31 @@
+{
+    "GameObject": {
+        "name": "TyrantWing",
+        "Transform": {
+            "translation": [
+                -14.0,
+                -52.5,
+                1
+            ],
+            "rotation": -3.5,
+            "scale": [
+                120.0,
+                120.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "TyrantWings"
+        },
+        "Physics": {},
+        "Animation": {
+            "FrameCount": 24,
+            "FrameDuration": 0.0334,
+            "IsLooping": true,
+            "DiffAnimations": false
+        }
+    }
+}

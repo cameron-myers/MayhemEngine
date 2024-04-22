@@ -1,0 +1,43 @@
+{
+    "GameObject": {
+        "name": "SpawnButtonMid",
+        "Transform": {
+            "translation": [
+                -63.0,
+                56.0,
+                1.0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                1994.0,
+                1627.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 0.5,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "LaneHoverA"
+        },
+        "Animation": {
+            "FrameCount": 90,
+            "FrameDuration": 0.0334,
+            "IsLooping": true,
+            "DiffAnimations": false
+        },
+        "Audio": {},
+        "Collider": {
+            "Type": "Box",
+            "WidthMod": 1.0,
+            "HeightMod": 0.07
+        },
+        "Children": [
+            "SpawnCircleMid"
+        ],
+        "Behavior":        
+        {
+            "Name":"SpawnButtonMid"
+        }
+    }
+}

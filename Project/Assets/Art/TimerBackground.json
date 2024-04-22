@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "TimerBackground",
+        "path": "TimerBackground.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

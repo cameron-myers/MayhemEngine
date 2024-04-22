@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "ExplosiveStone",
+        "path": "Stone_Damage_001.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

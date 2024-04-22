@@ -1,0 +1,93 @@
+{
+    "GameObject": {
+        "name": "Zeppelin2",
+        "Transform": {
+            "translation": [
+                338.2816162109375,
+                -300.0,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                200.0,
+                200.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "Mesh": "MainMesh",
+            "SpriteSource": "BugBear"
+        },
+        "Animation": {
+            "FrameCount": 2,
+            "FrameDuration": 0.1,
+            "IsLooping": false,
+            "DiffAnimations": true
+        },
+        "Physics": {},
+        "Collider": {
+            "Type": "Circle",
+            "RadiusMod": 0.699999988079071
+        },
+        "Audio": {},
+        "Stats": [
+            {
+                "ListCount": 3,
+                "MaxHealth": 20,
+                "RespawnRate": 15,
+                "AttackDamage": 20,
+                "ReloadTime": 1,
+                "MaxSpeed": 40,
+                "Cost": 25
+            },
+            {
+                "MaxHealth": 30,
+                "AttackDamage": 45,
+                "MaxSpeed": 75
+            },
+            {
+                "MaxHealth": 35,
+                "AttackDamage": 70,
+                "MaxSpeed": 105
+            }
+        ],
+        "Behavior":        
+        {
+            "Name":"ZeppelinTypeM"
+        },
+        "Children": [
+            "BugbearShadow",
+            "Cannon2",
+            "BugbearPropeller",
+            "BugbearSails",
+            "BugbearFlagClose",
+            "BugbearFlagFar",
+            "BugbearSmoke",
+            "ZeppelinExplosion",
+            "Particle_Bugbear1",
+            "Particle_Bugbear2",
+            "Particle_Bugbear3",
+            "Particle_Bugbear1",
+            "Particle_Bugbear2",
+            "Particle_Bugbear3",
+            "Particle_WoodDamage1",
+            "Particle_WoodDamage2",
+            "Particle_WoodDamage3",
+            "Particle_Gobbo2",
+            "Particle_SpawnCloud1",
+            "Particle_SpawnCloud2",
+            "Particle_SpawnCloud3",
+            "Particle_SpawnCloud4",
+            "Particle_SpawnCloud5",
+            "Particle_SpawnCloud6",
+            "healthbar_green",
+            "zeppelin_healthbar_border"
+        ]
+    }
+}

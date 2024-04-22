@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "FortressExplodeParticle3",
+        "path": "Fortress_Explode_Particle003.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

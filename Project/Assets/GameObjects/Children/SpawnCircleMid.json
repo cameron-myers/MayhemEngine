@@ -1,0 +1,24 @@
+{
+    "GameObject": {
+        "name": "SpawnCircleMid",
+        "Transform": {
+            "translation": [
+                -537.5,
+                27.5,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                180.0,
+                180.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "SpawnCircle"
+        }
+    }
+}

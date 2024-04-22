@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "NewUIUpgradeButton",
+        "path": "Upgrade button.png",
+        "numCols": 1,
+        "numRows": 4
+    }
+}

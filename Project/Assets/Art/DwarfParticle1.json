@@ -1,0 +1,8 @@
+{
+  "SpriteSource": {
+    "name": "DwarfParticle1",
+    "path": "Dwarf001.png",
+    "numCols": 1,
+    "numRows": 1
+  }
+}

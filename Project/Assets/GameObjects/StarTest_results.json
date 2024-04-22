@@ -1,0 +1,35 @@
+{
+    "GameObject": {
+        "name": "StarTest_Results",
+        "Transform": {
+            "translation": [
+                -450.0,
+                -200.0,
+                0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                200.0,
+                200.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "TimeStar"
+        },
+        "Animation": {
+            "FrameCount": 2,
+            "FrameDuration": 0.2,
+            "IsLooping": false,
+            "DiffAnimations": true
+        },
+        "Physics": {},
+        "Behavior": 
+        {
+            "Name":"BehaviorStar_Programer_Results"
+        }
+    }
+}

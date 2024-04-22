@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "NewUIUpgradeCost",
+        "path": "Upgrade_Cost_V03.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "GameObject": {
+        "name": "DeployCostNumber",
+        "Transform": {
+            "translation": [
+                -166.5,
+                -494.0,
+                0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                35.0,
+                35.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "TextMesh",
+            "SpriteSource": "PT_Mono_Black",
+            "Text": "",
+            "TextMode": "Center"
+        },
+        "Audio": {}
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "BugbearSmoke",
+        "path": "BugbearSmoke.png",
+        "numCols": 8,
+        "numRows": 8
+    }
+}

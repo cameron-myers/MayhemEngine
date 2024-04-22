@@ -1,0 +1,27 @@
+{
+    "GameObject": {
+        "name": "StartButtonText",
+        "Transform": {
+            "translation": [
+                -66.0,
+                -173.0,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                69.0,
+                71.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "TextMesh",
+            "SpriteSource": "PT_Mono_Black",
+            "Text": "Play",
+            "TextMode": "Right"
+        },
+        "Audio": {}
+    }
+}

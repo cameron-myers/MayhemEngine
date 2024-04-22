@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{23C72393-FC61-46C1-8ADE-2F3BC55CECC8}" SchemaVersion="103">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{23C72393-FC61-46C1-8ADE-2F3BC55CECC8}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Mix Testing" ID="{8CC30845-B526-4967-A03C-5CA1FFEF9A96}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Level_Win" ID="{93474994-0C45-4F42-92A8-044D4FAFFB22}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Victory_Stinger" ID="{2BE12603-488F-4C9D-960A-FFC8ACA42411}" WorkUnitID="{F43A1145-19C4-4280-A942-F87B3C4ABF08}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Level_Lose" ID="{4BB0F04D-DBA4-4D2E-B102-D9741719EE33}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sfx_lose_stinger" ID="{669BD144-66D5-4427-8809-303E0332F42F}" WorkUnitID="{C37FB167-7711-4A1B-A654-220DAE1A1D0A}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Level Music" ID="{0715582C-3309-47E6-8801-D0F37886B334}" WorkUnitID="{F43A1145-19C4-4280-A942-F87B3C4ABF08}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="SFX_Volume" ID="{75FAA60F-5F06-44D0-B6F1-9EBFF773D61E}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Music_Volume" ID="{61282EEF-4E91-48EB-81D3-942453ADBAC4}"/>
+							<Value>100</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{B6EEBE14-28CB-4469-8799-9C2905D04665}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

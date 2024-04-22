@@ -1,0 +1,9 @@
+ {
+    "SpriteSource":
+    {
+        "name": "particlemagic2",
+        "path": "ParticleMagic2.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

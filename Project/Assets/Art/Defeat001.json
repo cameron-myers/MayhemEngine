@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "DefeatSign",
+        "path": "Defeat001.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

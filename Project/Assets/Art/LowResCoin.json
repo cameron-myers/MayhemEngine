@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "LowResCoin",
+        "path": "CoinLowRes.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

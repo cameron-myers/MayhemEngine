@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "TimerMarks",
+        "path": "TimerMarks.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "GameObject": {
+        "name": "GremlinShadow",
+        "Transform": {
+            "translation": [
+                0.0,
+                -100.0,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                80.0,
+                80.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "ZeppShadow"
+        },
+        "Physics": {}
+    }
+}

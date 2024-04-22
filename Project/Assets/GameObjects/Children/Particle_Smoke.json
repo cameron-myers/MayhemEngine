@@ -1,0 +1,39 @@
+{
+    "GameObject": {
+        "name": "Particle_Smoke",
+        "Transform": {
+            "translation": [
+                -54.0,
+                -3.0,
+                1
+            ],
+            "rotation": -130.0,
+            "scale": [
+                15.0,
+                15.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 0.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "SmokeBrown"
+        },
+        "Emitter": {
+            "SpawnRate": 16,
+            "ParticleLife": 1.5,
+            "SprayAngle": 90,
+            "MinSpeed": 10,
+            "MaxSpeed": 50,
+            "HiveMind": false,
+            "Fade": "Out",
+            "FadeTime": 1.5,
+            "ScaleSetting": "In",
+            "ScaleMultiplier": 4.0,
+            "ScaleTime": 1.5
+        },
+        "Audio": {},
+        "EmitterBehavior": "EmitterTest"
+    }
+}

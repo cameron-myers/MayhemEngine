@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "TyrantDM",
+        "path": "Tyrant_DM.png",
+        "numCols": 1,
+        "numRows": 7
+    }
+}

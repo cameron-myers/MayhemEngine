@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "DwarfCannonB",
+        "path": "DwarfCannonB.png",
+        "numCols": 3,
+        "numRows": 6
+    }
+}

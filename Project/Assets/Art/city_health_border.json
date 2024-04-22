@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "city_health_border",
+        "path": "city_health_border.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

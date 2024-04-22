@@ -1,0 +1,31 @@
+{
+    "GameObject": {
+        "name": "GremlinFlag",
+        "Transform": {
+            "translation": [
+                -46.0,
+                37.5,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                20.0,
+                20.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "GremlinFlag"
+        },
+        "Physics": {},
+        "Animation": {
+            "FrameCount": 24,
+            "FrameDuration": 0.0334,
+            "IsLooping": true,
+            "DiffAnimations": false
+        }
+    }
+}

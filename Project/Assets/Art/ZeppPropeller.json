@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "ZeppPropeller",
+        "path": "ZeppPropeller.png",
+        "numCols": 2,
+        "numRows": 2
+    }
+}

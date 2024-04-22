@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "Bronze",
+        "path": "bronze.png",
+        "numCols": 1,
+        "numRows": 2
+    }
+}

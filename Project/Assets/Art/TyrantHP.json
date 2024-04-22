@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "TyrantHP",
+        "path": "Tyrant_HP.png",
+        "numCols": 1,
+        "numRows": 10
+    }
+}

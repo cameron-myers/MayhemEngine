@@ -1,0 +1,16 @@
+{
+    "Objects": [
+      "PauseBackground",
+        "PauseMenu",
+        "ResumeButton",
+        "ToMainMenuButton4",
+        "TutorialPauseMenu",
+        "VolumeSliderParent",
+        "VolumeIcon",
+        "QuitButton",
+        "ToCreditsButton",
+        "PauseText",
+        "PauseMenuExitButton",
+		"ScreenToggle"
+    ]
+}

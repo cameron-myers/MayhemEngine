@@ -1,0 +1,28 @@
+{
+  "GameObject": {
+    "name": "NewUITimer",
+    "Transform": {
+      "translation": [
+        0.0,
+        475.0,
+        1.0
+      ],
+      "rotation": 0.0,
+      "scale": [
+        610.5,
+        220.0
+      ]
+    },
+    "Sprite": {
+      "frameIndex": 0,
+      "alpha": 1.0,
+      "RGB": [1.0,1.0,1.0],
+      "Mesh": "Bar_Mesh",
+      "SpriteSource": "NewUITimer"
+    },
+    "Behavior":
+    { 
+      "Name":"NewUITimer"
+    }
+}
+}

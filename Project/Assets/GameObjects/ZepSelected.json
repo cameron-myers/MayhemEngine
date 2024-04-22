@@ -1,0 +1,28 @@
+{
+    "GameObject": {
+        "name": "ZepSelected",
+        "Transform": {
+            "translation": [
+                -152.0,
+                -399.5,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                350.0,
+                280.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "NewUIZeppelinDisplay"
+        },
+        "Audio": {},
+        "Children": [
+            "ZepSelectedIcon"
+        ]
+    }
+}

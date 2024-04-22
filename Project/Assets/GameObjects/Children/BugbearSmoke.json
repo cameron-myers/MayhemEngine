@@ -1,0 +1,31 @@
+{
+    "GameObject": {
+        "name": "BugbearSmoke",
+        "Transform": {
+            "translation": [
+                -95.0,
+                8.0,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                60.0,
+                60.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "BugbearSmoke"
+        },
+        "Physics": {},
+        "Animation": {
+            "FrameCount": 60,
+            "FrameDuration": 0.1,
+            "IsLooping": true,
+            "DiffAnimations": false
+        }
+    }
+}

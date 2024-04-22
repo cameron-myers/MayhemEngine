@@ -1,0 +1,9 @@
+ {
+    "SpriteSource":
+    {
+        "name":"LaneHoverC",
+        "path": "LaneHoverC.png",
+        "numCols": 9,
+        "numRows": 10
+    }
+}

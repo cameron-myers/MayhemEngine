@@ -1,0 +1,9 @@
+ {
+    "SpriteSource":
+    {
+        "name": "MenuButton",
+        "path": "MainMButton.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

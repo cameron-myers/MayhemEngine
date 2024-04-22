@@ -1,0 +1,8 @@
+{
+  "SpriteSource": {
+    "name": "TimeStar",
+    "path": "Star_spritesheet_V01.png",
+    "numCols": 1,
+    "numRows": 2
+  }
+}

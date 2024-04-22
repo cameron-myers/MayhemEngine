@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "SpawnCircle",
+        "path": "SpawnCircle.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

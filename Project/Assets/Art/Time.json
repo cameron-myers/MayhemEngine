@@ -1,0 +1,9 @@
+ {
+    "SpriteSource":
+    {
+        "name": "Time",
+        "path": "Time.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

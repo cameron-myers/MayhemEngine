@@ -1,0 +1,9 @@
+ {
+    "SpriteSource":
+    {
+        "name": "Coin Rain",
+        "path": "Coin_Rain.png",
+        "numCols": 6,
+        "numRows":6
+    }
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9866384B-6C10-476F-BA7E-B9BB1CD7895B}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{9866384B-6C10-476F-BA7E-B9BB1CD7895B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{20F0EB02-3241-4025-AC9C-CCD535496A90}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Zeppelin_Upgrade_Damage" ID="{C1D1EBC0-7AEF-4011-B01E-6D16A8D3206E}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_City_Spell_End" ID="{0F819BD5-7E8C-4029-8B4C-A4434B56E872}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Cannon_Fire_Tyrant" ID="{000C7B67-16F8-4071-86BB-4470FB25C29B}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Set_State_Game_Paused" ID="{3ED24D8C-265D-4085-975E-6910E9EADCA5}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Coins_Falling" ID="{A249D74B-540D-40E8-B30A-8B882D0B185E}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_buttonhover_menu" ID="{56FC9A49-04EC-412D-ACDD-38D6A59E036B}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_LevelAmbience" ID="{CA2E7304-F8D0-4158-BD4B-A487FB636A99}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_StoneTower_Attack" ID="{91DDF6A9-E6AA-41F6-A631-9BDBA4791653}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_WoodTower_Attack" ID="{32846561-FCAE-432E-9D23-275EB559E2FA}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_StoneTower_Damaged" ID="{62C8E6A0-A670-4395-A191-F1BFA9776BFD}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Set_State_Game_Unpaused" ID="{62EF73DA-A9DF-4442-9216-64F038C1B6AC}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_buttonhover_level" ID="{BC9D8833-CE5C-44A2-9A8B-0370F6D99144}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Zeppelin_Upgrade_Speed" ID="{542B911D-A494-45D7-86ED-8FA1892F897E}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Splash_Screen_NBI" ID="{93EB5467-D4F4-4612-A5BB-1F8FC07F699A}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_menu_music" ID="{53B393DD-A8D9-4665-90DD-CCC467623B24}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Credit_Music" ID="{875C4D8E-B3F4-466A-9853-857192C9DA72}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Cannon_Fire_Gremlin" ID="{48BB546F-27C2-467C-A5BF-813EB8D19142}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_City_Damaged" ID="{E582C64C-DBC1-46CB-9E4C-3A26ABF6DBB1}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_GoldPile" ID="{A8331FE3-9F9D-46D5-8301-24C8AB72BAB3}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_buttonclick_03" ID="{9997B8C3-4B3E-484C-A12E-543059833EC9}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Zeppelin_Damaged" ID="{2EE673F0-BC49-4862-ADDC-521CE8AB89A3}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pause_Level_Music" ID="{CF6D1A42-41FE-48A8-AE60-6556334138C5}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Cannon_Fire_Bugbear" ID="{0DEC770D-69AE-48A9-9A8E-B7C707E10318}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ZeppelinHover" ID="{D5EE1504-C1DF-48DE-9C86-7EC7E16CB34F}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Zeppelin_Spawn_Gremlin" ID="{EE6F34FA-F9EA-4916-A496-A4A0374F873E}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_WoodTower_Damaged" ID="{3E143114-820B-495B-8639-91ACED2D4C10}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Goblin_Celebration" ID="{7C9F67C3-0620-498F-AAEC-4A5A87E0DEEE}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Cannon_Fire_Tyrant" ID="{3ECA4B5E-EEA0-49C1-B9EB-718B4C390F4B}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_buttonclick_02" ID="{CD23A9C2-37E8-4A2A-A549-DCAE29D80D38}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_StoneTower_Destruction" ID="{FF557913-C16E-4A2A-A883-578A13BA6042}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Cannon_Fire_Gremlin" ID="{2D9CEEDF-37C5-4A97-B5A7-F1E472473FF0}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Level_Music" ID="{94FF1050-BFC2-4AEC-BF92-B8DA964EA800}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_City_Attack" ID="{39EF0DA0-B8FA-4AFA-B0E8-3BD3D4265F39}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_City_Spell_Start" ID="{5A766861-11C1-4B06-9081-8FEE115BC8B6}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Level_Music" ID="{AD92D83E-97ED-4B8D-8DF0-8367CABA79EA}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Zeppelin_Spawn_Tyrant" ID="{D6C26548-F0CE-4CA5-A7A0-BCB6ADAEA5B9}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_WoodTower_Destruction" ID="{A9073088-558B-4CFA-8390-D5E28A5980AB}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Cannon_Fire_Bugbear" ID="{8EF9CA3F-0808-4D19-8AE9-EC138CE14715}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Level_Lose" ID="{4BB0F04D-DBA4-4D2E-B102-D9741719EE33}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Zeppelin_Spawn_Bugbear" ID="{5C7A99E8-AC42-4D54-BCEB-6DB1AAA64362}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_buttonclick_04" ID="{50882318-C36F-4D7C-8EF8-188CA67D300A}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Zeppelin_Upgrade_Health" ID="{7F08FA48-2528-4DB7-99E3-0F2184218163}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_City_Destroyed" ID="{5711F6CB-214D-4E0C-817D-3697490410E9}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Action_Blocked" ID="{3B537423-0928-4E62-804D-346D879E75AA}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Splash_Screen_Digi" ID="{3232C59B-65D9-4E69-99FC-1DA4B416F981}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Coin_Clink_Level" ID="{4568828D-AFD5-4ECA-87C8-D0C4089DD889}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Resume_Level_Music" ID="{14FF70AF-A38D-4EE5-AF59-E303DE764225}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Credit_Music" ID="{27AA89BF-D934-4F06-BBA2-76B6DDEBB882}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Level_Win" ID="{93474994-0C45-4F42-92A8-044D4FAFFB22}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Zeppelin_Destroyed" ID="{B5A01D16-C46A-4F62-94BB-9946A5A5D660}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_buttonclick_01" ID="{6118918E-851B-4F76-9464-A41A6D116AB2}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Menu_Music" ID="{55F7AA5B-E60E-4F7C-B31A-80C0C9C89D2F}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Banner_Lower" ID="{420B116E-315D-4FB4-9057-DF531D209CEC}" WorkUnitID="{541BED40-6303-477E-95FC-80024705AE2B}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

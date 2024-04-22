@@ -1,0 +1,23 @@
+{
+  "GameObject":
+  { 
+    "name": "ZeppelinSelectSBorder",
+    
+    "Transform":
+     {
+      "translation": [ -450 , -375, 1 ],
+      "rotation": 0.0,
+      "scale": [ 160.0, 160.0 ]
+
+    },
+
+    "Sprite": {
+      "frameIndex": 0,
+      "alpha": 1.0,
+      "RGB": [1.0,1.0,1.0],
+      "Mesh": "MainMesh",
+      "SpriteSource": "ZepBorder"
+
+    }
+  }
+}

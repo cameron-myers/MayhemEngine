@@ -1,0 +1,73 @@
+{
+    "GameObject": {
+        "name": "DwarfCity",
+        "Transform": {
+            "translation": [
+                789.0,
+                34.0,
+                1.0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                674.0,
+                1015.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "DwarfCity"
+        },
+        "Audio": {},
+        "Stats": [
+            {
+                "ListCount": 1,
+                "MaxHealth": 6000,
+                "ObjectType": "City",
+                "AttackDamage": 150,
+                "ReloadTime": 1
+            }
+        ],
+        "Collider": {
+            "Type": "Box",
+            "WidthMod": 1.0,
+            "HeightMod": 1.0
+        },
+        "Animation": {
+            "FrameCount": 3,
+            "FrameDuration": 0.003,
+            "IsLooping": false,
+            "DiffAnimations": true
+        },
+        "Behavior":
+        {
+            "Name":"City"
+        },
+        "Children": [
+            "DwarfCannonC",
+            "DwarfCannonB",
+            "DwarfCannonA",
+            "CityExplosion0",
+            "CityExplosion1",
+            "CityExplosion2",
+            "CityExplosion3",
+            "CityExplosion4",
+            "CityExplosion5",
+            "CityExplosion6",
+            "CityExplosion7",
+            "CityExplosion8",
+            "CityExplosion9",
+            "Particle_Fortress1A",
+            "Particle_Fortress2A",
+            "Particle_Fortress3A",
+            "Particle_Fortress1B",
+            "Particle_Fortress2B",
+            "Particle_Fortress3B",
+            "Particle_Fortress1C",
+            "Particle_Fortress2C",
+            "Particle_Fortress3C"
+        ]
+    }
+}

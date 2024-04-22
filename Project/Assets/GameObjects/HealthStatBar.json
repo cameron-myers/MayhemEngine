@@ -1,0 +1,24 @@
+{
+    "GameObject": {
+        "name": "HealthStatBar",
+        "Transform": {
+            "translation": [
+                64.0,
+                -330.0,
+                1.0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                150.0,
+                135.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 1,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "GremlinHP"
+        }
+    }
+}

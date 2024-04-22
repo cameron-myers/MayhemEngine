@@ -1,0 +1,40 @@
+{
+    "GameObject": {
+        "name": "ScreenToggle",
+        "Transform": {
+            "translation": [
+                -218.0,
+                -376.5,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                55.5,
+                55.5
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "Mesh": "MainMesh",
+            "SpriteSource": "checkbox"
+        },
+        "Collider": {
+            "Type": "Box",
+            "WidthMod": 1.0,
+            "HeightMod": 1.0
+        },
+        "Audio": {},
+        "Behavior": {
+            "Name": "ScreenToggle"
+        },
+        "Children": [
+            "ScreenToggleText"
+        ]
+    }
+}

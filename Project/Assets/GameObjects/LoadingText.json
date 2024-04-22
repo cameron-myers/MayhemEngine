@@ -1,0 +1,26 @@
+{
+    "GameObject": {
+        "name": "LoadingText",
+        "Transform": {
+            "translation": [
+                500.0,
+                -500.0,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                75.0,
+                75.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "TextMesh",
+            "SpriteSource": "PT_Mono_Black",
+            "Text": "Loading...",
+            "TextMode": "Right"
+        }
+    }
+}

@@ -1,0 +1,9 @@
+ {
+    "SpriteSource":
+    {
+        "name": "Border",
+        "path": "Border.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

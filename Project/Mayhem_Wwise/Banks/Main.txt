@@ -1,0 +1,142 @@
+Event	ID	Name			Wwise Object Path	Notes
+	51240863	Play_Level_Win			\Default Work Unit\MUS\Play_Level_Win	
+	66789758	Play_buttonhover_menu			\Default Work Unit\UI\Play_buttonhover_menu	
+	97727228	Cannon_Fire_Bugbear			\Default Work Unit\SFX\Zeppelin\Cannon_Fire_Bugbear	
+	300927168	Play_WoodTower_Damaged			\Default Work Unit\SFX\Tower\Play_WoodTower_Damaged	
+	487846446	Play_Goblin_Celebration			\Default Work Unit\Play_Goblin_Celebration	
+	557932600	Play_Level_Music			\Default Work Unit\MUS\Play_Level_Music	
+	737768043	Play_WoodTower_Attack			\Default Work Unit\SFX\Tower\Play_WoodTower_Attack	
+	834063403	Resume_Level_Music			\Default Work Unit\MUS\Resume_Level_Music	
+	844605027	Play_City_Damaged			\Default Work Unit\SFX\Tower\Play_City_Damaged	
+	853173628	Play_Coins_Falling			\Default Work Unit\Play_Coins_Falling	
+	871756690	Play_City_Spell_End			\Default Work Unit\SFX\Tower\Play_City_Spell_End	
+	880038383	Set_State_Game_Paused			\Default Work Unit\Set_State_Game_Paused	
+	914471075	Play_Zeppelin_Destroyed			\Default Work Unit\Play_Zeppelin_Destroyed	
+	1029053404	Play_Splash_Screen_Digi			\Default Work Unit\UI\Play_Splash_Screen_Digi	
+	1168262086	Play_Zeppelin_Spawn_Bugbear			\Default Work Unit\SFX\Zeppelin\Play_Zeppelin_Spawn_Bugbear	
+	1177687250	Play_Zeppelin_Upgrade_Speed			\Default Work Unit\SFX\Zeppelin\Play_Zeppelin_Upgrade_Speed	
+	1202908975	Stop_Credit_Music			\Default Work Unit\MUS\Stop_Credit_Music	
+	1205173799	Play_StoneTower_Attack			\Default Work Unit\SFX\Tower\Play_StoneTower_Attack	
+	1222231042	Play_Splash_Screen_NBI			\Default Work Unit\UI\Play_Splash_Screen_NBI	
+	1697518767	Play_buttonhover_level			\Default Work Unit\UI\Play_buttonhover_level	
+	1713356576	Play_buttonclick_01			\Default Work Unit\UI\Play_buttonclick_01	
+	1713356578	Play_buttonclick_03			\Default Work Unit\UI\Play_buttonclick_03	
+	1713356579	Play_buttonclick_02			\Default Work Unit\UI\Play_buttonclick_02	
+	1713356581	Play_buttonclick_04			\Default Work Unit\UI\Play_buttonclick_04	
+	1843752364	Play_GoldPile			\Default Work Unit\UI\Play_GoldPile	
+	2023560711	Play_Zeppelin_Damaged			\Default Work Unit\SFX\Zeppelin\Play_Zeppelin_Damaged	
+	2043821631	Play_Zeppelin_Upgrade_Health			\Default Work Unit\SFX\Zeppelin\Play_Zeppelin_Upgrade_Health	
+	2097415741	Play_Credit_Music			\Default Work Unit\MUS\Play_Credit_Music	
+	2152679746	Cannon_Fire_Gremlin			\Default Work Unit\SFX\Zeppelin\Cannon_Fire_Gremlin	
+	2228153899	Play_menu_music			\Default Work Unit\MUS\Play_menu_music	
+	2339013412	Play_Level_Lose			\Default Work Unit\MUS\Play_Level_Lose	
+	2383607268	Cannon_Fire_Tyrant			\Default Work Unit\SFX\Zeppelin\Cannon_Fire_Tyrant	
+	2436887468	Play_Coin_Clink_Level			\Default Work Unit\UI\Play_Coin_Clink_Level	
+	2592254617	Play_StoneTower_Destruction			\Default Work Unit\SFX\Tower\Play_StoneTower_Destruction	
+	2688475861	Stop_Cannon_Fire_Gremlin			\Default Work Unit\SFX\Zeppelin\Stop_Cannon_Fire_Gremlin	
+	2816493517	Play_WoodTower_Destruction			\Default Work Unit\SFX\Tower\Play_WoodTower_Destruction	
+	2842146700	Play_StoneTower_Damaged			\Default Work Unit\SFX\Tower\Play_StoneTower_Damaged	
+	2862239458	Pause_Level_Music			\Default Work Unit\MUS\Pause_Level_Music	
+	2917290866	Play_Zeppelin_Spawn_Tyrant			\Default Work Unit\SFX\Zeppelin\Play_Zeppelin_Spawn_Tyrant	
+	2983009038	Play_Zeppelin_Upgrade_Damage			\Default Work Unit\SFX\Zeppelin\Play_Zeppelin_Upgrade_Damage	
+	3000472298	Set_State_Game_Unpaused			\Default Work Unit\Set_State_Game_Unpaused	
+	3112137762	Play_City_Attack			\Default Work Unit\SFX\Tower\Play_City_Attack	
+	3149838961	Play_City_Spell_Start			\Default Work Unit\SFX\Tower\Play_City_Spell_Start	
+	3363216396	Play_LevelAmbience			\Default Work Unit\SFX\Play_LevelAmbience	
+	3643286168	Play_Zeppelin_Spawn_Gremlin			\Default Work Unit\SFX\Zeppelin\Play_Zeppelin_Spawn_Gremlin	
+	3826206711	Play_ZeppelinHover			\Default Work Unit\UI\Play_ZeppelinHover	
+	3873832695	Play_City_Destroyed			\Default Work Unit\SFX\Tower\Play_City_Destroyed	
+	3945748993	Stop_Menu_Music			\Default Work Unit\MUS\Stop_Menu_Music	
+	3951251861	Stop_Cannon_Fire_Tyrant			\Default Work Unit\SFX\Zeppelin\Stop_Cannon_Fire_Tyrant	
+	4055353338	Stop_Level_Music			\Default Work Unit\MUS\Stop_Level_Music	
+	4209888250	Play_Banner_Lower			\Default Work Unit\Play_Banner_Lower	
+	4259398677	Play_Action_Blocked			\Default Work Unit\Play_Action_Blocked	
+	4273342723	Stop_Cannon_Fire_Bugbear			\Default Work Unit\SFX\Zeppelin\Stop_Cannon_Fire_Bugbear	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3092587493	Pause			\Default Work Unit\Pause	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Pause			
+	2729684577	Game_Unpaused	Pause			
+	3367563548	Game_Paused	Pause			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	506580606	Game_Paused	Pause	\Interactive Music Hierarchy\Default Work Unit\Level Music		
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	387472755	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Lost ambience\sfx_exra\Silence\Wwise Silence	
+	917922154	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Lost ambience\sfx_exra\Silence_01\Wwise Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	21932249	sfx_tank_04	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_tank_04_3E74E552.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Lost ambience\sfx_exra\StoneTower_Attack\sfx_tank_04		570620
+	32947321	sfx_ambient_floor_loop	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_ambient_floor_loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\sfx_ambient_floor_loop		7289810
+	46258184	City_Spell_End	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\SFX_Tower_Repair_End_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\City\City_Spell_End		576064
+	87401305	sfx_update_woodtower_destruction_05	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_update_woodtower_destruction_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Destruction\sfx_update_woodtower_destruction_05		718584
+	105012500	sfx_ui_coinclink_01	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_ui_coinclink_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Level_UI\Coin_Clink\sfx_ui_coinclink_01		37046
+	111068676	buttonclick_01	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_ui_buttonclick_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Level_UI\buttonclick_01		39822
+	116264625	sfx_Zeppelin_HealthUpgrade_03	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_Zeppelin_HealthUpgrade_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Zeppelin\Health_Upgrade\sfx_Zeppelin_HealthUpgrade_03		158204
+	116695629	sfx_Zeppelin_SpeedUpgrade_01	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_Zeppelin_SpeedUpgrade_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Zeppelin\Speed_Upgrade\sfx_Zeppelin_SpeedUpgrade_01		270688
+	131052993	buttonclick_03	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_ui_buttonclick_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Level_UI\buttonclick_03		29686
+	144410768	sfx_woodtower_damaged_04_	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_woodtower_damaged_04__10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Damaged\sfx_woodtower_damaged_04_		190352
+	150154597	sfx_Zeppelin_WeaponUpgrade_01	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_Zeppelin_WeaponUpgrade_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Zeppelin\Damage_Upgrade\sfx_Zeppelin_WeaponUpgrade_01		258524
+	167627178	sfx_tank_02	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_tank_02_6D5004E7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Lost ambience\sfx_exra\StoneTower_Attack\sfx_tank_02		502712
+	197891623	sfx_city_destruction_1stpass	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_city_destruction_1stpass_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\City\City_Destroyed\sfx_city_destruction_1stpass		725508
+	223358758	sfx_update_woodtower_destruction_01	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_update_woodtower_destruction_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Destruction\sfx_update_woodtower_destruction_01		718584
+	236215768	sfx_woodentower_ballista_02	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_woodentower_ballista_02_EF5BE17A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Ballista\sfx_woodentower_ballista_02		200222
+	277644435	sfx_update_woodtower_destruction_03	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_update_woodtower_destruction_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Destruction\sfx_update_woodtower_destruction_03		718584
+	294848901	buttonhover_level	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_buttonhover_level_17F0E3B4.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Level_UI\buttonhover_level		8988
+	302931505	sfx_update_stonetower_destruction_04	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_update_stonetower_destruction_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Stone\StoneTower_Destruction\sfx_update_stonetower_destruction_04		359324
+	334526699	sfx_woodtower_damaged_02	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_woodtower_damaged_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Damaged\sfx_woodtower_damaged_02		282772
+	353700461	buttonclick_02	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_ui_buttonclick_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Level_UI\buttonclick_02		36040
+	354810172	sfx_woodentower_ballista_06	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_woodentower_ballista_06_EF8CB57D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Ballista\sfx_woodentower_ballista_06		235590
+	359164842	sfx_woodentower_ballista_04	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_woodentower_ballista_04_B7A2229A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Ballista\sfx_woodentower_ballista_04		205706
+	367452716	New Music Track	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\mus_menu_1stpass_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Menu_Music\mus_menu_1stpass\New Music Track		12759340
+	389608670	buttonclick_04	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_ui_buttonclick_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Level_UI\buttonclick_04		35106
+	407209803	sfx_woodtower_damaged_03	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_woodtower_damaged_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Damaged\sfx_woodtower_damaged_03		245928
+	409245298	sfx_woodtower_damaged_05_	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_woodtower_damaged_05__10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Damaged\sfx_woodtower_damaged_05_		181968
+	422631437	New Music Track	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\mus_CreditMusic_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Credit_Music\Credit_Music\New Music Track		7372864
+	431601860	sfx_woodentower_ballista_05	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_woodentower_ballista_05_2A378405.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Ballista\sfx_woodentower_ballista_05		219844
+	441910380	sfx_update_stonetower_destruction_01	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_update_stonetower_destruction_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Stone\StoneTower_Destruction\sfx_update_stonetower_destruction_01		359324
+	450902649	sfx_update_stonetower_destruction_02	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_update_stonetower_destruction_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Stone\StoneTower_Destruction\sfx_update_stonetower_destruction_02		359324
+	471547811	GoldPile	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_ui_goldpile_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Level_UI\GoldPile		184416
+	559778520	sfx_update_stonetower_destruction_03	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_update_stonetower_destruction_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Stone\StoneTower_Destruction\sfx_update_stonetower_destruction_03		359324
+	568432073	sfx_Zeppelin_HealthUpgrade_02	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_Zeppelin_HealthUpgrade_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Zeppelin\Health_Upgrade\sfx_Zeppelin_HealthUpgrade_02		137166
+	569766647	Action_Blocked	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_ui_ActionBlocked_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Action_Blocked		31584
+	575894184	mus_win_stinger	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\mus_win_stinger_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Victory_Stinger\Victory\mus_win_stinger		1729384
+	595596463	sfx_Zeppelin_HealthUpgrade_01	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_Zeppelin_HealthUpgrade_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Zeppelin\Health_Upgrade\sfx_Zeppelin_HealthUpgrade_01		139920
+	636974018	mus_level_1stpass	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\mus_win_1stpass_test_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\mus_level_1stpass\mus_level_1stpass		8519776
+	651666002	sfx_ui_coinclink_03	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_ui_coinclink_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Level_UI\Coin_Clink\sfx_ui_coinclink_03		33232
+	657585472	sfx_woodentower_ballista_03	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_woodentower_ballista_03_40E6F681.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Ballista\sfx_woodentower_ballista_03		196836
+	658286532	sfx_ui_coinclink_04	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_ui_coinclink_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Level_UI\Coin_Clink\sfx_ui_coinclink_04		24548
+	668794921	sfx_tank_01	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_tank_01_729A7C48.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Lost ambience\sfx_exra\StoneTower_Attack\sfx_tank_01		473344
+	704973090	sfx_stonetower_damaged_02	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_stonetower_damaged_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Stone\StoneTower_Damaged\sfx_stonetower_damaged_02		173056
+	713529597	sfx_zeppelin_1stpass spawn	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_zeppelin_1stpass spawn_655B7EC7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Zeppelin\Zeppelin_Spawn\sfx_zeppelin_1stpass spawn		378320
+	752633298	sfx_tank_05	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_tank_05_404C566C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Lost ambience\sfx_exra\StoneTower_Attack\sfx_tank_05		560496
+	754920950	sfx_Zeppelin_WeaponUpgrade_02	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_Zeppelin_WeaponUpgrade_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Zeppelin\Damage_Upgrade\sfx_Zeppelin_WeaponUpgrade_02		231838
+	766474293	sfx_update_woodtower_destruction_08	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_update_woodtower_destruction_08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Destruction\sfx_update_woodtower_destruction_08		718584
+	769299816	sfx_update_woodtower_destruction_07	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_update_woodtower_destruction_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Destruction\sfx_update_woodtower_destruction_07		718584
+	770331476	sfx_stonetower_damaged_01	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_stonetower_damaged_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\City\City_Damaged\sfx_stonetower_damaged_01		153440
+	783148298	City_Attack	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_Zeppelin_Destruction_15C66194.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\City\City_Attack		79398
+	785545135	sfx_tank_03	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_tank_03_3CAB8D9E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Lost ambience\sfx_exra\StoneTower_Attack\sfx_tank_03		613628
+	787993089	sfx_ui_coinclink_02	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_ui_coinclink_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Level_UI\Coin_Clink\sfx_ui_coinclink_02		42358
+	794969280	Splash_Screen_NBI	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_SplashScreen_NBI_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Splash_Screen_NBI		331516
+	820690121	Splash_Screen_Digi	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_SplashScreen_DigiPen_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Splash_Screen_Digi		276040
+	847554814	mus_win_firetail	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\mus_win_firetail_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Victory_Stinger\mus_win_firetail\mus_win_firetail		1475000
+	850789044	sfx_1stpass_cannon_fire_01	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_1stpass_cannon_fire_01_1E469441.wem		\Actor-Mixer Hierarchy\Default Work Unit\Zeppelin\Cannon_Fire_Bugbear\sfx_1stpass_cannon_fire_01		193120
+	854703325	buttonhover_menu	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_buttonhover_menu_EFEA3961.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Level_UI\buttonhover_menu		9038
+	860626781	sfx_lose_stinger	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_lose_stinger_44370BE4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Lost ambience\sfx_lose_stinger		336064
+	877007162	sfx_zeppelin_damaged_01	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_zeppelin_damaged_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Zeppelin\Zeppelin_Damaged\sfx_zeppelin_damaged_01		93852
+	886334774	sfx_stonetower_damaged_03	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_stonetower_damaged_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Stone\StoneTower_Damaged\sfx_stonetower_damaged_03		196818
+	898315792	sfx_update_woodtower_destruction_02	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_update_woodtower_destruction_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Destruction\sfx_update_woodtower_destruction_02		718584
+	918857759	sfx_woodentower_ballista_01	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_woodentower_ballista_01_05A3A550.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Ballista\sfx_woodentower_ballista_01		195658
+	956798487	sfx_lost_ambience	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_lose_ambience_8369D8A4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\Lost ambience\sfx_lost_ambience		1970488
+	958132264	sfx_1stpass_cannon_fire_01	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_1stpass_cannon_fire_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Zeppelin\Cannon_Fire_Gremlin\sfx_1stpass_cannon_fire_01		271516
+	968668727	sfx_Zeppelin_SpeedUpgrade_02	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_Zeppelin_SpeedUpgrade_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Zeppelin\Speed_Upgrade\sfx_Zeppelin_SpeedUpgrade_02		252360
+	981174391	sfx_woodentower_ballista_07	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_woodentower_ballista_07_E96A2253.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Ballista\sfx_woodentower_ballista_07		245458
+	1005000553	sfx_update_woodtower_destruction_06	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_update_woodtower_destruction_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Destruction\sfx_update_woodtower_destruction_06		718584
+	1008770114	City_Spell_Start	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_Tower_Repair_Start_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\City\City_Spell_Start		398208
+	1033440240	sfx_update_woodtower_destruction_04	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_update_woodtower_destruction_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Destruction\sfx_update_woodtower_destruction_04		718584
+	1041260159	sfx_1stpass_cannon_fire_02	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_1stpass_cannon_fire_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Zeppelin\Cannon_Fire_Bugbear\sfx_1stpass_cannon_fire_02		271556
+	1051953033	sfx_woodtower_damaged_01	C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Windows\SFX\sfx_woodtower_damaged_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Wood\WoodenTower_Damaged\sfx_woodtower_damaged_01		281496
+

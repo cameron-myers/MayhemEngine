@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "BugbearSail",
+        "path": "BugbearSail.png",
+        "numCols": 6,
+        "numRows": 6
+    }
+}

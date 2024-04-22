@@ -1,0 +1,30 @@
+{
+    "GameObject": {
+        "name": "GremlinDM",
+        "Transform": {
+            "translation": [
+                104.5,
+                -400.5,
+                1.0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                173.5,
+                163.0
+            ]
+        },
+        "Animation": {
+            "FrameCount": 4,
+            "FrameDuration": 0.003,
+            "IsLooping": false,
+            "DiffAnimations": true
+        },
+        "Sprite": {
+            "frameIndex": 2,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "GremlinDM"
+        }
+    }
+}

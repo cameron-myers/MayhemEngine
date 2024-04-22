@@ -1,0 +1,37 @@
+{
+    "GameObject": {
+        "name": "Particle_StoneDamage",
+        "Transform": {
+            "translation": [
+                0,
+                0,
+                1
+            ],
+            "rotation": 0,
+            "scale": [
+                0.01,
+                0.01
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 0.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "ExplosiveStone"
+        },
+        "Emitter": {
+            "SpawnRate": 0.2,
+            "ParticleLife": 0.5,
+            "SprayAngle": 360,
+            "MinSpeed": 1000,
+            "MaxSpeed": 1000,
+            "HiveMind": false,
+            "ScaleSetting": "In",
+            "ScaleMultiplier": 2000.0,
+            "ScaleTime": 0.1
+        },
+        "Audio": {},
+        "EmitterBehavior": "CannonHit"
+    }
+}

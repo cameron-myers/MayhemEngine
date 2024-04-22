@@ -1,0 +1,40 @@
+{
+    "GameObject": {
+        "name": "Particle_GoldRain2",
+        "Transform": {
+            "translation": [
+                -480.0,
+                800.0,
+                1
+            ],
+            "rotation": 360.0,
+            "scale": [
+                100.0,
+                100.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 0.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "Coin_Rain"
+        },
+        "Animation": {
+            "FrameCount": 32,
+            "FrameDuration": 0.01,
+            "IsLooping": true,
+            "DiffAnimations": false
+        },
+        "Emitter": {
+            "SpawnRate": 3,
+            "ParticleLife": 10,
+            "SprayAngle": 20,
+            "MinSpeed": 80,
+            "MaxSpeed": 120,
+            "UniformAnimation": false
+        },
+        "Audio": {},
+        "EmitterBehavior": "EmitterTest"
+    }
+}

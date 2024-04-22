@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "StatBarDamageMedium",
+        "path": "spritesheetDMMedium.png",
+        "numCols": 4,
+        "numRows": 1
+    }
+}

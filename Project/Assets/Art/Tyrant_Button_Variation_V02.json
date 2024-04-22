@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "Tyrant_Button_Variation_V02",
+        "path": "Tyrant_button.png",
+        "numCols": 1,
+        "numRows": 3
+    }
+}

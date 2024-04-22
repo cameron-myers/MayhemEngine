@@ -1,0 +1,8 @@
+{
+  "SpriteSource": {
+    "name": "Dock",
+    "path": "Dock.png",
+    "numCols": 1,
+    "numRows": 1
+  }
+}

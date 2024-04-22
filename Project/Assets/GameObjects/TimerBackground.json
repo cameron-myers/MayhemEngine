@@ -1,0 +1,23 @@
+{
+  "GameObject":
+  { 
+    "name": "TimerBackground",
+    
+    "Transform":
+     {
+      "translation": [ 700, -380, 1 ],
+      "rotation": 0.0,
+      "scale": [ 204.8, 243.6 ]
+
+    },
+
+    "Sprite": {
+      "frameIndex": 0,
+      "alpha": 1.0,
+      "RGB": [1.0,1.0,1.0],
+      "Mesh": "MainMesh",
+      "SpriteSource": "TimerBackground"
+
+    }
+  }
+}

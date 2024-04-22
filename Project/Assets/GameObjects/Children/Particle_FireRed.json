@@ -1,0 +1,36 @@
+{
+    "GameObject": {
+        "name": "Particle_DamageSmoke",
+        "Transform": {
+            "translation": [
+                0,
+                0,
+                1
+            ],
+            "rotation": 0,
+            "scale": [
+                40.0,
+                40.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "particlered"
+        },
+        "Emitter": {
+            "SpawnRate": 6,
+            "ParticleLife": 2,
+            "SprayAngle": 90,
+            "MinSpeed": 50,
+            "MaxSpeed": 50,
+            "HiveMind": false,
+			      "Fade": "Out",
+            "FadeTime": 2
+        },
+        "Audio": {},
+        "EmitterBehavior": "EmitterTest"
+    }
+}

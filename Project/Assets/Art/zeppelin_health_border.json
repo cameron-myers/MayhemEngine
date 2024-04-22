@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "zeppelin_health_border",
+        "path": "zeppelin_health_border.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\NoBadIdeas_Wwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\Cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\NoBadIdeas_Wwise\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\glowc\Desktop\no_bad_ideas\trunk\Tech\NoBadIdeas\Mayhem_Wwise\NoBadIdeas_Wwise\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="4173969672">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="1006694123" Name="Music_Volume" ObjectPath="\Game Parameters\Default Work Unit\Music_Volume"/>
+				<GameParameter Id="1564184899" Name="SFX_Volume" ObjectPath="\Game Parameters\Default Work Unit\SFX_Volume"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="1306463880">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="97727228" Name="Cannon_Fire_Bugbear" ObjectPath="\Events\Default Work Unit\SFX\Zeppelin\Cannon_Fire_Bugbear">
+					<IncludedMemoryFiles>
+						<File Id="850789044" Language="SFX">
+							<ShortName>sfx_1stpass_cannon_fire_01.wav</ShortName>
+							<Path>SFX\sfx_1stpass_cannon_fire_01_1E469441.wem</Path>
+						</File>
+						<File Id="1041260159" Language="SFX">
+							<ShortName>sfx_1stpass_cannon_fire_02.wav</ShortName>
+							<Path>SFX\sfx_1stpass_cannon_fire_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2152679746" Name="Cannon_Fire_Gremlin" ObjectPath="\Events\Default Work Unit\SFX\Zeppelin\Cannon_Fire_Gremlin">
+					<IncludedMemoryFiles>
+						<File Id="958132264" Language="SFX">
+							<ShortName>sfx_1stpass_cannon_fire_01.wav</ShortName>
+							<Path>SFX\sfx_1stpass_cannon_fire_01_10C4C929.wem</Path>
+						</File>
+						<File Id="1041260159" Language="SFX">
+							<ShortName>sfx_1stpass_cannon_fire_02.wav</ShortName>
+							<Path>SFX\sfx_1stpass_cannon_fire_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2383607268" Name="Cannon_Fire_Tyrant" ObjectPath="\Events\Default Work Unit\SFX\Zeppelin\Cannon_Fire_Tyrant">
+					<IncludedMemoryFiles>
+						<File Id="958132264" Language="SFX">
+							<ShortName>sfx_1stpass_cannon_fire_01.wav</ShortName>
+							<Path>SFX\sfx_1stpass_cannon_fire_01_10C4C929.wem</Path>
+						</File>
+						<File Id="1041260159" Language="SFX">
+							<ShortName>sfx_1stpass_cannon_fire_02.wav</ShortName>
+							<Path>SFX\sfx_1stpass_cannon_fire_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2862239458" Name="Pause_Level_Music" ObjectPath="\Events\Default Work Unit\MUS\Pause_Level_Music"/>
+				<Event Id="4259398677" Name="Play_Action_Blocked" ObjectPath="\Events\Default Work Unit\Play_Action_Blocked">
+					<IncludedMemoryFiles>
+						<File Id="569766647" Language="SFX">
+							<ShortName>sfx_ui_ActionBlocked.wav</ShortName>
+							<Path>SFX\sfx_ui_ActionBlocked_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4209888250" Name="Play_Banner_Lower" ObjectPath="\Events\Default Work Unit\Play_Banner_Lower">
+					<IncludedMemoryFiles>
+						<File Id="105012500" Language="SFX">
+							<ShortName>sfx_ui_coinclink_01.wav</ShortName>
+							<Path>SFX\sfx_ui_coinclink_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1713356576" Name="Play_buttonclick_01" ObjectPath="\Events\Default Work Unit\UI\Play_buttonclick_01">
+					<IncludedMemoryFiles>
+						<File Id="111068676" Language="SFX">
+							<ShortName>sfx_ui_buttonclick_01.wav</ShortName>
+							<Path>SFX\sfx_ui_buttonclick_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1713356579" Name="Play_buttonclick_02" ObjectPath="\Events\Default Work Unit\UI\Play_buttonclick_02">
+					<IncludedMemoryFiles>
+						<File Id="353700461" Language="SFX">
+							<ShortName>sfx_ui_buttonclick_02.wav</ShortName>
+							<Path>SFX\sfx_ui_buttonclick_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1713356578" Name="Play_buttonclick_03" ObjectPath="\Events\Default Work Unit\UI\Play_buttonclick_03">
+					<IncludedMemoryFiles>
+						<File Id="131052993" Language="SFX">
+							<ShortName>sfx_ui_buttonclick_03.wav</ShortName>
+							<Path>SFX\sfx_ui_buttonclick_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1713356581" Name="Play_buttonclick_04" ObjectPath="\Events\Default Work Unit\UI\Play_buttonclick_04">
+					<IncludedMemoryFiles>
+						<File Id="389608670" Language="SFX">
+							<ShortName>sfx_ui_buttonclick_04.wav</ShortName>
+							<Path>SFX\sfx_ui_buttonclick_04_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1697518767" Name="Play_buttonhover_level" ObjectPath="\Events\Default Work Unit\UI\Play_buttonhover_level">
+					<IncludedMemoryFiles>
+						<File Id="294848901" Language="SFX">
+							<ShortName>sfx_buttonhover_level.wav</ShortName>
+							<Path>SFX\sfx_buttonhover_level_17F0E3B4.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="66789758" Name="Play_buttonhover_menu" ObjectPath="\Events\Default Work Unit\UI\Play_buttonhover_menu">
+					<IncludedMemoryFiles>
+						<File Id="854703325" Language="SFX">
+							<ShortName>sfx_buttonhover_menu.wav</ShortName>
+							<Path>SFX\sfx_buttonhover_menu_EFEA3961.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3112137762" Name="Play_City_Attack" ObjectPath="\Events\Default Work Unit\SFX\Tower\Play_City_Attack">
+					<IncludedMemoryFiles>
+						<File Id="783148298" Language="SFX">
+							<ShortName>sfx_Zeppelin_Destruction.wav</ShortName>
+							<Path>SFX\sfx_Zeppelin_Destruction_15C66194.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="844605027" Name="Play_City_Damaged" ObjectPath="\Events\Default Work Unit\SFX\Tower\Play_City_Damaged">
+					<IncludedMemoryFiles>
+						<File Id="770331476" Language="SFX">
+							<ShortName>sfx_stonetower_damaged_01.wav</ShortName>
+							<Path>SFX\sfx_stonetower_damaged_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3873832695" Name="Play_City_Destroyed" ObjectPath="\Events\Default Work Unit\SFX\Tower\Play_City_Destroyed">
+					<IncludedMemoryFiles>
+						<File Id="197891623" Language="SFX">
+							<ShortName>sfx_city_destruction_1stpass.wav</ShortName>
+							<Path>SFX\sfx_city_destruction_1stpass_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="871756690" Name="Play_City_Spell_End" ObjectPath="\Events\Default Work Unit\SFX\Tower\Play_City_Spell_End">
+					<IncludedMemoryFiles>
+						<File Id="46258184" Language="SFX">
+							<ShortName>SFX_Tower_Repair_End.wav</ShortName>
+							<Path>SFX\SFX_Tower_Repair_End_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3149838961" Name="Play_City_Spell_Start" ObjectPath="\Events\Default Work Unit\SFX\Tower\Play_City_Spell_Start">
+					<IncludedMemoryFiles>
+						<File Id="1008770114" Language="SFX">
+							<ShortName>sfx_Tower_Repair_Start.wav</ShortName>
+							<Path>SFX\sfx_Tower_Repair_Start_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2436887468" Name="Play_Coin_Clink_Level" ObjectPath="\Events\Default Work Unit\UI\Play_Coin_Clink_Level">
+					<IncludedMemoryFiles>
+						<File Id="105012500" Language="SFX">
+							<ShortName>sfx_ui_coinclink_01.wav</ShortName>
+							<Path>SFX\sfx_ui_coinclink_01_10C4C929.wem</Path>
+						</File>
+						<File Id="651666002" Language="SFX">
+							<ShortName>sfx_ui_coinclink_03.wav</ShortName>
+							<Path>SFX\sfx_ui_coinclink_03_10C4C929.wem</Path>
+						</File>
+						<File Id="658286532" Language="SFX">
+							<ShortName>sfx_ui_coinclink_04.wav</ShortName>
+							<Path>SFX\sfx_ui_coinclink_04_10C4C929.wem</Path>
+						</File>
+						<File Id="787993089" Language="SFX">
+							<ShortName>sfx_ui_coinclink_02.wav</ShortName>
+							<Path>SFX\sfx_ui_coinclink_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="853173628" Name="Play_Coins_Falling" ObjectPath="\Events\Default Work Unit\Play_Coins_Falling">
+					<IncludedMemoryFiles>
+						<File Id="105012500" Language="SFX">
+							<ShortName>sfx_ui_coinclink_01.wav</ShortName>
+							<Path>SFX\sfx_ui_coinclink_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2097415741" Name="Play_Credit_Music" ObjectPath="\Events\Default Work Unit\MUS\Play_Credit_Music">
+					<IncludedMemoryFiles>
+						<File Id="422631437" Language="SFX">
+							<ShortName>mus_CreditMusic.wav</ShortName>
+							<Path>SFX\mus_CreditMusic_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="487846446" Name="Play_Goblin_Celebration" ObjectPath="\Events\Default Work Unit\Play_Goblin_Celebration">
+					<IncludedMemoryFiles>
+						<File Id="105012500" Language="SFX">
+							<ShortName>sfx_ui_coinclink_01.wav</ShortName>
+							<Path>SFX\sfx_ui_coinclink_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1843752364" Name="Play_GoldPile" ObjectPath="\Events\Default Work Unit\UI\Play_GoldPile">
+					<IncludedMemoryFiles>
+						<File Id="471547811" Language="SFX">
+							<ShortName>sfx_ui_goldpile.wav</ShortName>
+							<Path>SFX\sfx_ui_goldpile_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2339013412" Name="Play_Level_Lose" ObjectPath="\Events\Default Work Unit\MUS\Play_Level_Lose">
+					<IncludedMemoryFiles>
+						<File Id="21932249" Language="SFX">
+							<ShortName>sfx_tank_04.wav</ShortName>
+							<Path>SFX\sfx_tank_04_3E74E552.wem</Path>
+						</File>
+						<File Id="167627178" Language="SFX">
+							<ShortName>sfx_tank_02.wav</ShortName>
+							<Path>SFX\sfx_tank_02_6D5004E7.wem</Path>
+						</File>
+						<File Id="668794921" Language="SFX">
+							<ShortName>sfx_tank_01.wav</ShortName>
+							<Path>SFX\sfx_tank_01_729A7C48.wem</Path>
+						</File>
+						<File Id="752633298" Language="SFX">
+							<ShortName>sfx_tank_05.wav</ShortName>
+							<Path>SFX\sfx_tank_05_404C566C.wem</Path>
+						</File>
+						<File Id="785545135" Language="SFX">
+							<ShortName>sfx_tank_03.wav</ShortName>
+							<Path>SFX\sfx_tank_03_3CAB8D9E.wem</Path>
+						</File>
+						<File Id="860626781" Language="SFX">
+							<ShortName>sfx_lose_stinger.wav</ShortName>
+							<Path>SFX\sfx_lose_stinger_44370BE4.wem</Path>
+						</File>
+						<File Id="956798487" Language="SFX">
+							<ShortName>sfx_lose_ambience.wav</ShortName>
+							<Path>SFX\sfx_lose_ambience_8369D8A4.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="557932600" Name="Play_Level_Music" ObjectPath="\Events\Default Work Unit\MUS\Play_Level_Music">
+					<IncludedMemoryFiles>
+						<File Id="636974018" Language="SFX">
+							<ShortName>mus_win_1stpass_test.wav</ShortName>
+							<Path>SFX\mus_win_1stpass_test_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="51240863" Name="Play_Level_Win" ObjectPath="\Events\Default Work Unit\MUS\Play_Level_Win">
+					<IncludedMemoryFiles>
+						<File Id="575894184" Language="SFX">
+							<ShortName>mus_win_stinger.wav</ShortName>
+							<Path>SFX\mus_win_stinger_D79FB2B7.wem</Path>
+						</File>
+						<File Id="847554814" Language="SFX">
+							<ShortName>mus_win_firetail.wav</ShortName>
+							<Path>SFX\mus_win_firetail_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3363216396" Name="Play_LevelAmbience" ObjectPath="\Events\Default Work Unit\SFX\Play_LevelAmbience">
+					<IncludedMemoryFiles>
+						<File Id="32947321" Language="SFX">
+							<ShortName>sfx_ambient_floor_loop.wav</ShortName>
+							<Path>SFX\sfx_ambient_floor_loop_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2228153899" Name="Play_menu_music" ObjectPath="\Events\Default Work Unit\MUS\Play_menu_music">
+					<IncludedMemoryFiles>
+						<File Id="367452716" Language="SFX">
+							<ShortName>mus_menu_1stpass.wav</ShortName>
+							<Path>SFX\mus_menu_1stpass_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1029053404" Name="Play_Splash_Screen_Digi" ObjectPath="\Events\Default Work Unit\UI\Play_Splash_Screen_Digi">
+					<IncludedMemoryFiles>
+						<File Id="820690121" Language="SFX">
+							<ShortName>sfx_SplashScreen_DigiPen.wav</ShortName>
+							<Path>SFX\sfx_SplashScreen_DigiPen_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1222231042" Name="Play_Splash_Screen_NBI" ObjectPath="\Events\Default Work Unit\UI\Play_Splash_Screen_NBI">
+					<IncludedMemoryFiles>
+						<File Id="794969280" Language="SFX">
+							<ShortName>sfx_SplashScreen_NBI.wav</ShortName>
+							<Path>SFX\sfx_SplashScreen_NBI_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1205173799" Name="Play_StoneTower_Attack" ObjectPath="\Events\Default Work Unit\SFX\Tower\Play_StoneTower_Attack">
+					<IncludedMemoryFiles>
+						<File Id="21932249" Language="SFX">
+							<ShortName>sfx_tank_04.wav</ShortName>
+							<Path>SFX\sfx_tank_04_3E74E552.wem</Path>
+						</File>
+						<File Id="167627178" Language="SFX">
+							<ShortName>sfx_tank_02.wav</ShortName>
+							<Path>SFX\sfx_tank_02_6D5004E7.wem</Path>
+						</File>
+						<File Id="668794921" Language="SFX">
+							<ShortName>sfx_tank_01.wav</ShortName>
+							<Path>SFX\sfx_tank_01_729A7C48.wem</Path>
+						</File>
+						<File Id="752633298" Language="SFX">
+							<ShortName>sfx_tank_05.wav</ShortName>
+							<Path>SFX\sfx_tank_05_404C566C.wem</Path>
+						</File>
+						<File Id="785545135" Language="SFX">
+							<ShortName>sfx_tank_03.wav</ShortName>
+							<Path>SFX\sfx_tank_03_3CAB8D9E.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2842146700" Name="Play_StoneTower_Damaged" ObjectPath="\Events\Default Work Unit\SFX\Tower\Play_StoneTower_Damaged">
+					<IncludedMemoryFiles>
+						<File Id="704973090" Language="SFX">
+							<ShortName>sfx_stonetower_damaged_02.wav</ShortName>
+							<Path>SFX\sfx_stonetower_damaged_02_10C4C929.wem</Path>
+						</File>
+						<File Id="886334774" Language="SFX">
+							<ShortName>sfx_stonetower_damaged_03.wav</ShortName>
+							<Path>SFX\sfx_stonetower_damaged_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2592254617" Name="Play_StoneTower_Destruction" ObjectPath="\Events\Default Work Unit\SFX\Tower\Play_StoneTower_Destruction">
+					<IncludedMemoryFiles>
+						<File Id="302931505" Language="SFX">
+							<ShortName>sfx_update_stonetower_destruction_04.wav</ShortName>
+							<Path>SFX\sfx_update_stonetower_destruction_04_10C4C929.wem</Path>
+						</File>
+						<File Id="441910380" Language="SFX">
+							<ShortName>sfx_update_stonetower_destruction_01.wav</ShortName>
+							<Path>SFX\sfx_update_stonetower_destruction_01_10C4C929.wem</Path>
+						</File>
+						<File Id="450902649" Language="SFX">
+							<ShortName>sfx_update_stonetower_destruction_02.wav</ShortName>
+							<Path>SFX\sfx_update_stonetower_destruction_02_10C4C929.wem</Path>
+						</File>
+						<File Id="559778520" Language="SFX">
+							<ShortName>sfx_update_stonetower_destruction_03.wav</ShortName>
+							<Path>SFX\sfx_update_stonetower_destruction_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="737768043" Name="Play_WoodTower_Attack" ObjectPath="\Events\Default Work Unit\SFX\Tower\Play_WoodTower_Attack">
+					<IncludedMemoryFiles>
+						<File Id="236215768" Language="SFX">
+							<ShortName>sfx_woodentower_ballista_02.wav</ShortName>
+							<Path>SFX\sfx_woodentower_ballista_02_EF5BE17A.wem</Path>
+						</File>
+						<File Id="354810172" Language="SFX">
+							<ShortName>sfx_woodentower_ballista_06.wav</ShortName>
+							<Path>SFX\sfx_woodentower_ballista_06_EF8CB57D.wem</Path>
+						</File>
+						<File Id="359164842" Language="SFX">
+							<ShortName>sfx_woodentower_ballista_04.wav</ShortName>
+							<Path>SFX\sfx_woodentower_ballista_04_B7A2229A.wem</Path>
+						</File>
+						<File Id="431601860" Language="SFX">
+							<ShortName>sfx_woodentower_ballista_05.wav</ShortName>
+							<Path>SFX\sfx_woodentower_ballista_05_2A378405.wem</Path>
+						</File>
+						<File Id="657585472" Language="SFX">
+							<ShortName>sfx_woodentower_ballista_03.wav</ShortName>
+							<Path>SFX\sfx_woodentower_ballista_03_40E6F681.wem</Path>
+						</File>
+						<File Id="918857759" Language="SFX">
+							<ShortName>sfx_woodentower_ballista_01.wav</ShortName>
+							<Path>SFX\sfx_woodentower_ballista_01_05A3A550.wem</Path>
+						</File>
+						<File Id="981174391" Language="SFX">
+							<ShortName>sfx_woodentower_ballista_07.wav</ShortName>
+							<Path>SFX\sfx_woodentower_ballista_07_E96A2253.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="300927168" Name="Play_WoodTower_Damaged" ObjectPath="\Events\Default Work Unit\SFX\Tower\Play_WoodTower_Damaged">
+					<IncludedMemoryFiles>
+						<File Id="144410768" Language="SFX">
+							<ShortName>sfx_woodtower_damaged_04_.wav</ShortName>
+							<Path>SFX\sfx_woodtower_damaged_04__10C4C929.wem</Path>
+						</File>
+						<File Id="334526699" Language="SFX">
+							<ShortName>sfx_woodtower_damaged_02.wav</ShortName>
+							<Path>SFX\sfx_woodtower_damaged_02_10C4C929.wem</Path>
+						</File>
+						<File Id="407209803" Language="SFX">
+							<ShortName>sfx_woodtower_damaged_03.wav</ShortName>
+							<Path>SFX\sfx_woodtower_damaged_03_10C4C929.wem</Path>
+						</File>
+						<File Id="409245298" Language="SFX">
+							<ShortName>sfx_woodtower_damaged_05_.wav</ShortName>
+							<Path>SFX\sfx_woodtower_damaged_05__10C4C929.wem</Path>
+						</File>
+						<File Id="1051953033" Language="SFX">
+							<ShortName>sfx_woodtower_damaged_01.wav</ShortName>
+							<Path>SFX\sfx_woodtower_damaged_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2816493517" Name="Play_WoodTower_Destruction" ObjectPath="\Events\Default Work Unit\SFX\Tower\Play_WoodTower_Destruction">
+					<IncludedMemoryFiles>
+						<File Id="87401305" Language="SFX">
+							<ShortName>sfx_update_woodtower_destruction_05.wav</ShortName>
+							<Path>SFX\sfx_update_woodtower_destruction_05_10C4C929.wem</Path>
+						</File>
+						<File Id="223358758" Language="SFX">
+							<ShortName>sfx_update_woodtower_destruction_01.wav</ShortName>
+							<Path>SFX\sfx_update_woodtower_destruction_01_10C4C929.wem</Path>
+						</File>
+						<File Id="277644435" Language="SFX">
+							<ShortName>sfx_update_woodtower_destruction_03.wav</ShortName>
+							<Path>SFX\sfx_update_woodtower_destruction_03_10C4C929.wem</Path>
+						</File>
+						<File Id="766474293" Language="SFX">
+							<ShortName>sfx_update_woodtower_destruction_08.wav</ShortName>
+							<Path>SFX\sfx_update_woodtower_destruction_08_10C4C929.wem</Path>
+						</File>
+						<File Id="769299816" Language="SFX">
+							<ShortName>sfx_update_woodtower_destruction_07.wav</ShortName>
+							<Path>SFX\sfx_update_woodtower_destruction_07_10C4C929.wem</Path>
+						</File>
+						<File Id="898315792" Language="SFX">
+							<ShortName>sfx_update_woodtower_destruction_02.wav</ShortName>
+							<Path>SFX\sfx_update_woodtower_destruction_02_10C4C929.wem</Path>
+						</File>
+						<File Id="1005000553" Language="SFX">
+							<ShortName>sfx_update_woodtower_destruction_06.wav</ShortName>
+							<Path>SFX\sfx_update_woodtower_destruction_06_10C4C929.wem</Path>
+						</File>
+						<File Id="1033440240" Language="SFX">
+							<ShortName>sfx_update_woodtower_destruction_04.wav</ShortName>
+							<Path>SFX\sfx_update_woodtower_destruction_04_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2023560711" Name="Play_Zeppelin_Damaged" ObjectPath="\Events\Default Work Unit\SFX\Zeppelin\Play_Zeppelin_Damaged">
+					<IncludedMemoryFiles>
+						<File Id="877007162" Language="SFX">
+							<ShortName>sfx_zeppelin_damaged_01.wav</ShortName>
+							<Path>SFX\sfx_zeppelin_damaged_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="914471075" Name="Play_Zeppelin_Destroyed" ObjectPath="\Events\Default Work Unit\Play_Zeppelin_Destroyed"/>
+				<Event Id="1168262086" Name="Play_Zeppelin_Spawn_Bugbear" ObjectPath="\Events\Default Work Unit\SFX\Zeppelin\Play_Zeppelin_Spawn_Bugbear">
+					<IncludedMemoryFiles>
+						<File Id="713529597" Language="SFX">
+							<ShortName>sfx_zeppelin_1stpass spawn.wav</ShortName>
+							<Path>SFX\sfx_zeppelin_1stpass spawn_655B7EC7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3643286168" Name="Play_Zeppelin_Spawn_Gremlin" ObjectPath="\Events\Default Work Unit\SFX\Zeppelin\Play_Zeppelin_Spawn_Gremlin">
+					<IncludedMemoryFiles>
+						<File Id="713529597" Language="SFX">
+							<ShortName>sfx_zeppelin_1stpass spawn.wav</ShortName>
+							<Path>SFX\sfx_zeppelin_1stpass spawn_655B7EC7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2917290866" Name="Play_Zeppelin_Spawn_Tyrant" ObjectPath="\Events\Default Work Unit\SFX\Zeppelin\Play_Zeppelin_Spawn_Tyrant">
+					<IncludedMemoryFiles>
+						<File Id="713529597" Language="SFX">
+							<ShortName>sfx_zeppelin_1stpass spawn.wav</ShortName>
+							<Path>SFX\sfx_zeppelin_1stpass spawn_655B7EC7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2983009038" Name="Play_Zeppelin_Upgrade_Damage" ObjectPath="\Events\Default Work Unit\SFX\Zeppelin\Play_Zeppelin_Upgrade_Damage">
+					<IncludedMemoryFiles>
+						<File Id="150154597" Language="SFX">
+							<ShortName>sfx_Zeppelin_WeaponUpgrade_01.wav</ShortName>
+							<Path>SFX\sfx_Zeppelin_WeaponUpgrade_01_10C4C929.wem</Path>
+						</File>
+						<File Id="754920950" Language="SFX">
+							<ShortName>sfx_Zeppelin_WeaponUpgrade_02.wav</ShortName>
+							<Path>SFX\sfx_Zeppelin_WeaponUpgrade_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2043821631" Name="Play_Zeppelin_Upgrade_Health" ObjectPath="\Events\Default Work Unit\SFX\Zeppelin\Play_Zeppelin_Upgrade_Health">
+					<IncludedMemoryFiles>
+						<File Id="116264625" Language="SFX">
+							<ShortName>sfx_Zeppelin_HealthUpgrade_03.wav</ShortName>
+							<Path>SFX\sfx_Zeppelin_HealthUpgrade_03_10C4C929.wem</Path>
+						</File>
+						<File Id="568432073" Language="SFX">
+							<ShortName>sfx_Zeppelin_HealthUpgrade_02.wav</ShortName>
+							<Path>SFX\sfx_Zeppelin_HealthUpgrade_02_10C4C929.wem</Path>
+						</File>
+						<File Id="595596463" Language="SFX">
+							<ShortName>sfx_Zeppelin_HealthUpgrade_01.wav</ShortName>
+							<Path>SFX\sfx_Zeppelin_HealthUpgrade_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1177687250" Name="Play_Zeppelin_Upgrade_Speed" ObjectPath="\Events\Default Work Unit\SFX\Zeppelin\Play_Zeppelin_Upgrade_Speed">
+					<IncludedMemoryFiles>
+						<File Id="116695629" Language="SFX">
+							<ShortName>sfx_Zeppelin_SpeedUpgrade_01.wav</ShortName>
+							<Path>SFX\sfx_Zeppelin_SpeedUpgrade_01_10C4C929.wem</Path>
+						</File>
+						<File Id="968668727" Language="SFX">
+							<ShortName>sfx_Zeppelin_SpeedUpgrade_02.wav</ShortName>
+							<Path>SFX\sfx_Zeppelin_SpeedUpgrade_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3826206711" Name="Play_ZeppelinHover" ObjectPath="\Events\Default Work Unit\UI\Play_ZeppelinHover"/>
+				<Event Id="834063403" Name="Resume_Level_Music" ObjectPath="\Events\Default Work Unit\MUS\Resume_Level_Music"/>
+				<Event Id="880038383" Name="Set_State_Game_Paused" ObjectPath="\Events\Default Work Unit\Set_State_Game_Paused">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3367563548" Name="Game_Paused" ObjectPath="\States\Default Work Unit\Pause\Game_Paused"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3000472298" Name="Set_State_Game_Unpaused" ObjectPath="\Events\Default Work Unit\Set_State_Game_Unpaused">
+					<ActionSetState>
+						<ActionSetStateEntry Id="2729684577" Name="Game_Unpaused" ObjectPath="\States\Default Work Unit\Pause\Game_Unpaused"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="4273342723" Name="Stop_Cannon_Fire_Bugbear" ObjectPath="\Events\Default Work Unit\SFX\Zeppelin\Stop_Cannon_Fire_Bugbear"/>
+				<Event Id="2688475861" Name="Stop_Cannon_Fire_Gremlin" ObjectPath="\Events\Default Work Unit\SFX\Zeppelin\Stop_Cannon_Fire_Gremlin"/>
+				<Event Id="3951251861" Name="Stop_Cannon_Fire_Tyrant" ObjectPath="\Events\Default Work Unit\SFX\Zeppelin\Stop_Cannon_Fire_Tyrant"/>
+				<Event Id="1202908975" Name="Stop_Credit_Music" ObjectPath="\Events\Default Work Unit\MUS\Stop_Credit_Music"/>
+				<Event Id="4055353338" Name="Stop_Level_Music" ObjectPath="\Events\Default Work Unit\MUS\Stop_Level_Music"/>
+				<Event Id="3945748993" Name="Stop_Menu_Music" ObjectPath="\Events\Default Work Unit\MUS\Stop_Menu_Music"/>
+			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="2729684577" Name="Game_Unpaused" ObjectPath="\States\Default Work Unit\Pause\Game_Unpaused" GUID="{1AC4E48D-CF87-4C19-8B7B-1BFDC59C2D27}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3367563548" Name="Game_Paused" ObjectPath="\States\Default Work Unit\Pause\Game_Paused" GUID="{DA767637-FE77-429F-9900-D0AD622F51BC}">
+					<States/>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

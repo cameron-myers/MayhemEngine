@@ -1,0 +1,9 @@
+ {
+    "SpriteSource":
+    {
+        "name": "NewUIZeppelinDisplay",
+        "path": "Zeppelin_preview_panel.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

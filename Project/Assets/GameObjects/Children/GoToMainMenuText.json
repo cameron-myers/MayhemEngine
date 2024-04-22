@@ -1,0 +1,27 @@
+{
+    "GameObject": {
+        "name": "GoToMainMenuText",
+        "Transform": {
+            "translation": [
+                -123.0,
+                0.0,
+                0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                50.5,
+                54.5
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "TextMesh",
+            "SpriteSource": "PT_Mono_Black",
+            "Text": "Main Menu",
+            "TextMode": "Center"
+        },
+        "Audio": {}
+    }
+}

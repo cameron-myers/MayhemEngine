@@ -1,0 +1,9 @@
+ {
+    "SpriteSource":
+    {
+        "name": "GameBG",
+        "path": "GameBG.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

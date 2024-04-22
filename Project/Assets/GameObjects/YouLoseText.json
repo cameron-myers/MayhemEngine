@@ -1,0 +1,24 @@
+{
+  "GameObject": {
+    "name": "LoseText",
+
+    "Transform": {
+      "translation": [ -880, 220, 1 ],
+      "rotation": 0.0,
+      "scale": [ 190.0, 190.0 ]
+
+    },
+    "Sprite": {
+      "frameIndex": 0,
+      "alpha": 1.0,
+      "RGB": [1.0,1.0,1.0],
+      "Mesh": "MainMesh",
+      "SpriteSource": "PT_Mono_Black",
+      "Text": "You Lose",
+      "TextMode": "Right"
+
+    },
+    "Audio": {
+    }
+  }
+}

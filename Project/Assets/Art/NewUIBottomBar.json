@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "NewUIBottomBar",
+        "path": "Bottom_Bar_Background_V002.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

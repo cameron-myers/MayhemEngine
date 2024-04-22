@@ -1,0 +1,25 @@
+{
+    "GameObject": {
+        "name": "LaneBackground",
+        "Transform": {
+            "translation": [
+                19.0,
+                12.5,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                1757.5,
+                421.5
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "Lanes"
+        },
+        "Audio": {}
+    }
+}

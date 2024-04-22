@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "NewUIStatPanel",
+        "path": "Stat_Background_V02.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

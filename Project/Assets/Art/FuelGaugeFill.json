@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "FuelGaugeFill",
+        "path": "FuelG_Fill_V01.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

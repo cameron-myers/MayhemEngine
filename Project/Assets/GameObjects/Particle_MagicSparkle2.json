@@ -1,0 +1,35 @@
+{
+    "GameObject": {
+        "name": "Particle_MagicSparkle2",
+        "Transform": {
+            "translation": [
+                790.0,
+                301.0,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                50.0,
+                50.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 0.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "particlemagic2"
+        },
+        "Emitter": {
+            "SpawnRate": 100,
+            "ParticleLife": 2,
+            "SprayAngle": 360,
+            "MinSpeed": 100,
+            "MaxSpeed": 150,
+            "Fade": "In",
+            "FadeTime": 1.5
+        },
+        "Audio": {},
+        "EmitterBehavior": "EmitterTest"
+    }
+}

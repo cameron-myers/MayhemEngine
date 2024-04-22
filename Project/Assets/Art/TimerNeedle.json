@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "TimerNeedle",
+        "path": "TimerNeedle.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

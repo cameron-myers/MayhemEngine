@@ -1,0 +1,9 @@
+ {
+    "SpriteSource":
+    {
+        "name": "Needle",
+        "path": "Needle_fixed.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

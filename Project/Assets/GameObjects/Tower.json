@@ -1,0 +1,56 @@
+{
+  "GameObject": {
+    "name": "Tower",
+
+    "Transform": {
+
+      "translation": [ 100, 0, 1 ],
+      "rotation": 0.0,
+      "scale": [ 500.0, 500.0 ]
+    },
+
+    "Sprite": {
+      "frameIndex": 0,
+      "alpha": 1.0,
+      "RGB": [1.0,1.0,1.0],
+      "Mesh": "MainMesh",
+      "SpriteSource": "WoodTower"
+
+    },
+
+    "Animation": {
+      "FrameCount": 24,
+      "FrameDuration": 0.2,
+      "IsLooping": false,
+      "DiffAnimations": true
+    },
+
+    "Physics": {
+
+    },
+    "Stats": [
+      {
+        "ListCount": 3,
+        "MaxHealth": 150,
+        "RespawnRate": 30,
+        "AttackDamage": 2,
+        "ReloadTime": 10
+      },
+      {
+        "MaxHealth": 150
+      },
+      {
+        "MaxHealth": 200
+      }
+
+    ],
+    "Collider": {
+      "Type": "Circle",
+      "RadiusMod": 500.0
+    },
+    "Behavior":        
+    {
+        "Name":"Tower"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+ {
+    "SpriteSource":
+    {
+        "name": "SmokeRed1",
+        "path": "Smoke_Red001.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

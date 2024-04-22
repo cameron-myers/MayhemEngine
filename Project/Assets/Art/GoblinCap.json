@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "GoblinCommander",
+        "path": "GoblinCommander.png",
+        "numCols": 1,
+        "numRows": 5
+    }
+}

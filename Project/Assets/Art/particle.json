@@ -1,0 +1,9 @@
+ {
+    "SpriteSource":
+    {
+        "name": "particle",
+        "path": "ParticleTest.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

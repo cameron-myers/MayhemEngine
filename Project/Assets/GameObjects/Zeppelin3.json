@@ -1,0 +1,91 @@
+{
+    "GameObject": {
+        "name": "Zeppelin3",
+        "Transform": {
+            "translation": [
+                513.5380859375,
+                -300.0,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                225.0,
+                225.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "Mesh": "MainMesh",
+            "SpriteSource": "Tyrant"
+        },
+        "Animation": {
+            "FrameCount": 2,
+            "FrameDuration": 0.1,
+            "IsLooping": false,
+            "DiffAnimations": true
+        },
+        "Physics": {},
+        "Collider": {
+            "Type": "Circle",
+            "RadiusMod": 0.75
+        },
+        "Audio": {},
+        "Stats": [
+            {
+                "ListCount": 3,
+                "MaxHealth": 75,
+                "RespawnRate": 15,
+                "AttackDamage": 30,
+                "ReloadTime": 1,
+                "MaxSpeed": 35,
+                "Cost": 50
+            },
+            {
+                "MaxHealth": 60,
+                "AttackDamage": 85,
+                "MaxSpeed": 50
+            },
+            {
+                "MaxHealth": 100,
+                "AttackDamage": 50,
+                "MaxSpeed": 100
+            }
+        ],
+        "Behavior":        
+        {
+            "Name":"ZeppelinTypeL"
+        },
+        "Children": [
+            "TyrantShadow",
+            "TyrantCannon",
+            "TyrantFlag",
+            "TyrantWing",
+            "ZeppelinExplosion",
+            "Particle_Tyrant1",
+            "Particle_Tyrant2",
+            "Particle_Tyrant3",
+            "Particle_Tyrant1",
+            "Particle_Tyrant2",
+            "Particle_Tyrant3",
+            "Particle_WoodDamage1",
+            "Particle_WoodDamage2",
+            "Particle_WoodDamage3",
+            "Particle_Smoke2",
+            "Particle_Gobbo3",
+            "Particle_SpawnCloud1",
+            "Particle_SpawnCloud2",
+            "Particle_SpawnCloud3",
+            "Particle_SpawnCloud4",
+            "Particle_SpawnCloud5",
+            "Particle_SpawnCloud6",
+            "healthbar_green",
+            "zeppelin_healthbar_border"
+        ]
+    }
+}

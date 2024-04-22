@@ -1,0 +1,24 @@
+{
+    "GameObject": {
+        "name": "ExampleBG",
+        "Transform": {
+            "translation": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                1920.0,
+                1080.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "ExampleBG"
+        }
+    }
+}

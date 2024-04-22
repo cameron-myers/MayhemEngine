@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "BugbearDM",
+        "path": "Bugbear_DM.png",
+        "numCols": 1,
+        "numRows": 10
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "GameObject": {
+        "name": "tower_healthbar_border",
+        "Transform": {
+            "translation": [
+                0.0,
+                132.5,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                105.5,
+                27.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "tower_health_border"
+        },
+        "Physics": {}
+    }
+}

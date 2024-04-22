@@ -1,0 +1,72 @@
+{
+    "GameObject": {
+        "name": "StoneTowerTopRight",
+        "Transform": {
+            "translation": [
+                199.5,
+                275.0,
+                0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                210.0,
+                210.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "StoneTower"
+        },
+        "Animation": {
+            "FrameCount": 2,
+            "FrameDuration": 0.2,
+            "IsLooping": false,
+            "DiffAnimations": true
+        },
+        "Physics": {},
+        "Stats": [
+            {
+                "ListCount": 3,
+                "MaxHealth": 600,
+                "RespawnRate": 5,
+                "AttackDamage": 50,
+                "ReloadTime": 1
+            },
+            {
+                "MaxHealth": 750
+            },
+            {
+                "MaxHealth": 800
+            }
+        ],
+        "Audio": {},
+        "Collider": {
+            "Type": "Circle",
+            "RadiusMod": 1.0
+        },
+        "Children": [
+            "TowerCannon",
+            "WoodTowerExplosion",
+            "Particle_Stone2",
+            "Particle_Stone3",
+            "Particle_Dwarf3",
+            "Particle_StoneDamage",
+            "Particle_StoneDamage",
+            "Particle_StoneDamage",
+            "Particle_TowerGold1",
+            "Particle_TowerGold1",
+            "Particle_TowerGold1",
+            "Particle_TowerGold1",
+            "Particle_TowerGold1",
+            "healthbar_purple",
+            "tower_healthbar_border"
+        ],
+        "Behavior":        
+        {
+            "Name":"StoneTower"
+        }
+    }
+}

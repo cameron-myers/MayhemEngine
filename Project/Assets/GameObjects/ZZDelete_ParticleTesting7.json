@@ -1,0 +1,48 @@
+{
+  "GameObject": {
+    "name": "GoldFacingDownRightSide",
+    "Transform": {
+      "translation": [
+        900.0,
+        0.0,
+        1
+      ],
+      "rotation": 360.0,
+      "scale": [
+        1.0,
+        1.0
+      ]
+    },
+    "Sprite": {
+      "frameIndex": 0,
+      "alpha": 0.0,
+      "RGB": [1.0,1.0,1.0],
+      "Mesh": "MainMesh",
+      "SpriteSource": "Coin_Rain"
+    },
+    "Animation": {
+      "FrameCount": 32,
+      "FrameDuration": 0.01,
+      "IsLooping": true,
+      "DiffAnimations": false
+    },
+    "Emitter": {
+      "ParticleMoveWithObject": false,
+      "HiveMind": false,
+      "UniformAnimation": false,
+      "PatternType": "Not Implemented",
+      "SpawnRate": 100,
+      "ParticleLife": 3,
+      "SprayAngle": 90,
+      "MinSpeed": 100,
+      "MaxSpeed": 500,
+      "Fade": "Out",
+      "FadeTime": 0.5,
+      "ScaleSetting": "In",
+      "ScaleMultiplier": 100,
+      "ScaleTime": 0.5
+    },
+    "Audio": {},
+    "EmitterBehavior": "EmitterTest"
+  }
+}

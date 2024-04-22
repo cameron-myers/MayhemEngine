@@ -1,0 +1,27 @@
+{
+    "GameObject": {
+        "name": "RetryText2",
+        "Transform": {
+            "translation": [
+                264.0,
+                132.5,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                71.5,
+                60.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "PT_Mono_Black",
+            "Text": "RETRY",
+            "TextMode": "Right"
+        },
+        "Audio": {}
+    }
+}

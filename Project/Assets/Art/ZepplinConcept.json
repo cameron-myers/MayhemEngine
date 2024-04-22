@@ -1,0 +1,9 @@
+ {
+    "SpriteSource":
+    {
+        "name": "ZeppelinConcept",
+        "path": "ZepplinConceptAnimation.png",
+        "numCols": 4,
+        "numRows":4
+    }
+}

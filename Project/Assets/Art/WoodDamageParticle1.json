@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "WoodDamageParticle1",
+        "path": "Wood_Damage001.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

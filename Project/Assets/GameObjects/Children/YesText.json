@@ -1,0 +1,27 @@
+{
+    "GameObject": {
+        "name": "YesText",
+        "Transform": {
+            "translation": [
+                -51.5,
+                0.0,
+                0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                60.0,
+                60.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "TextMesh",
+            "SpriteSource": "PT_Mono_Black",
+            "Text": "Yes",
+            "TextMode": "Center"
+        },
+        "Audio": {}
+    }
+}

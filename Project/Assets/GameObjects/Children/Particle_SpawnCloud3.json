@@ -1,0 +1,39 @@
+{
+    "GameObject": {
+        "name": "Particle_SpawnCloud3",
+        "Transform": {
+            "translation": [
+                0,
+                0,
+                1
+            ],
+            "rotation": 180.0,
+            "scale": [
+                0.01,
+                0.01
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 0.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "SmokeBrown"
+        },
+        "Emitter": {
+            "SpawnRate": 20.0,
+            "ParticleLife": 1.5,
+            "SprayAngle": 360,
+            "MinSpeed": 50,
+            "MaxSpeed": 50,
+            "HiveMind": false,
+            "Fade": "Out",
+            "FadeTime": 1.0,
+            "ScaleSetting": "In",
+            "ScaleMultiplier": 20000.0,
+            "ScaleTime": 0.1
+        },
+        "Audio": {},
+        "EmitterBehavior": "EmitterTest"
+    }
+}

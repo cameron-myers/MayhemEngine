@@ -1,0 +1,33 @@
+{
+    "GameObject": {
+        "name": "Particle_MagicWave",
+        "Transform": {
+            "translation": [
+                790.0,
+                301.0,
+                1
+            ],
+            "rotation": 360.0,
+            "scale": [
+                200.0,
+                200.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 0.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "particlemagic"
+        },
+        "Emitter": {
+            "SpawnRate": 1000,
+            "ParticleLife": 5,
+            "SprayAngle": 360,
+            "MinSpeed": 600,
+            "MaxSpeed": 600
+        },
+        "Audio": {},
+        "EmitterBehavior": "EmitterKey"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "BugbearParticle1",
+        "path": "Zepp_Explode_Particle_001.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

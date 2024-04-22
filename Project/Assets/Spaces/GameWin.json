@@ -1,0 +1,23 @@
+{
+    "Objects": [
+        "WinMenuBackground",
+        "Particle_GoldRain",
+        "Particle_GoldRain2",
+        "Particle_GoldRain3",
+        "Particle_GoldRain4",
+        "Particle_GoldRain5",
+        "Particle_GoldRain6",
+        "Particle_GoldRain7",
+        "Particle_GoldRain8",
+        "Particle_GoldRain9",
+        "StartButtonWinScreen",
+        "RetryText",
+        "ToMainMenuButton2",
+        "StarTest_results",
+        "StarTest_results1",
+        "StarTest_results2",
+        "VictorySign",
+        "BlackSquare"
+
+    ]
+}

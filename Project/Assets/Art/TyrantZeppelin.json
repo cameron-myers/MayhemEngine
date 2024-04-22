@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "TyrantZeppelin",
+        "path": "LZeppelin.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

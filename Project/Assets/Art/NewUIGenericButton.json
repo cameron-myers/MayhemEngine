@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "NewUIGenericButton",
+        "path": "Generic_Button_V001.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

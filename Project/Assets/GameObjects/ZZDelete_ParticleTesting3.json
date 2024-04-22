@@ -1,0 +1,41 @@
+{
+    "GameObject": {
+        "name": "DisapearingGold",
+        "Transform": {
+            "translation": [
+                -400.0,
+                100.0,
+                1
+            ],
+            "rotation": 360.0,
+            "scale": [
+                100.0,
+                100.0
+            ]
+        },
+      "Sprite": {
+        "frameIndex": 0,
+        "alpha": 0.0,
+        "RGB": [1.0,1.0,1.0],
+        "Mesh": "MainMesh",
+        "SpriteSource": "particlemagic"
+      },
+      "Emitter": {
+        "ParticleMoveWithObject": false,
+        "HiveMind": false,
+        "PatternType": "Not Implemented",
+        "SpawnRate": 800,
+        "ParticleLife": 5,
+        "SprayAngle": 360,
+        "MinSpeed": 10,
+        "MaxSpeed": 50,
+        "Fade": "In",
+        "FadeTime": 4.5,
+        "ScaleSetting": "Out",
+        "ScaleMultiplier": 0.001,
+        "ScaleTime": 3.0
+      },
+        "Audio": {},
+        "EmitterBehavior": "EmitterTest"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "GameObject": {
+        "name": "BigSmoke",
+        "Transform": {
+            "translation": [
+                -130.0,
+                -3.0,
+                1
+            ],
+            "rotation": -130.0,
+            "scale": [
+                37.0,
+                37.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 0.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "particle"
+        },
+        "Emitter": {
+            "SpawnRate": 8.5,
+            "ParticleLife": 1.5,
+            "SprayAngle": 90,
+            "MinSpeed": 10,
+            "MaxSpeed": 50,
+            "HiveMind": false,
+            "Fade": "Out",
+            "FadeTime": 1.5
+        },
+        "Audio": {},
+        "EmitterBehavior": "EmitterTest"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "StoneTowerCannon",
+        "path": "StoneTowerCannon.png",
+        "numCols": 43,
+        "numRows": 8
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "VolumeBackground",
+        "path": "VolumeBackground.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

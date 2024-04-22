@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "StatBarDamageSmall",
+        "path": "spritesheetDMSmall.png",
+        "numCols": 3,
+        "numRows": 1
+    }
+}

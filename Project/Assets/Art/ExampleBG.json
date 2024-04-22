@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "ExampleBG",
+        "path": "Environment_Layout_Demo.png",
+        "numCols": 1,
+        "numRows": 1
+    }
+}

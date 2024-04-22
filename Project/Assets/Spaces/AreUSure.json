@@ -1,0 +1,9 @@
+{
+    "Objects":
+    [
+        "MenuBackground",
+        "YesButton",
+        "NoButton",
+        "AreYouSureText"
+    ]
+  }

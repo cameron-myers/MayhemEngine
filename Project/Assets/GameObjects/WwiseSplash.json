@@ -1,0 +1,21 @@
+{
+    "GameObject":
+    { 
+      "name": "WwiseSplash",
+      
+      "Transform":{
+          "translation": [ 0 , -0, 1 ],
+          "rotation": 0.0,
+          "scale": [500.0, 452.0, 1]
+          },
+  
+      "Sprite": {
+        "frameIndex": 0,
+        "alpha": 1.0,
+        "RGB": [1.0,1.0,1.0],
+        "Mesh": "MainMesh",
+        "SpriteSource": "WwiseLogo"
+  
+      }
+    }
+  }

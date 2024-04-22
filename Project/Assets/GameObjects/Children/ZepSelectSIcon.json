@@ -1,0 +1,24 @@
+{
+    "GameObject": {
+        "name": "ZepSelectSIcon",
+        "Transform": {
+            "translation": [
+                0.0,
+                0.0,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                65.5,
+                65.5
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "Gremlin"
+        }
+    }
+}

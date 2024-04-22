@@ -1,0 +1,36 @@
+{
+    "GameObject": {
+        "name": "Particle_RebuildEffectM",
+        "Transform": {
+            "translation": [
+                0.0,
+                -20.0,
+                1
+            ],
+            "rotation": 180.0,
+            "scale": [
+                75.0,
+                75.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 0.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "particlemagic"
+        },
+        "Emitter": {
+            "SpawnRate": 15,
+            "ParticleLife": 3,
+            "SprayAngle": 30,
+            "MinSpeed": 300,
+            "MaxSpeed": 300,
+            "HiveMind": false,
+            "Fade": "Out",
+            "FadeTime": 1
+        },
+        "Audio": {},
+        "EmitterBehavior": "EmitterKey"
+    }
+}

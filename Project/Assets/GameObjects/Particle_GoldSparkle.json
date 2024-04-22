@@ -1,0 +1,35 @@
+{
+    "GameObject": {
+        "name": "Particle_GoldSparkle",
+        "Transform": {
+            "translation": [
+                638.0,
+                0.0,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                20.0,
+                20.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 0.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "star_programer"
+        },
+        "Emitter": {
+            "SpawnRate": 10,
+            "ParticleLife": 0.8,
+            "SprayAngle": 360,
+            "MinSpeed": 200,
+            "MaxSpeed": 200,
+            "Fade": "In",
+            "FadeTime": 0.75
+        },
+        "Audio": {},
+        "EmitterBehavior": "EmitterTest"
+    }
+}

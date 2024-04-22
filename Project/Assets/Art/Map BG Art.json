@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "Map BG Art",
+        "path": "Map BG Art.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

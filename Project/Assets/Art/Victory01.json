@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "VictorySign",
+        "path": "Victory01.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

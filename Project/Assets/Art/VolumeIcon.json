@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "VolumeIcon",
+        "path": "VolumeIcon_spritesheet.png",
+        "numCols": 1,
+        "numRows":2
+    }
+}

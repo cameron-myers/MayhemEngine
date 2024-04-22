@@ -1,0 +1,31 @@
+{
+    "GameObject": {
+        "name": "GoldCounter",
+        "Transform": {
+            "translation": [
+                -515.0,
+                -487.0,
+                1.0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                34.0,
+                38.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "PT_Mono_Black",
+            "Text": "0",
+            "TextMode": "Right"
+        },
+        "Physics": {},
+        "Behavior":
+        {
+            "Name":"GoldCount"
+        } 
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "GameObject": {
+        "name": "NewUIUpgradeCostBox",
+        "Transform": {
+            "translation": [
+                473.0,
+                -398.0,
+                1.0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                184.5,
+                197.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "NewUIUpgradeCost"
+        },
+        "Children": [
+            "UpgradeLabelText"
+        ]
+    }
+}

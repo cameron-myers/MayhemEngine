@@ -1,0 +1,9 @@
+ {
+    "SpriteSource":
+    {
+        "name": "NewUIDeployCost",
+        "path": "Deploy_Cost.png",
+        "numCols": 1,
+        "numRows":1
+    }
+}

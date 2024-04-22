@@ -1,0 +1,41 @@
+{
+    "GameObject": {
+        "name": "Particle_Dwarf1",
+        "Transform": {
+            "translation": [
+                0,
+                0,
+                1
+            ],
+            "rotation": 0,
+            "scale": [
+                0.01,
+                0.01
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 0.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "DwarfParticle1"
+        },
+        "Emitter": {
+            "SpawnRate": 0.2,
+            "ParticleLife": 1,
+            "SprayAngle": 90,
+            "MinSpeed": 1000,
+            "MaxSpeed": 1000,
+            "HiveMind": false,
+            "ScaleSetting": "In",
+            "ScaleMultiplier": 3000.0,
+            "ScaleTime": 0.1,
+            "Fade": "Out",
+            "FadeTimer": 0.1
+
+
+        },
+        "Audio": {},
+        "EmitterBehavior": "OnDeath"
+    }
+}

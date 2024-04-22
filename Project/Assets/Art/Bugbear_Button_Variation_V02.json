@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+        "name": "Bugbear_Button_Variation_V02",
+        "path": "Bugbear_button.png",
+        "numCols": 1,
+        "numRows":3
+    }
+}

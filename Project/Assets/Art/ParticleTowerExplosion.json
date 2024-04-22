@@ -1,0 +1,9 @@
+ {
+    "SpriteSource":
+    {
+        "name": "ParticleTowerExplosion",
+        "path": "ParticleTowerExplosion.png",
+        "numCols": 6,
+        "numRows":6
+    }
+}

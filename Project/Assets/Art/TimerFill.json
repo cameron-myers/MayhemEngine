@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "TimerFill",
+        "path": "spritesheetTimer.png",
+        "numCols": 5,
+        "numRows": 1
+    }
+}

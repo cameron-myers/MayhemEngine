@@ -1,0 +1,24 @@
+{
+    "GameObject": {
+        "name": "DamageStatBar",
+        "Transform": {
+            "translation": [
+                71.0,
+                -400.5,
+                1.0
+            ],
+            "rotation": 0.0,
+            "scale": [
+                170.0,
+                165.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 1,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "GremlinDM"
+        }
+    }
+}

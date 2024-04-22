@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+      "name": "StoneTower",
+        "path": "StoneTower.png",
+        "numCols": 1,
+        "numRows": 2
+    }
+}

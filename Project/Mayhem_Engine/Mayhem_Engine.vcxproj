@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribute|Win32">
+      <Configuration>Distribute</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribute|x64">
+      <Configuration>Distribute</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{fa142c03-b4cc-4d38-bf46-c529df1ee513}</ProjectGuid>
+    <RootNamespace>MayhemEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Mayhem_Engine</OutDir>
+    <IntDir>$(ProjectDir)Intermediate\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(PlatformTarget)_$(Configuration)</TargetName>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(IncludePath)</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)Mayhem_Engine</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Builds</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Builds</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'">
+    <OutDir>$(SolutionDir)Builds</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Distribute|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source;$(SolutionDir)Include;$(SolutionDir)Include\AK;$(SolutionDir)Include\AK\Win32;$(SolutionDir)Include\imgui-docking;$(SolutionDir)Mayhem_Wwise\Banks</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>AkSoundEngine.lib;AkMemoryMgr.lib;AkStreamMgr.lib;AkMusicEngine.lib;AkSpatialAudio.lib;AkSilenceSource.lib;AkAudioInputSource.lib;Shell32.lib;CommunicationCentral.lib;ws2_32.lib;glfw3.lib;opengl32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries;$(SolutionDir)Libraries\$(configuration)\lib;$(SolutionDir)Libraries\$(configuration)\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;AK_OPTIMIZED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(ProjectDir)Source;$(SolutionDir)Include\AK;$(SolutionDir)Include\AK\Win32;$(SolutionDir)Include\AK\Common;$(SolutionDir)Mayhem_Wwise\Banks</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>AkSoundEngine.lib;AkMemoryMgr.lib;AkStreamMgr.lib;AkMusicEngine.lib;AkSpatialAudio.lib;AkAudioInputSource.lib;Shell32.lib;glfw3.lib;opengl32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries;$(SolutionDir)Libraries\$(configuration)\lib;$(SolutionDir)Libraries\$(configuration)\bin</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)\Libraries\$(configuration)\bin\AkSoundEngineDLL.dll" "$(OutDir)" /s /r /y /q</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Distribute|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DISTRIBUTE;_CONSOLE;AK_OPTIMIZED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(ProjectDir)Source;$(SolutionDir)Include\AK;$(SolutionDir)Include\AK\Win32;$(SolutionDir)Include\AK\Common;$(SolutionDir)Mayhem_Wwise\Banks</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>AkSoundEngine.lib;AkMemoryMgr.lib;AkStreamMgr.lib;AkMusicEngine.lib;AkSpatialAudio.lib;AkSilenceSource.lib;AkAudioInputSource.lib;Shell32.lib;glfw3.lib;opengl32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries;$(SolutionDir)Libraries\$(configuration)\lib;$(SolutionDir)Libraries\$(configuration)\bin</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)\Libraries\$(configuration)\bin\AkSoundEngineDLL.dll" "$(OutDir)" /s /r /y /q</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Include\AK\Common\AkDefaultLowLevelIODispatcher.cpp" />
+    <ClCompile Include="..\Include\AK\Common\AkFileLocationBase.cpp" />
+    <ClCompile Include="..\Include\AK\Common\AkFilePackage.cpp" />
+    <ClCompile Include="..\Include\AK\Common\AkFilePackageLUT.cpp" />
+    <ClCompile Include="..\Include\AK\Common\AkMultipleFileLocation.cpp" />
+    <ClCompile Include="..\Include\AK\Win32\AkDefaultIOHookBlocking.cpp" />
+    <ClCompile Include="..\Include\AK\Win32\AkDefaultIOHookDeferred.cpp" />
+    <ClCompile Include="..\Include\AK\Win32\stdafx.cpp" />
+    <ClCompile Include="Source\Animation.cpp" />
+    <ClCompile Include="Source\Audio.cpp" />
+    <ClCompile Include="Source\BackgroundBehavior.cpp" />
+    <ClCompile Include="Source\Behavior.cpp" />
+    <ClCompile Include="Source\BehaviorBackButton.cpp" />
+    <ClCompile Include="Source\BehaviorBlackSquare.cpp" />
+    <ClCompile Include="Source\BehaviorButton.cpp" />
+    <ClCompile Include="Source\BehaviorCoinButton.cpp" />
+    <ClCompile Include="Source\BehaviorCreditReturnButton.cpp" />
+    <ClCompile Include="Source\BehaviorCreditsButton.cpp" />
+    <ClCompile Include="Source\BehaviorEmitterDeath.cpp" />
+    <ClCompile Include="Source\BehaviorEmitterExplosion.cpp" />
+    <ClCompile Include="Source\BehaviorEmitterKey.cpp" />
+    <ClCompile Include="Source\BehaviorEmitterTest.cpp" />
+    <ClCompile Include="Source\BehaviorFPSDisplay.cpp" />
+    <ClCompile Include="Source\BehaviorGoldCount.cpp" />
+    <ClCompile Include="Source\BehaviorHealthBar.cpp" />
+    <ClCompile Include="Source\BehaviorMainConfirmButton.cpp" />
+    <ClCompile Include="Source\BehaviorMenuButton.cpp" />
+    <ClCompile Include="Source\BehaviorNoButton.cpp" />
+    <ClCompile Include="Source\BehaviorPlayButton.cpp" />
+    <ClCompile Include="Source\BehaviorQuitButton.cpp" />
+    <ClCompile Include="Source\BehaviorResumeButton.cpp" />
+    <ClCompile Include="Source\BehaviorRetryButton.cpp" />
+    <ClCompile Include="Source\BehaviorRoundTimer.cpp" />
+    <ClCompile Include="Source\BehaviorScreenToggle.cpp" />
+    <ClCompile Include="Source\BehaviorSettingsButton.cpp" />
+    <ClCompile Include="Source\BehaviorSpawnButton.cpp" />
+    <ClCompile Include="Source\BehaviorStar_Programer.cpp" />
+    <ClCompile Include="Source\BehaviorStar_Programer_Results.cpp" />
+    <ClCompile Include="Source\BehaviorTimer_Results.cpp" />
+    <ClCompile Include="Source\BehaviorTutorialButton.cpp" />
+    <ClCompile Include="Source\BehaviorUpgradeDButton.cpp" />
+    <ClCompile Include="Source\BehaviorVolumeSlider.cpp" />
+    <ClCompile Include="Source\BehaviorVolumeToggle.cpp" />
+    <ClCompile Include="Source\BehaviorYesButton.cpp" />
+    <ClCompile Include="Source\BehaviorZeppelinSelectButton.cpp" />
+    <ClCompile Include="Source\CannonBehavior.cpp" />
+    <ClCompile Include="Source\CityBehavior.cpp" />
+    <ClCompile Include="Source\Collider.cpp" />
+    <ClCompile Include="Source\Component.cpp" />
+    <ClCompile Include="Source\EmitterBehavior.cpp" />
+    <ClCompile Include="Source\Engine.cpp" />
+    <ClCompile Include="Source\GameObject.cpp" />
+    <ClCompile Include="Source\GameObjectFactory.cpp" />
+    <ClCompile Include="Source\GameObjectManager.cpp" />
+    <ClCompile Include="Source\glad.c" />
+    <ClCompile Include="Source\imgui.cpp" />
+    <ClCompile Include="Source\imgui_demo.cpp" />
+    <ClCompile Include="Source\imgui_draw.cpp" />
+    <ClCompile Include="Source\imgui_impl_glfw.cpp" />
+    <ClCompile Include="Source\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="Source\imgui_stdlib.cpp" />
+    <ClCompile Include="Source\imgui_tables.cpp" />
+    <ClCompile Include="Source\imgui_widgets.cpp" />
+    <ClCompile Include="Source\Interpolation.cpp" />
+    <ClCompile Include="Source\InterpolManager.cpp" />
+    <ClCompile Include="Source\LaneManager.cpp" />
+    <ClCompile Include="Source\Log.cpp" />
+    <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\MEAudio.cpp" />
+    <ClCompile Include="Source\MEEditor.cpp" />
+    <ClCompile Include="Source\MEFramerateController.cpp" />
+    <ClCompile Include="Source\MEInput.cpp" />
+    <ClCompile Include="Source\MERand.cpp" />
+    <ClCompile Include="Source\MERendering.cpp" />
+    <ClCompile Include="Source\MEResources.cpp" />
+    <ClCompile Include="Source\MESerializer.cpp" />
+    <ClCompile Include="Source\Mesh.cpp" />
+    <ClCompile Include="Source\MeshManager.cpp" />
+    <ClCompile Include="Source\MESpace.cpp" />
+    <ClCompile Include="Source\MESpaceManager.cpp" />
+    <ClCompile Include="Source\MEtimer.cpp" />
+    <ClCompile Include="Source\MEWindow.cpp" />
+    <ClCompile Include="Source\OpenGLError.cpp" />
+    <ClCompile Include="Source\ParticleSystem.cpp" />
+    <ClCompile Include="Source\Physics.cpp" />
+    <ClCompile Include="Source\Sprite.cpp" />
+    <ClCompile Include="Source\SpriteSource.cpp" />
+    <ClCompile Include="Source\SpriteSourceManager.cpp" />
+    <ClCompile Include="Source\Stats.cpp" />
+    <ClCompile Include="Source\TowerBehavior.cpp" />
+    <ClCompile Include="Source\ZeppelinBehavior.cpp" />
+    <ClCompile Include="Source\Transform.cpp" />
+    <ClCompile Include="stub.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Mayhem_Wwise\Banks\Wwise_IDs.h" />
+    <ClInclude Include="Source\Animation.h" />
+    <ClInclude Include="Source\Audio.h" />
+    <ClInclude Include="Source\BackgroundBehavior.h" />
+    <ClInclude Include="Source\Behavior.h" />
+    <ClInclude Include="Source\BehaviorBackButton.h" />
+    <ClInclude Include="Source\BehaviorBlackSquare.h" />
+    <ClInclude Include="Source\BehaviorButton.h" />
+    <ClInclude Include="Source\BehaviorCoinButton.h" />
+    <ClInclude Include="Source\BehaviorCreditReturnButton.h" />
+    <ClInclude Include="Source\BehaviorCreditsButton.h" />
+    <ClInclude Include="Source\BehaviorEmitterDeath.h" />
+    <ClInclude Include="Source\BehaviorEmitterExplosion.h" />
+    <ClInclude Include="Source\BehaviorEmitterKey.h" />
+    <ClInclude Include="Source\BehaviorEmitterTest.h" />
+    <ClInclude Include="Source\BehaviorFPSDisplay.h" />
+    <ClInclude Include="Source\BehaviorGoldCount.h" />
+    <ClInclude Include="Source\BehaviorHealthBar.h" />
+    <ClInclude Include="Source\BehaviorMainConfirmButton.h" />
+    <ClInclude Include="Source\BehaviorMenuButton.h" />
+    <ClInclude Include="Source\BehaviorNoButton.h" />
+    <ClInclude Include="Source\BehaviorQuitButton.h" />
+    <ClInclude Include="Source\BehaviorResumeButton.h" />
+    <ClInclude Include="Source\BehaviorRetryButton.h" />
+    <ClInclude Include="Source\BehaviorRoundTimer.h" />
+    <ClInclude Include="Source\BehaviorScreenToggle.h" />
+    <ClInclude Include="Source\BehaviorSettingsButton.h" />
+    <ClInclude Include="Source\BehaviorSpawnButton.h" />
+    <ClInclude Include="Source\BehaviorStar_Programer_Results.h" />
+    <ClInclude Include="Source\BehaviorStar_Programmer.h" />
+    <ClInclude Include="Source\BehaviorTimer_Results.h" />
+    <ClInclude Include="Source\BehaviorTutorialButton.h" />
+    <ClInclude Include="Source\BehaviorUpgradeDButton.h" />
+    <ClInclude Include="Source\BehaviorVolumeSlider.h" />
+    <ClInclude Include="Source\BehaviorVolumeToggle.h" />
+    <ClInclude Include="Source\BehaviorYesButton.h" />
+    <ClInclude Include="Source\BehaviorZeppelinSelectButton.h" />
+    <ClInclude Include="Source\CannonBehavior.h" />
+    <ClInclude Include="Source\CityBehavior.h" />
+    <ClInclude Include="Source\Collider.h" />
+    <ClInclude Include="Source\Component.h" />
+    <ClInclude Include="Source\EmitterBehavior.h" />
+    <ClInclude Include="Source\Engine.h" />
+    <ClInclude Include="Source\GameObject.h" />
+    <ClInclude Include="Source\GameObjectFactory.h" />
+    <ClInclude Include="Source\GameObjectManager.h" />
+    <ClInclude Include="Source\imconfig.h" />
+    <ClInclude Include="Source\imgui.h" />
+    <ClInclude Include="Source\imgui_impl_glfw.h" />
+    <ClInclude Include="Source\imgui_impl_opengl3.h" />
+    <ClInclude Include="Source\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="Source\imgui_internal.h" />
+    <ClInclude Include="Source\imgui_stdlib.h" />
+    <ClInclude Include="Source\imstb_rectpack.h" />
+    <ClInclude Include="Source\imstb_textedit.h" />
+    <ClInclude Include="Source\imstb_truetype.h" />
+    <ClInclude Include="Source\Interpolation.h" />
+    <ClInclude Include="Source\InterpolManager.h" />
+    <ClInclude Include="Source\LaneManager.h" />
+    <ClInclude Include="Source\Log.h" />
+    <ClInclude Include="Source\MEAudio.h" />
+    <ClInclude Include="Source\MEEditor.h" />
+    <ClInclude Include="Source\MEFramerateController.h" />
+    <ClInclude Include="Source\MEInput.h" />
+    <ClInclude Include="Source\MERand.h" />
+    <ClInclude Include="Source\MERendering.h" />
+    <ClInclude Include="Source\MEResources.h" />
+    <ClInclude Include="Source\MESerializer.h" />
+    <ClInclude Include="Source\Mesh.h" />
+    <ClInclude Include="Source\MeshManager.h" />
+    <ClInclude Include="Source\MESpace.h" />
+    <ClInclude Include="Source\MESpaceManager.h" />
+    <ClInclude Include="Source\MEtimer.h" />
+    <ClInclude Include="Source\MEWindow.h" />
+    <ClInclude Include="Source\OpenGLError.h" />
+    <ClInclude Include="Source\ParticleSystem.h" />
+    <ClInclude Include="Source\Physics.h" />
+    <ClInclude Include="Source\SpaceSandbox.h" />
+    <ClInclude Include="Source\Sprite.h" />
+    <ClInclude Include="Source\SpriteSource.h" />
+    <ClInclude Include="Source\SpriteSourceManager.h" />
+    <ClInclude Include="Source\Stats.h" />
+    <ClInclude Include="Source\TowerBehavior.h" />
+    <ClInclude Include="Source\ZeppelinBehavior.h" />
+    <ClInclude Include="Source\Transform.h" />
+    <ClInclude Include="stub.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

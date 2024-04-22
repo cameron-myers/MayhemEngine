@@ -1,0 +1,9 @@
+{
+    "SpriteSource":
+    {
+      "name": "WoodTower",
+        "path": "WoodTower.png",
+        "numCols": 1,
+        "numRows": 2
+    }
+}

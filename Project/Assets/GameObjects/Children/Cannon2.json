@@ -1,0 +1,35 @@
+{
+    "GameObject": {
+        "name": "Cannon2",
+        "Transform": {
+            "translation": [
+                -2.0,
+                53.0,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                150.0,
+                150.0
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "ZeppCannon"
+        },
+        "Animation": {
+            "FrameCount": 154,
+            "FrameDuration": 0.0334,
+            "IsLooping": false,
+            "DiffAnimations": true
+        },
+        "Physics": {},
+        "Behavior":        
+        {
+            "Name":"Cannon"
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "GameObject": {
+        "name": "DwarfCannonA",
+        "Transform": {
+            "translation": [
+                -73.0,
+                -92.5,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                371.5,
+                228.5
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "DwarfCannonA"
+        },
+        "Animation": {
+            "FrameCount": 18,
+            "FrameDuration": 0.0334,
+            "IsLooping": false,
+            "DiffAnimations": false
+        },
+        "Physics": {},
+        "Behavior":        
+        {
+            "Name":"Cannon"
+        }
+    }
+}

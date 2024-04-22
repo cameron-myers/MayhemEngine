@@ -1,0 +1,8 @@
+{
+    "SpriteSource": {
+        "name": "Generic_Button",
+        "path": "Generic_Button_V001.png",
+        "numCols": 1,
+        "numRows": 3
+    }
+}

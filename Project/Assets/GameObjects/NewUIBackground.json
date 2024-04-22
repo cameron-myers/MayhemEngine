@@ -1,0 +1,25 @@
+{
+    "GameObject": {
+        "name": "NewUIBackground",
+        "Transform": {
+            "translation": [
+                0.0,
+                -334.5,
+                1
+            ],
+            "rotation": 0.0,
+            "scale": [
+                1366.5,
+                434.5
+            ]
+        },
+        "Sprite": {
+            "frameIndex": 0,
+            "alpha": 1.0,
+            "RGB": [1.0,1.0,1.0],
+            "Mesh": "MainMesh",
+            "SpriteSource": "NewUIBottomBar"
+        },
+        "Audio": {}
+    }
+}
