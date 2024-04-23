@@ -325,9 +325,13 @@ void Animation::AnimationAdvanceFrame()
 			}
 			if (this->IsRunning == true)
 			{
-				SpritePtr spriteptr = Parent()->GetComponent<Sprite>(cSprite);
-				spriteptr->SetFrame(this->frameIndex);
-				this->frameRate += this->frameDuration;
+				SpritePtr spriteptr = Parent()->Has(Sprite);
+				if(spriteptr)
+				{
+					spriteptr->SetFrame(this->frameIndex);
+					this->frameRate += this->frameDuration;
+				}
+
 			}
 			else
 			{
