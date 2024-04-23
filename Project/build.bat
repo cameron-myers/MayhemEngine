@@ -1,4 +1,4 @@
-echo. [Mayhem_Engine Build Script]
-cd .\Mayhem_Engine
+echo [Mayhem_Engine Build Script]
 
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe" "Mayhem_Engine.vcxproj" /build
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.com" "NoBadIdeas.sln" /Build Debug
+pause
