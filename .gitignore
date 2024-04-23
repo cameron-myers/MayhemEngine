@@ -1,2 +1,12 @@
 
 MayhemEngine.code-workspace
+*.pdb
+*.lib
+*.exp
+*.obj
+*.idb
+*.ilk
+*.log
+*.tlog
+*.recipe
+*.exe
