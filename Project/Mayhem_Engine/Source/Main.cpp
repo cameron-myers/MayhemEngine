@@ -5,7 +5,7 @@
   \author            Cameron Myers // Nate White
   \par               Email: cameron.myers\@digipen.edu, nate.white\@digipen.edu
   \par               Course: GAM200
-  \par               Copyright © 2022 DigiPen, All rights reserved.
+  \par               Copyright ï¿½ 2022 DigiPen, All rights reserved.
 
   \brief
 	
@@ -90,6 +90,10 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
     freopen_s(&fpstdout, "CONOUT$", "w", stdout);
     freopen_s(&fpstderr, "CONOUT$", "w", stderr);
     std::cout << "Welcome to Mayhem Engine" << std::endl;
+    if(true)
+    {
+      std::cout << "The Engine will now boot in headless mode"
+    }
 #endif
 
     // Save the current sticky/toggle/filter key settings so they can be restored them later
