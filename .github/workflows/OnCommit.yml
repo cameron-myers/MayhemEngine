@@ -3,7 +3,7 @@ name: OnCommit-Jenkins
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: '*Dev*'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -15,8 +15,11 @@ jobs:
       - name: Trigger OnCommit Jenkins
         uses: ftsamis/jenkins-githubaction@v2
         with:
-          url: https://192.168.6.1:8080
-          job_name: on_commit
+          url: http://71.231.11.163:8080
+          job_name: OnCommit
           username: ${{ secrets.JENKINS_USER }}
           api_token: ${{ secrets.JENKINS_TOKEN }}
+          start_timeout: "100"
           timeout: "1000"
+          wait: true
+          parameters: '{"git_branch": "${{github.ref_name}}"}'
