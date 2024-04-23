@@ -22,4 +22,4 @@ jobs:
           start_timeout: "100"
           timeout: "1000"
           wait: true
-          parameters: '{"git_branch": ${github.ref_name}}'
+          parameters: '{"git_branch": github.ref_name}'
