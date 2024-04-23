@@ -92,7 +92,7 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
     std::cout << "Welcome to Mayhem Engine" << std::endl;
     if(true)
     {
-      std::cout << "The Engine will now boot in headless mode"
+      std::cout << "The Engine will now boot in headless mode" << std::endl;
     }
 #endif
 
