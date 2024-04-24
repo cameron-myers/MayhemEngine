@@ -20,3 +20,7 @@ MayhemEngine.code-workspace
 *.lastcodeanalysissucceeded
 Project/Mayhem_Engine_Test/x64/Debug/Mayhem_Engine_Test.vcxproj.FileListAbsolute.txt
 Project/x64/Debug/Mayhem_Engine_Test.dll
+Project/Mayhem_Engine_Test/x64/Debug/Mayhem_Engine_Test.pch
+Project/Mayhem_Engine_Test/x64/Debug/Mayhem_Engine_Test.vcxproj.FileListAbsolute.txt
+Project/x64/Debug/Mayhem_Engine_Test.dll
+Project/Mayhem_Engine/Mayhem.log

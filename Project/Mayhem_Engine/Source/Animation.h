@@ -32,7 +32,7 @@ public:
 	Component* Clone() const;
 	void	Read(const char* bufchar);
 	void	AnimationAdvanceFrame();
-	void	SetRowForMultiAnimation(int DesiredCol);
+	void	SetRowForMultiAnimation(int DesiredRow);
 	void	AnimationPlay(int frameCount, float frameDuration, bool isLooping, int startFrame = 0);
 	void	Update(float dt);
 	bool	AnimationIsDone();

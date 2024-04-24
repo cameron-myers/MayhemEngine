@@ -232,7 +232,7 @@ int Animation::GetRowOfCurrentIndex()
 //desired row is zero indexed whereas the num rows is not
 
 /// <summary>
-/// set the row for multiple animation sheets
+/// Updates the current frame index to the start of the desired row
 /// </summary>
 /// <param name="DesiredRow"></param>
 void Animation::SetRowForMultiAnimation(int DesiredRow)
@@ -250,9 +250,6 @@ void Animation::SetRowForMultiAnimation(int DesiredRow)
 		ME_CORE_ERROR("Set Row For Multi Animation Failed because the desired row was greater then the number of rows");
 	}
 }
-//to find the row frameIndex is currently in (frameIndex/col)
-//to find the col frameIndex is currently in (index%col) this is wrong
-//advances the frame to the end of the row;
 
 /// <summary>
 /// advance the animation to a different frame
