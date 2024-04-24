@@ -1,15 +1,14 @@
 name: OnCommit-Jenkins
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for thedevbranch
+  # Triggers the workflow on push to any branch that includes 'Dev' in its name
   push:
     branches: '*Dev*'
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   build:
-    name: Build
+    name: OnCommit
     runs-on: ubuntu-latest
     steps:
       - name: Trigger OnCommit Jenkins

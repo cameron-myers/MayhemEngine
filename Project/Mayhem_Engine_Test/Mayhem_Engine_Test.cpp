@@ -19,7 +19,6 @@ namespace MayhemEngineTest
 			return in.c_str();
 		}
 	public:
-
 		TEST_METHOD(ReadTest)
 		{
 

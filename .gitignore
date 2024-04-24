@@ -14,3 +14,9 @@ MayhemEngine.code-workspace
 .vscode/launch.json
 .vscode/c_cpp_properties.json
 /Project/.vs
+/Project/Mayhem_Engine/Intermediate
+/Project/Mayhem_Engine_Test/x64
+/Project/x64
+*.lastcodeanalysissucceeded
+Project/Mayhem_Engine_Test/x64/Debug/Mayhem_Engine_Test.vcxproj.FileListAbsolute.txt
+Project/x64/Debug/Mayhem_Engine_Test.dll
