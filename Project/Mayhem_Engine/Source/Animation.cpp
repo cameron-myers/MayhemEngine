@@ -239,7 +239,7 @@ void Animation::SetRowForMultiAnimation(int DesiredRow)
 {
 	SpritePtr spriteptr = Parent()->GetComponent<Sprite>(cSprite);//(get the sprite sheet col and row count)
 	int Row = spriteptr->GetSpriteSource()->GetNumRows();
-	if (DesiredRow < Row)
+	if (DesiredRow < Row && DesiredRow > -1)
 	{
 		int Col = spriteptr->GetSpriteSource()->GetNumCols();
 		frameIndex = Col*DesiredRow;
