@@ -209,12 +209,10 @@ namespace MayhemEngineTest
 		//gets the row of the sprite sheet that the sprite index is in
 		TEST_METHOD(GetRowOfCurrentIndexTest)
 		{
+			SetupGameObject();
 			AnimationPtr animation = game_object->Has(Animation);
 
 			SpritePtr sprite = game_object->Has(Sprite);
-
-			sprite->GetSpriteSource()->SetNumRows(5);
-			sprite->GetSpriteSource()->SetNumCols(5);
 
 			//row should be 3
 			animation->SetFrameIndex(16);
