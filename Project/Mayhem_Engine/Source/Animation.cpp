@@ -264,6 +264,7 @@ void Animation::AnimationAdvanceDifferentFrame()
 		int currentRow = frameIndex / Col;
 		int currentCol = frameIndex % Col;
 		this->frameIndex += 1;
+		//should loop or is done
 		if (currentRow != (frameIndex / Col))
 		{
 			if (this->IsLooping == true)

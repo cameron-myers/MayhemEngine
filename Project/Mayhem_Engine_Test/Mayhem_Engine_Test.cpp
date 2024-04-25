@@ -68,7 +68,6 @@ namespace MayhemEngineTest
 
 		TEST_METHOD(AnimationAdvanceFrameTest)
 		{
-
 			AnimationPtr animation = game_object->Has(Animation);
 
 			animation->SetFrameCount(3);
@@ -78,6 +77,58 @@ namespace MayhemEngineTest
 
 			std::wstring message = L"Animation Frame did not advance! frame was: " + std::to_wstring(post_frame) + L"should have been: " + std::to_wstring(curr_frame + 1);
 			Assert::IsTrue(post_frame == curr_frame + 1, message.c_str());
+		}
+
+		TEST_METHOD(AnimationAdvanceFrameTestLoop)
+		{
+			//test for frame advance loop
+			AnimationPtr animation = game_object->Has(Animation);
+			animation->SetisLooping(true);
+
+			animation->SetFrameCount(3);
+			//at end
+			animation->SetFrameIndex(animation->getFrameCount());
+
+			int curr_frame = animation->getFrameIndex();
+
+			animation->AnimationAdvanceFrame();
+
+			int post_frame = animation->getFrameIndex();
+
+			std::wstring message = L"Animation Frame did not loop! frame was: " + std::to_wstring(post_frame) + L"should have been: " + std::to_wstring(curr_frame - animation->getFrameCount());
+			//index is not local to anim so the beggining isnt really 0
+			Assert::IsTrue(post_frame == (curr_frame - animation->getFrameCount()), message.c_str());
+
+		}
+		TEST_METHOD(AnimationAdvanceFrameTestNoLoop)
+		{
+			//test for frame advance loop
+			AnimationPtr animation = game_object->Has(Animation);
+			animation->SetisLooping(false);
+
+			animation->SetFrameCount(animation->getFrameCount());
+			int curr_frame = animation->getFrameIndex();
+			animation->AnimationAdvanceFrame();
+			int post_frame = animation->getFrameIndex();
+
+			std::wstring message = L"Animation Frame changed when it shouldn't have! frame was: " + std::to_wstring(post_frame) + L"should have been: " + std::to_wstring(curr_frame);
+			Assert::IsTrue(post_frame == curr_frame, message.c_str());
+		}
+
+		//This function advances frame but keeps in the row
+		TEST_METHOD(AnimationAdvanceDifferentFrameTestNextFrame)
+		{
+			//test for frame advance
+		}
+
+		TEST_METHOD(AnimationAdvanceDifferentFrameTestLoop)
+		{
+			//test for frame advance
+		}
+
+		TEST_METHOD(AnimationAdvanceDifferentFrameTestNoLoop)
+		{
+			//test for frame advance
 		}
 
 		//Test for normal use
@@ -140,19 +191,42 @@ namespace MayhemEngineTest
 			Assert::IsTrue(correct_frame == post_frame, message.c_str());
 
 		}
+
 		TEST_METHOD(AnimationPlayTest)
 		{
+			//test parameter setting and that frame index is correct on sprite
 			
 		}
-		TEST_METHOD(UpdateTest)
+		TEST_METHOD(UpdateTestNextFrame)
 		{
-			
+			//test that if frame rate is over advance frame
 		}
-		TEST_METHOD(GetRowOfCurrentIndexTest)
+		TEST_METHOD(UpdateTestWait)
 		{
-			
+			//test that if frame rate is under dont advance
 		}
 
+		//gets the row of the sprite sheet that the sprite index is in
+		TEST_METHOD(GetRowOfCurrentIndexTest)
+		{
+			AnimationPtr animation = game_object->Has(Animation);
+
+			SpritePtr sprite = game_object->Has(Sprite);
+
+			sprite->GetSpriteSource()->SetNumRows(5);
+			sprite->GetSpriteSource()->SetNumCols(5);
+
+			//row should be 3
+			animation->SetFrameIndex(16);
+
+			int result = animation->GetRowOfCurrentIndex();
+
+			std::wstring message = L"Resulting row is incorrect, row was: " + std::to_wstring(result) + L" should have been: " + std::to_wstring(3);
+			Assert::IsTrue(result == 3, message.c_str());
+
+		}
+
+		
 		TEST_METHOD(SaveTest)
 		{
 			

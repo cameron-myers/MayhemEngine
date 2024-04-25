@@ -1549,6 +1549,10 @@ void AnimationTool(tool* tool)
 			ImGui::PopStyleVar();
 
 			ImGui::NewLine();
+
+			//frameindex
+			ImGui::Text("Frame Index: %d", animation->getFrameIndex());
+
 			ImGui::NewLine();
 
 			//Frame Count
