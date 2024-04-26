@@ -24,6 +24,7 @@ typedef Sprite* SpritePtr;
 class Component;
 class Animation : public Component
 {
+
 public:
 	Animation();
 
@@ -75,5 +76,6 @@ private:
 	bool IsVFX;
 
 	void AnimationAdvanceDifferentFrame();
+
 };
 

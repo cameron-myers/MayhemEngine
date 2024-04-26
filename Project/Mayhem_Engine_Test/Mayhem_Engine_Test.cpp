@@ -14,9 +14,10 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 namespace MayhemEngineTest
 {
 
-	TEST_CLASS(AnimationComponent)
+	TEST_CLASS(AnimationComponentTest)
 	{
-		TEST_CLASS_INITIALIZE(Init)
+
+		 TEST_CLASS_INITIALIZE(Init)
 		{
 			Log::Init();
 		}
@@ -40,7 +41,7 @@ namespace MayhemEngineTest
 
 	public:
 		//This gets called before each test is ran
-		AnimationComponent()
+		AnimationComponentTest()
 		{
 			//create some blank components
 			SpritePtr sprite = new Sprite();
@@ -56,7 +57,7 @@ namespace MayhemEngineTest
 			game_object->Add(sprite);
 			game_object->Add(animation);
 		}
-		~AnimationComponent()
+		~AnimationComponentTest()
 		{
 			delete game_object;
 		}
@@ -68,9 +69,10 @@ namespace MayhemEngineTest
 
 		TEST_METHOD(AnimationAdvanceFrameTest)
 		{
+			SetupGameObject();
+
 			AnimationPtr animation = game_object->Has(Animation);
 
-			animation->SetFrameCount(3);
 			int curr_frame = animation->getFrameIndex();
 			animation->AnimationAdvanceFrame();
 			int post_frame = animation->getFrameIndex();
@@ -81,13 +83,13 @@ namespace MayhemEngineTest
 
 		TEST_METHOD(AnimationAdvanceFrameTestLoop)
 		{
+			SetupGameObject();
 			//test for frame advance loop
 			AnimationPtr animation = game_object->Has(Animation);
 			animation->SetisLooping(true);
 
-			animation->SetFrameCount(3);
 			//at end
-			animation->SetFrameIndex(animation->getFrameCount());
+			animation->SetFrameIndex((animation->getFrameCount() * 3) - 1);
 
 			int curr_frame = animation->getFrameIndex();
 
@@ -95,18 +97,20 @@ namespace MayhemEngineTest
 
 			int post_frame = animation->getFrameIndex();
 
-			std::wstring message = L"Animation Frame did not loop! frame was: " + std::to_wstring(post_frame) + L"should have been: " + std::to_wstring(curr_frame - animation->getFrameCount());
+			std::wstring message = L"Animation Frame did not loop! frame was: " + std::to_wstring(post_frame) + L"should have been: " + std::to_wstring(curr_frame - animation->getFrameCount() + 1);
 			//index is not local to anim so the beggining isnt really 0
-			Assert::IsTrue(post_frame == (curr_frame - animation->getFrameCount()), message.c_str());
+			Assert::IsTrue(post_frame == (curr_frame - animation->getFrameCount() + 1), message.c_str());
 
 		}
 		TEST_METHOD(AnimationAdvanceFrameTestNoLoop)
 		{
+			SetupGameObject();
+
 			//test for frame advance loop
 			AnimationPtr animation = game_object->Has(Animation);
 			animation->SetisLooping(false);
 
-			animation->SetFrameCount(animation->getFrameCount());
+			animation->SetFrameIndex((animation->getFrameCount() * 3) - 1);
 			int curr_frame = animation->getFrameIndex();
 			animation->AnimationAdvanceFrame();
 			int post_frame = animation->getFrameIndex();
@@ -119,16 +123,67 @@ namespace MayhemEngineTest
 		TEST_METHOD(AnimationAdvanceDifferentFrameTestNextFrame)
 		{
 			//test for frame advance
+			//test for frame advance loop
+
+			SetupGameObject();
+
+			AnimationPtr animation = game_object->Has(Animation);
+			animation->SetisDiffAnimations(true);
+
+			animation->SetFrameIndex(animation->getFrameCount());
+			int curr_frame = animation->getFrameIndex();
+			animation->AnimationAdvanceFrame();
+			int post_frame = animation->getFrameIndex();
+
+			std::wstring message = L"Animation Frame did not advance! frame was: " + std::to_wstring(post_frame) + L"should have been: " + std::to_wstring(curr_frame + 1);
+			Assert::IsTrue(post_frame == curr_frame + 1, message.c_str());
 		}
 
 		TEST_METHOD(AnimationAdvanceDifferentFrameTestLoop)
 		{
-			//test for frame advance
+			//test for frame advance loop
+
+			SetupGameObject();
+
+			AnimationPtr animation = game_object->Has(Animation);
+			//frame count is the number of cols in the spritesheet
+			animation->SetFrameCount(game_object->Has(Sprite)->GetSpriteSource()->GetNumCols());
+			animation->SetisLooping(true);
+			animation->SetisDiffAnimations(true);
+
+			//at end
+			animation->SetFrameIndex((animation->getFrameCount() * 3)-1);
+
+			int curr_frame = animation->getFrameIndex();
+
+			animation->AnimationAdvanceFrame();
+
+			int post_frame = animation->getFrameIndex();
+
+			std::wstring message = L"Animation Frame did not loop! frame was: " + std::to_wstring(post_frame) + L"should have been: " + std::to_wstring(curr_frame - animation->getFrameCount() + 1);
+			//index is not local to anim so the beggining isnt really 0
+			Assert::IsTrue(post_frame == (curr_frame - animation->getFrameCount() + 1), message.c_str());
 		}
 
 		TEST_METHOD(AnimationAdvanceDifferentFrameTestNoLoop)
 		{
-			//test for frame advance
+
+			SetupGameObject();
+
+			//test for frame advance no loop
+			AnimationPtr animation = game_object->Has(Animation);
+			//frame count is the number of cols in the spritesheet
+			animation->SetFrameCount(game_object->Has(Sprite)->GetSpriteSource()->GetNumCols());
+			animation->SetisLooping(false);
+			animation->SetisDiffAnimations(true);
+
+			animation->SetFrameIndex((animation->getFrameCount() * 3) - 1);
+			int curr_frame = animation->getFrameIndex();
+			animation->AnimationAdvanceFrame();
+			int post_frame = animation->getFrameIndex();
+
+			std::wstring message = L"Animation Frame changed when it shouldn't have! frame was: " + std::to_wstring(post_frame) + L"should have been: " + std::to_wstring(curr_frame);
+			Assert::IsTrue(post_frame == curr_frame, message.c_str());
 		}
 
 		//Test for normal use
