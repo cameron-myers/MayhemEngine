@@ -153,7 +153,7 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
             framecount = 0;
         }
 	}
-
+    Log::Free();
     delete engine;
     delete Window;
     //re-enable sticky keys
