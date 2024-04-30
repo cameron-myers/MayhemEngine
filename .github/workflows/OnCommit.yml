@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger OnCommit Jenkins
-        uses: cameron-myers/jenkins-githubaction@v0.0.3
+        uses: cameron-myers/jenkins-githubaction
         with:
           url: http://71.231.11.163:8080
           job_name: OnCommit
