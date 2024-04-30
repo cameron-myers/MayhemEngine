@@ -24,7 +24,7 @@ namespace MayhemEngineTest
 
 	private:
 
-		void SetupGameObject()
+		void setup_game_object()
 		{
 			//Setup the m_sprite for the test
 			m_sprite = m_game_object->Has(Sprite);
@@ -70,7 +70,7 @@ namespace MayhemEngineTest
 
 		TEST_METHOD(AnimationAdvanceFrameTest)
 		{
-			SetupGameObject();
+			setup_game_object();
 
 			int curr_frame = m_animation->getFrameIndex();
 			m_animation->AnimationAdvanceFrame();
@@ -82,7 +82,7 @@ namespace MayhemEngineTest
 
 		TEST_METHOD(AnimationAdvanceFrameTestLoop)
 		{
-			SetupGameObject();
+			setup_game_object();
 			//test for frame advance loop
 			m_animation->SetisLooping(true);
 
@@ -102,7 +102,7 @@ namespace MayhemEngineTest
 		}
 		TEST_METHOD(AnimationAdvanceFrameTestNoLoop)
 		{
-			SetupGameObject();
+			setup_game_object();
 
 			//test for frame advance loop
 			m_animation->SetisLooping(false);
@@ -122,7 +122,7 @@ namespace MayhemEngineTest
 			//test for frame advance
 			//test for frame advance loop
 
-			SetupGameObject();
+			setup_game_object();
 
 			m_animation->SetisDiffAnimations(true);
 
@@ -139,7 +139,7 @@ namespace MayhemEngineTest
 		{
 			//test for frame advance loop
 
-			SetupGameObject();
+			setup_game_object();
 
 			//frame count is the number of cols in the spritesheet
 			m_animation->SetFrameCount(m_texture->GetNumCols());
@@ -156,14 +156,14 @@ namespace MayhemEngineTest
 			int post_frame = m_animation->getFrameIndex();
 
 			std::wstring message = L"Animation Frame did not loop! frame was: " + std::to_wstring(post_frame) + L"should have been: " + std::to_wstring(curr_frame - m_animation->getFrameCount() + 1);
-			//index is not local to anim so the beggining isnt really 0
+			//index is not local to anim so the begining isnt really 0
 			Assert::IsTrue(post_frame == (curr_frame - m_animation->getFrameCount() + 1), message.c_str());
 		}
 
 		TEST_METHOD(AnimationAdvanceDifferentFrameTestNoLoop)
 		{
 
-			SetupGameObject();
+			setup_game_object();
 
 			//test for frame advance no loop
 			//frame count is the number of cols in the spritesheet
@@ -183,7 +183,7 @@ namespace MayhemEngineTest
 		//Test for normal use
 		TEST_METHOD(SetRowForMultiAnimationTestNormal)
 		{
-			SetupGameObject();
+			setup_game_object();
 
 			int curr_row = 0;
 			int new_row = 2;
@@ -203,7 +203,7 @@ namespace MayhemEngineTest
 		//intended output is to have nothing change
 		TEST_METHOD(SetRowForMultiAnimationTestOutOfBoundsPos)
 		{
-			SetupGameObject();
+			setup_game_object();
 
 			int correct_frame = m_animation->getFrameIndex();
 
@@ -223,7 +223,7 @@ namespace MayhemEngineTest
 		//intended output is to have nothing change
 		TEST_METHOD(SetRowForMultiAnimationTestOutOfBoundsNeg)
 		{
-			SetupGameObject();
+			setup_game_object();
 
 
 			int correct_frame = m_animation->getFrameIndex();
@@ -240,9 +240,10 @@ namespace MayhemEngineTest
 
 		TEST_METHOD(AnimationPlayTest)
 		{
-			SetupGameObject();
+			setup_game_object();
 
 			//test parameter setting and that frame index is correct on m_sprite
+			Assert::Fail(L"This is a failed test example");
 			
 		}
 		TEST_METHOD(UpdateTestNextFrame)
@@ -257,7 +258,7 @@ namespace MayhemEngineTest
 		//gets the row of the m_sprite sheet that the m_sprite index is in
 		TEST_METHOD(GetRowOfCurrentIndexTest)
 		{
-			SetupGameObject();
+			setup_game_object();
 			AnimationPtr animation = m_game_object->Has(Animation);
 
 			SpritePtr sprite = m_game_object->Has(Sprite);
