@@ -11,6 +11,8 @@ jobs:
   build:
     name: OnCommit
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Trigger OnCommit Jenkins
         uses: cameron-myers/jenkins-githubaction@master
