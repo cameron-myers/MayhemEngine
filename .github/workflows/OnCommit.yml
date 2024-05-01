@@ -15,7 +15,6 @@ jobs:
       - name: Trigger OnCommit Jenkins
         uses: cameron-myers/jenkins-githubaction@master
         with:
-          gh_token: ${{ secrets.GITHUB_TOKEN }}
           url: http://71.231.11.163:8080
           job_name: OnCommit
           username: ${{ secrets.JENKINS_USER }}
