@@ -32,7 +32,7 @@ namespace MayhemEngineTest
 			m_texture->SetNumRows(5);
 			m_texture->SetNumCols(5);
 			m_sprite->SetSpriteSource(m_texture);
-
+			m_animation->SetFrameDuration(0.033f);
 			//give it a random frame to start at
 			m_sprite->SetFrame(3);
 			m_game_object->Has(Animation)->SetFrameIndex(3);
@@ -242,17 +242,42 @@ namespace MayhemEngineTest
 		{
 			setup_game_object();
 
+
 			//test parameter setting and that frame index is correct on m_sprite
-			Assert::Fail(L"This is a failed test example");
-			
+			m_animation->AnimationPlay(5, 0.033f, true, 3);
+
+			std::wstring message = L"Frame Index is not correct, frame was: " + std::to_wstring(m_animation->getFrameIndex()) + L" should have been: " + std::to_wstring(3);
+			Assert::IsTrue(3 == m_animation->getFrameIndex(), message.c_str());
+
 		}
 		TEST_METHOD(UpdateTestNextFrame)
 		{
 			//test that if frame rate is over advance frame
+			setup_game_object();
+			m_animation->AnimationPlay(5, 0.033f, true, 0);
+			int pre_frame = m_animation->getFrameIndex();
+			m_animation->Update(0.05f);
+			int post_frame = m_animation->getFrameIndex();
+
+			std::wstring message = L"Frame Index is not correct, frame was: " + std::to_wstring(post_frame) + L" should have been: " + std::to_wstring(pre_frame + 1);
+			Assert::IsTrue(post_frame == pre_frame + 1, message.c_str());
+			
+
 		}
 		TEST_METHOD(UpdateTestWait)
 		{
 			//test that if frame rate is under dont advance
+			//test that if frame rate is over advance frame
+			setup_game_object();
+			m_animation->AnimationPlay(5, 0.033f, true, 0);
+			int pre_frame = m_animation->getFrameIndex();
+			m_animation->Update(0.01f);
+			int post_frame = m_animation->getFrameIndex();
+
+			std::wstring message = L"Frame Index is not correct, frame was: " + std::to_wstring(post_frame) + L" should have been: " + std::to_wstring(pre_frame);
+			Assert::IsTrue(post_frame == pre_frame, message.c_str());
+
+
 		}
 
 		//gets the row of the m_sprite sheet that the m_sprite index is in
