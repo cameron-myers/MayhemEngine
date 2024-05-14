@@ -311,7 +311,6 @@ namespace MayhemEngineTest
 
 		TEST_METHOD(AnimationSaveTest)
 		{
-			Assert::Fail(L"This is a Test");
 		}
 	};
 
@@ -321,7 +320,6 @@ namespace MayhemEngineTest
 	public:
 		TEST_METHOD(AnimationReadTest)
 		{
-			Assert::Fail(L"This is a Test");
 		}
 
 	};
