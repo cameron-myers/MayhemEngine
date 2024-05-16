@@ -4,6 +4,7 @@ name: OnCommit-Jenkins
 on:
   # Triggers the workflow on push to any branch that includes 'Dev' in its name
   pull_request:
+    types: [opened, reopened,ready_for_review]
     branches: '*Dev*'
 
 jobs:
