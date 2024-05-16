@@ -5,6 +5,7 @@ on:
   # Triggers the workflow on pull request to any branch that includes 'Dev' in its name
   pull_request:
     types: [opened, reopened,ready_for_review]
+    branches: 'dev/***'
 
 jobs:
   # This workflow contains a single job called "build"
@@ -26,4 +27,4 @@ jobs:
           start_timeout: "100"
           timeout: "1000"
           wait: true
-          parameters: '{"git_branch": "${{github.ref_name}}"}'
+          parameters: '{"PR_NUMBER": "${{github.event.number}}"}'
