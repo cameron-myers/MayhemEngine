@@ -11,6 +11,7 @@ jobs:
   build:
     name: OnCommit
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/**'
     permissions:
       contents: write
     steps:
