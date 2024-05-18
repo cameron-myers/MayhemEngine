@@ -10,10 +10,7 @@
 #pragma once
 
 #include "Component.h"
-#include "rapidjson/document.h"
-#include "rapidjson/writer.h"
-#include "rapidjson/stringbuffer.h"
-#include "rapidjson/filewritestream.h"
+
 
 class Animation;
 class Sprite;
@@ -27,6 +24,7 @@ typedef Sprite* SpritePtr;
 class Component;
 class Animation : public Component
 {
+
 public:
 	Animation();
 
@@ -35,7 +33,7 @@ public:
 	Component* Clone() const;
 	void	Read(const char* bufchar);
 	void	AnimationAdvanceFrame();
-	void	SetRowForMultiAnimation(int DesiredCol);
+	void	SetRowForMultiAnimation(int DesiredRow);
 	void	AnimationPlay(int frameCount, float frameDuration, bool isLooping, int startFrame = 0);
 	void	Update(float dt);
 	bool	AnimationIsDone();
@@ -78,5 +76,6 @@ private:
 	bool IsVFX;
 
 	void AnimationAdvanceDifferentFrame();
+
 };
 

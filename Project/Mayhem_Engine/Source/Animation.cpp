@@ -232,14 +232,14 @@ int Animation::GetRowOfCurrentIndex()
 //desired row is zero indexed whereas the num rows is not
 
 /// <summary>
-/// set the row for multiple animation sheets
+/// Updates the current frame index to the start of the desired row
 /// </summary>
 /// <param name="DesiredRow"></param>
 void Animation::SetRowForMultiAnimation(int DesiredRow)
 {
 	SpritePtr spriteptr = Parent()->GetComponent<Sprite>(cSprite);//(get the sprite sheet col and row count)
 	int Row = spriteptr->GetSpriteSource()->GetNumRows();
-	if (DesiredRow < Row)
+	if (DesiredRow < Row && DesiredRow > -1)
 	{
 		int Col = spriteptr->GetSpriteSource()->GetNumCols();
 		frameIndex = Col*DesiredRow;
@@ -250,9 +250,6 @@ void Animation::SetRowForMultiAnimation(int DesiredRow)
 		ME_CORE_ERROR("Set Row For Multi Animation Failed because the desired row was greater then the number of rows");
 	}
 }
-//to find the row frameIndex is currently in (frameIndex/col)
-//to find the col frameIndex is currently in (index%col) this is wrong
-//advances the frame to the end of the row;
 
 /// <summary>
 /// advance the animation to a different frame
@@ -266,24 +263,24 @@ void Animation::AnimationAdvanceDifferentFrame()
 		int Col = spriteptr->GetSpriteSource()->GetNumCols();
 		int currentRow = frameIndex / Col;
 		int currentCol = frameIndex % Col;
-		this->frameIndex += 1;
-		if (currentRow != (frameIndex / Col))
+		//should loop or is done
+		if (currentRow != ((frameIndex + 1) / Col))
 		{
 			if (this->IsLooping == true)
 			{
+				//sets to 1 before the start to get incremented later
 				frameIndex = frameIndex - Col;
 				IsDone = true;
 			}
 			else
 			{
-				frameIndex = currentRow*Col;
 				IsRunning = false;
 			}
 			IsDone = true;
 		}
 		if (this->IsRunning == true)
 		{
-			//SpritePtr spriteptr = Parent()->GetComponent<Sprite>(cSprite);
+			this->frameIndex += 1;
 			spriteptr->SetFrame(this->frameIndex);
 			this->frameRate += this->frameDuration;
 		}
@@ -306,17 +303,15 @@ void Animation::AnimationAdvanceFrame()
 		}
 		if (this)
 		{
-			this->frameIndex += 1;
-			if (this->frameIndex >= this->frameCount)
+			if (this->frameIndex == this->frameCount - 1)
 			{
 				if (this->IsLooping == true)
 				{
-					this->frameIndex = 0;
+					//set the index to -1 so that when it increments it starts at 0
+					this->frameIndex = -1;
 				}
 				else
 				{
-					frameIndex = 0;
-					//this->frameIndex = this->frameCount - 1;
 					this->IsRunning = false;
 				}
 				this->IsDone = true;
@@ -325,9 +320,15 @@ void Animation::AnimationAdvanceFrame()
 			}
 			if (this->IsRunning == true)
 			{
-				SpritePtr spriteptr = Parent()->GetComponent<Sprite>(cSprite);
-				spriteptr->SetFrame(this->frameIndex);
-				this->frameRate += this->frameDuration;
+				SpritePtr spriteptr = Parent()->Has(Sprite);
+				if(spriteptr)
+				{
+					this->frameIndex += 1;
+					spriteptr->SetFrame(this->frameIndex);
+					this->frameRate += this->frameDuration;
+
+				}
+
 			}
 			else
 			{

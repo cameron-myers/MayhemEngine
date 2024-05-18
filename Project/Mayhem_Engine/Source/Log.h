@@ -16,6 +16,15 @@
 	{
 	public:
 		static void Init();
+		static void Free()
+		{
+			s_CoreLogger->flush();
+			s_ClientLogger->flush();
+			spdlog::drop("MAYHEM");
+			spdlog::drop("APP");
+
+
+		};
 
 		inline static std::shared_ptr<spdlog::logger>& GetCoreLogger() { return s_CoreLogger; }
 		inline static std::shared_ptr<spdlog::logger>& GetClientLogger() { return s_ClientLogger; }

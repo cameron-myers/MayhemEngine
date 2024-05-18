@@ -1,30 +1,29 @@
-name: OnCommit-Jenkins
+name: OnPullRequest-Jenkins
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push to any branch that includes 'Dev' in its name
-  push:
-    branches: '*Dev*'
+  # Triggers the workflow on pull request to any branch that includes 'Dev' in its name
+  pull_request:
+    types: [opened, reopened,ready_for_review]
 
 jobs:
   # This workflow contains a single job called "build"
   build:
-    name: OnCommit
+    name: OnPullRequest
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/**'
     permissions:
       contents: write
     steps:
-      - name: Trigger OnCommit Jenkins
+      - name: Trigger OnPullRequest Jenkins
         uses: cameron-myers/jenkins-githubaction@master
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           url: http://71.231.11.163:8080
-          job_name: OnCommit
+          job_name: OnPullRequest
           username: ${{ secrets.JENKINS_USER }}
           api_token: ${{ secrets.JENKINS_TOKEN }}
           start_timeout: "100"
           timeout: "1000"
           wait: true
-          parameters: '{"git_branch": "${{github.ref_name}}"}'
+          parameters: '{"PR_NUMBER": "${{github.event.number}}"}'
