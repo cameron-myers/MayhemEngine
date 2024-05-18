@@ -47,7 +47,7 @@ typedef GLFWwindow* GLFWwindowPtr;
 STICKYKEYS g_StartupStickyKeys = { sizeof(STICKYKEYS), 0 };
 void AllowAccessibilityShortcutKeys(bool bAllowKeys);
 std::string from_Wchar_to_Str(wchar_t* in);
-
+bool headless = false;
 /*!********************************************************************************************************************
 	\par this is from the graphics quickstart
   \brief
@@ -123,8 +123,12 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
     if (arg_values[index] == "1")
     {
         std::cout << "The Engine will now boot in testing mode" << std::endl;
+        headless = true;
     }
-
+    if(!headless)
+    {
+	    
+    }
     //create a new window
     MEWindow* Window = new MEWindow((char*)"Mayhem_Engine");
     if(!Window)
