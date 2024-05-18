@@ -11,7 +11,7 @@ jobs:
   build:
     name: OnCommit
     runs-on: ubuntu-latest
-    if: !github.ref.contains('pull')
+    if: github.head_ref != null
     permissions:
       contents: write
     steps:
