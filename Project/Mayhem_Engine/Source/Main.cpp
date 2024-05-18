@@ -40,12 +40,13 @@
 #include "MERendering.h"
 #include "MEWindow.h"
 #include "MEInput.h"
-
+#include "shellapi.h"
 
 typedef struct GLFWwindow GLFWwindow;
 typedef GLFWwindow* GLFWwindowPtr;
 STICKYKEYS g_StartupStickyKeys = { sizeof(STICKYKEYS), 0 };
 void AllowAccessibilityShortcutKeys(bool bAllowKeys);
+std::string from_Wchar_to_Str(wchar_t* in);
 
 /*!********************************************************************************************************************
 	\par this is from the graphics quickstart
@@ -76,8 +77,7 @@ void AllowAccessibilityShortcutKeys(bool bAllowKeys);
 int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, int cmdShow)
 {
 	UNREFERENCED(instance);
-	UNREFERENCED(prevInstance);
-	UNREFERENCED(pCmdLine);
+    UNREFERENCED(prevInstance);
 	UNREFERENCED(cmdShow);
 
 #ifdef _DEBUG
@@ -90,10 +90,7 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
     freopen_s(&fpstdout, "CONOUT$", "w", stdout);
     freopen_s(&fpstderr, "CONOUT$", "w", stderr);
     std::cout << "Welcome to Mayhem Engine" << std::endl;
-    if(true)
-    {
-      std::cout << "The Engine will now boot in headless mode" << std::endl;
-    }
+
 #endif
 
     // Save the current sticky/toggle/filter key settings so they can be restored them later
@@ -101,6 +98,32 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
 
     //disable sticky keys
     AllowAccessibilityShortcutKeys(false);
+    int argCount = 0;
+
+	LPWSTR* args = CommandLineToArgvW(pCmdLine, &argCount);
+
+    std::vector<std::string> arguments;
+    std::vector<std::string> arg_values;
+
+    for (int i = 0; i < argCount; ++i)
+    {
+        //even
+        if(i % 2 == 0)
+        {
+            arguments.push_back(from_Wchar_to_Str(args[i]));
+        }
+        else
+        {
+            arg_values.push_back(from_Wchar_to_Str(args[i]));
+        }
+    }
+    auto iter = std::find(arguments.begin(), arguments.end(), "/FuncTesting");
+    int index = std::distance(arguments.begin(), iter);
+
+    if (arg_values[index] == "1")
+    {
+        std::cout << "The Engine will now boot in testing mode" << std::endl;
+    }
 
     //create a new window
     MEWindow* Window = new MEWindow((char*)"Mayhem_Engine");
@@ -199,4 +222,11 @@ void AllowAccessibilityShortcutKeys(bool bAllowKeys)
 
         
     }
+}
+
+std::string from_Wchar_to_Str(wchar_t* in)
+{
+    std::wstring ws(in);
+    std::string str(ws.begin(), ws.end());
+    return  str;
 }
