@@ -278,6 +278,9 @@
     <ClCompile Include="Source\BehaviorRetryButton.cpp">
       <Filter>Implementations\Behaviors</Filter>
     </ClCompile>
+    <ClCompile Include="Source\MEFunctionalTesting.cpp">
+      <Filter>Implementations\Engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Mayhem_Wwise\Banks\Wwise_IDs.h" />
@@ -535,6 +538,9 @@
     </ClInclude>
     <ClInclude Include="Source\BehaviorTutorialButton.h">
       <Filter>Headers\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MEFunctionalTesting.h">
+      <Filter>Implementations\Engine</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -125,10 +125,7 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
         std::cout << "The Engine will now boot in testing mode" << std::endl;
         headless = true;
     }
-    if(!headless)
-    {
-	    
-    }
+
     //create a new window
     MEWindow* Window = new MEWindow((char*)"Mayhem_Engine");
     if(!Window)

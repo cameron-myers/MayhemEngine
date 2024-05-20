@@ -311,6 +311,7 @@
     <ClCompile Include="Source\MEAudio.cpp" />
     <ClCompile Include="Source\MEEditor.cpp" />
     <ClCompile Include="Source\MEFramerateController.cpp" />
+    <ClCompile Include="Source\MEFunctionalTesting.cpp" />
     <ClCompile Include="Source\MEInput.cpp" />
     <ClCompile Include="Source\MERand.cpp" />
     <ClCompile Include="Source\MERendering.cpp" />
@@ -398,6 +399,7 @@
     <ClInclude Include="Source\MEAudio.h" />
     <ClInclude Include="Source\MEEditor.h" />
     <ClInclude Include="Source\MEFramerateController.h" />
+    <ClInclude Include="Source\MEFunctionalTesting.h" />
     <ClInclude Include="Source\MEInput.h" />
     <ClInclude Include="Source\MERand.h" />
     <ClInclude Include="Source\MERendering.h" />
