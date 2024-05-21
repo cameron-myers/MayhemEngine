@@ -13,7 +13,7 @@
 class MEFunctionalTest;
 
 
-class MEFunctionalTesting
+class MEFunctionalTestExecutor
 {
 	
 

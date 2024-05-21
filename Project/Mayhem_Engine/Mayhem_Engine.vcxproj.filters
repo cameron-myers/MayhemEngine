@@ -278,7 +278,7 @@
     <ClCompile Include="Source\BehaviorRetryButton.cpp">
       <Filter>Implementations\Behaviors</Filter>
     </ClCompile>
-    <ClCompile Include="Source\MEFunctionalTesting.cpp">
+    <ClCompile Include="Source\MEFunctionalTestExecutor.cpp">
       <Filter>Implementations\Engine</Filter>
     </ClCompile>
     <ClCompile Include="Source\MEFunctionalTest.cpp">
@@ -545,7 +545,7 @@
     <ClInclude Include="Source\BehaviorTutorialButton.h">
       <Filter>Headers\Behaviors</Filter>
     </ClInclude>
-    <ClInclude Include="Source\MEFunctionalTesting.h">
+    <ClInclude Include="Source\MEFunctionalTestExecutor.h">
       <Filter>Implementations\Engine</Filter>
     </ClInclude>
     <ClInclude Include="Source\MEFunctionalTest.h">

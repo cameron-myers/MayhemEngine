@@ -313,7 +313,7 @@
     <ClCompile Include="Source\MEEditor.cpp" />
     <ClCompile Include="Source\MEFramerateController.cpp" />
     <ClCompile Include="Source\MEFunctionalTest.cpp" />
-    <ClCompile Include="Source\MEFunctionalTesting.cpp" />
+    <ClCompile Include="Source\MEFunctionalTestExecutor.cpp" />
     <ClCompile Include="Source\MEInput.cpp" />
     <ClCompile Include="Source\MERand.cpp" />
     <ClCompile Include="Source\MERendering.cpp" />
@@ -403,7 +403,7 @@
     <ClInclude Include="Source\MEEditor.h" />
     <ClInclude Include="Source\MEFramerateController.h" />
     <ClInclude Include="Source\MEFunctionalTest.h" />
-    <ClInclude Include="Source\MEFunctionalTesting.h" />
+    <ClInclude Include="Source\MEFunctionalTestExecutor.h" />
     <ClInclude Include="Source\MEInput.h" />
     <ClInclude Include="Source\MERand.h" />
     <ClInclude Include="Source\MERendering.h" />
