@@ -46,8 +46,12 @@ typedef struct GLFWwindow GLFWwindow;
 typedef GLFWwindow* GLFWwindowPtr;
 STICKYKEYS g_StartupStickyKeys = { sizeof(STICKYKEYS), 0 };
 void AllowAccessibilityShortcutKeys(bool bAllowKeys);
+void parse_args(PWSTR pCmdLine, int argCount, int& index);
 std::string from_Wchar_to_Str(wchar_t* in);
 bool headless = false;
+
+std::vector<std::string> arguments;
+std::vector<std::string> arg_values;
 /*!********************************************************************************************************************
 	\par this is from the graphics quickstart
   \brief
@@ -58,6 +62,8 @@ bool headless = false;
 **********************************************************************************************************************/
 
 #define UNREFERENCED(x) (void)x
+
+
 
 
 /*!
@@ -100,31 +106,9 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
     AllowAccessibilityShortcutKeys(false);
     int argCount = 0;
 
-	LPWSTR* args = CommandLineToArgvW(pCmdLine, &argCount);
+	int index;
+	parse_args(pCmdLine, argCount, index);
 
-    std::vector<std::string> arguments;
-    std::vector<std::string> arg_values;
-
-    for (int i = 0; i < argCount; ++i)
-    {
-        //even
-        if(i % 2 == 0)
-        {
-            arguments.push_back(from_Wchar_to_Str(args[i]));
-        }
-        else
-        {
-            arg_values.push_back(from_Wchar_to_Str(args[i]));
-        }
-    }
-    auto iter = std::find(arguments.begin(), arguments.end(), "/FuncTesting");
-    int index = std::distance(arguments.begin(), iter);
-
-    if (arg_values[index] == "1")
-    {
-        std::cout << "The Engine will now boot in testing mode" << std::endl;
-        headless = true;
-    }
 
     //create a new window
     MEWindow* Window = new MEWindow((char*)"Mayhem_Engine");
@@ -142,6 +126,14 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
     {
         assert("Failed to initialize the Engine");
         return -1;
+    }
+
+
+    if (arg_values[index] == "1")
+    {
+        std::cout << "The Engine will now boot in testing mode" << std::endl;
+        headless = true;
+        engine->isHeadless = true;
     }
     //main render loop
     int framecount = 0;
@@ -230,4 +222,25 @@ std::string from_Wchar_to_Str(wchar_t* in)
     std::wstring ws(in);
     std::string str(ws.begin(), ws.end());
     return  str;
+}
+
+void parse_args(PWSTR pCmdLine, int argCount, int& index)
+{
+    LPWSTR* args = CommandLineToArgvW(pCmdLine, &argCount);
+
+    for (int i = 0; i < argCount; ++i)
+    {
+        //even
+        if (i % 2 == 0)
+        {
+            arguments.push_back(from_Wchar_to_Str(args[i]));
+        }
+        else
+        {
+            arg_values.push_back(from_Wchar_to_Str(args[i]));
+        }
+    }
+    auto iter = std::find(arguments.begin(), arguments.end(), "/FuncTesting");
+    index = std::distance(arguments.begin(), iter);
+
 }

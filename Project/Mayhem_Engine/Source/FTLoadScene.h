@@ -12,26 +12,17 @@
 
 class MEFunctionalTest;
 
-
-class MEFunctionalTesting
+class FTLoadScene : public MEFunctionalTest
 {
-	
 
 public:
-	static void Init();
 
-	static void Update(float dt);
+	FTLoadScene(const char* name):MEFunctionalTest(name){};
+	virtual void Init();
+	virtual void Read();
+	virtual void Update(float dt);
+	virtual void Shutdown();
 
-	static void Shutdown();
-	
-	static void PushTest();
-
-	static void PopTest();
-
-private:
-
-	static std::stack<MEFunctionalTest> s_TestStack;
-	//				test name
-	static std::map<std::string, MEFunctionalTest> s_TestMap;
-
+	std::string m_Scene;
+	std::string m_Object;
 };

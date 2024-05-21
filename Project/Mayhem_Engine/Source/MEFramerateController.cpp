@@ -15,6 +15,8 @@
 #include <MEFramerateController.h>
 #include <string>
 #include <glfw/glfw3.h>
+
+#include "MEWindow.h"
 int frames = 0;
 double currentFrame = 0.0;
 double lastFrame = 0.0;
@@ -74,4 +76,22 @@ float MEFramerateController::GetFPS()
 void MEFramerateController::SetFPS(int Fps)
 { 
     MEFramerateController::fps = Fps;
+}
+
+/**
+ * \brief [NOT IMPLEMENTED] Gets the last frame that was rendered
+ * \return 
+ */
+int MEFramerateController::GetFrame()
+{
+    return -1;
+}
+
+/**
+ * \brief Get the time elapsed since the application began
+ * \return 
+ */
+float MEFramerateController::GetTimeElapsed()
+{
+    return glfwGetTime();
 }

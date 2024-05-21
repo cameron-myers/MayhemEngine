@@ -32,6 +32,7 @@
 #include "MESpaceManager.h"
 #include "MEtimer.h"
 #include "InterpolManager.h"
+#include "MEFunctionalTesting.h"
 
 float total = 0.f;
 MEWindow* window = NULL;
@@ -72,11 +73,13 @@ void Engine::Initialize()
 	//glfwMaximizeWindow(window->GetWindow());
 
 	InitRenderer(window->GetWindow());
+	MEFunctionalTesting::Init();
 
 	MEAudio::Init();
 	MEAudio::Load();
 
 	MESpaceManager::Init();
+
 
 	//if debug toggle to windowed on boot
 #ifdef _DEBUG
@@ -94,6 +97,8 @@ void Engine::Initialize()
  */
 void Engine::Update(float dt)
 {
+	MEFunctionalTesting::Update(dt);
+
 	InterpolManager::Update(dt);
 	Input::InputUpdate();
 	/*
@@ -134,6 +139,7 @@ void Engine::Update(float dt)
  */
 void Engine::Render()
 {
+	if(isHeadless) return;
 
 	StartRenderFrame();
 

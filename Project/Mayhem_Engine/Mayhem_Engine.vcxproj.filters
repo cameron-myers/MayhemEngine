@@ -281,6 +281,12 @@
     <ClCompile Include="Source\MEFunctionalTesting.cpp">
       <Filter>Implementations\Engine</Filter>
     </ClCompile>
+    <ClCompile Include="Source\MEFunctionalTest.cpp">
+      <Filter>Implementations\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FTLoadScene.cpp">
+      <Filter>Implementations\FunctionalTests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Mayhem_Wwise\Banks\Wwise_IDs.h" />
@@ -542,6 +548,15 @@
     <ClInclude Include="Source\MEFunctionalTesting.h">
       <Filter>Implementations\Engine</Filter>
     </ClInclude>
+    <ClInclude Include="Source\MEFunctionalTest.h">
+      <Filter>Implementations\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\FTLoadScene.h">
+      <Filter>Implementations\FunctionalTests</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\METestSuite.h">
+      <Filter>Implementations\FunctionalTests</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Implementations">
@@ -567,6 +582,9 @@
     </Filter>
     <Filter Include="Implementations\Engine">
       <UniqueIdentifier>{dd198259-f50f-4b6b-9d27-a4c5074cb7ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementations\FunctionalTests">
+      <UniqueIdentifier>{7cea76d5-80e1-40f5-8e81-8f01177a1299}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

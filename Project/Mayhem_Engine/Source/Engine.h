@@ -38,6 +38,7 @@ public:
 	void Render();
 
 	bool isRunning = true;
+	bool isHeadless = false;
 	// Public Event Handlers
 public:
 	// Windows message event handler.

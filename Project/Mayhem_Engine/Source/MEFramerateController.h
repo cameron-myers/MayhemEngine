@@ -21,7 +21,8 @@ class MEFramerateController
 {
 public:
 	static float GetFrameTime();
-
+	static int GetFrame();
+	static float GetTimeElapsed();
 	static float GetFPS();
 	static void SetFPS(int Fps);
 private:
