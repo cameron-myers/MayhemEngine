@@ -287,6 +287,9 @@
     <ClCompile Include="Source\FTLoadScene.cpp">
       <Filter>Implementations\FunctionalTests</Filter>
     </ClCompile>
+    <ClCompile Include="Source\tinyxml2.cpp">
+      <Filter>Implementations\Engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Mayhem_Wwise\Banks\Wwise_IDs.h" />
@@ -556,6 +559,9 @@
     </ClInclude>
     <ClInclude Include="Source\METestSuite.h">
       <Filter>Implementations\FunctionalTests</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tinyxml2.h">
+      <Filter>Headers\Engine</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

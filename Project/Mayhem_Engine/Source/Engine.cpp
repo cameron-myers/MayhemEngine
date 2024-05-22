@@ -48,7 +48,6 @@ MEWindow* GetWindow();
 Engine::Engine(MEWindow* windowptr)
 {
 	window = windowptr;
-	Initialize();
 
 }
 /// <summary>
@@ -73,7 +72,6 @@ void Engine::Initialize()
 	//glfwMaximizeWindow(window->GetWindow());
 
 	InitRenderer(window->GetWindow());
-	MEFunctionalTestExecutor::Init();
 
 	MEAudio::Init();
 	MEAudio::Load();
@@ -87,6 +85,7 @@ void Engine::Initialize()
 	MEEditor::Initialize(window);
 
 #endif
+	MEFunctionalTestExecutor::Init();
 
 
 }

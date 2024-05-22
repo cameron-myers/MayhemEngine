@@ -7,6 +7,7 @@
 
 #pragma once
 #include <map>
+#include <memory>
 #include <stack>
 #include <string>
 
@@ -30,8 +31,8 @@ public:
 
 private:
 
-	static std::stack<MEFunctionalTest> s_TestStack;
+	static std::stack<MEFunctionalTest*> s_TestStack;
 	//				test name
-	static std::map<std::string, MEFunctionalTest> s_TestMap;
+	static std::map<std::string, MEFunctionalTest*> s_TestMap;
 
 };

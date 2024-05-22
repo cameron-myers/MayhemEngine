@@ -1,0 +1,7 @@
+<testsuites>
+    <testsuite name="Scene Loading">
+        <testcase name="Load_Level" classname="METestSuite.LoadScene">
+            <failure message="Assert Error: Incorrect scene loaded! Loaded scene was: Sandboxshould have loaded: Sandbox" type="AssertionError"/>
+        </testcase>
+    </testsuite>
+</testsuites>

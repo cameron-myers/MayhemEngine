@@ -16,10 +16,16 @@ class FTLoadScene : public MEFunctionalTest
 {
 
 public:
-
+	FTLoadScene() = default;
 	FTLoadScene(const char* name):MEFunctionalTest(name){};
+	FTLoadScene(const FTLoadScene& rhs):MEFunctionalTest(rhs)
+	{
+		m_Scene = rhs.m_Scene;
+		m_Object = rhs.m_Object;
+	};
+
 	virtual void Init();
-	virtual void Read();
+	virtual std::string Read();
 	virtual void Update(float dt);
 	virtual void Shutdown();
 

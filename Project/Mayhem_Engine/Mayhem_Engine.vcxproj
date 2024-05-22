@@ -332,6 +332,7 @@
     <ClCompile Include="Source\SpriteSource.cpp" />
     <ClCompile Include="Source\SpriteSourceManager.cpp" />
     <ClCompile Include="Source\Stats.cpp" />
+    <ClCompile Include="Source\tinyxml2.cpp" />
     <ClCompile Include="Source\TowerBehavior.cpp" />
     <ClCompile Include="Source\ZeppelinBehavior.cpp" />
     <ClCompile Include="Source\Transform.cpp" />
@@ -424,6 +425,7 @@
     <ClInclude Include="Source\SpriteSource.h" />
     <ClInclude Include="Source\SpriteSourceManager.h" />
     <ClInclude Include="Source\Stats.h" />
+    <ClInclude Include="Source\tinyxml2.h" />
     <ClInclude Include="Source\TowerBehavior.h" />
     <ClInclude Include="Source\ZeppelinBehavior.h" />
     <ClInclude Include="Source\Transform.h" />

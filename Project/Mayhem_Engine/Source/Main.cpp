@@ -122,19 +122,21 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
 
     //create the engine
     Engine* engine = new Engine(Window);
-    if (!engine)
-    {
-        assert("Failed to initialize the Engine");
-        return -1;
-    }
-
-
     if (arg_values[index] == "1")
     {
         std::cout << "The Engine will now boot in testing mode" << std::endl;
         headless = true;
         engine->isHeadless = true;
     }
+    if (!engine)
+    {
+        assert("Failed to initialize the Engine");
+        return -1;
+    }
+    engine->Initialize();
+
+
+    
     //main render loop
     int framecount = 0;
     float deetee = 0;
