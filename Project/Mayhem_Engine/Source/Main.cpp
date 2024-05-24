@@ -41,6 +41,7 @@
 #include "MEWindow.h"
 #include "MEInput.h"
 #include "shellapi.h"
+#include <vector>
 
 typedef struct GLFWwindow GLFWwindow;
 typedef GLFWwindow* GLFWwindowPtr;
@@ -122,7 +123,8 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
 
     //create the engine
     Engine* engine = new Engine(Window);
-    if (arg_values[index] == "1")
+
+    if (!arg_values.empty() && arg_values[index] == "1")
     {
         std::cout << "The Engine will now boot in testing mode" << std::endl;
         headless = true;
