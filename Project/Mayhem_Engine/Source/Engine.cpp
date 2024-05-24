@@ -85,7 +85,7 @@ void Engine::Initialize()
 	MEEditor::Initialize(window);
 
 #endif
-	MEFunctionalTestExecutor::Init();
+	if(isHeadless)MEFunctionalTestExecutor::Init();
 
 
 }
@@ -96,7 +96,7 @@ void Engine::Initialize()
  */
 void Engine::Update(float dt)
 {
-	MEFunctionalTestExecutor::Update(dt);
+	if (isHeadless)MEFunctionalTestExecutor::Update(dt);
 
 	InterpolManager::Update(dt);
 	Input::InputUpdate();
