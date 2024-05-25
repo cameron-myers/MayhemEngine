@@ -49,7 +49,7 @@ void FTLoadScene::Update(float dt)
 		m_Status = Failed;
 
 	}
-	else if(*(space->GetName()) == m_Scene)
+	else if(*(space->GetName()) != m_Scene)
 	{
 		m_Output += "Assert Error: Incorrect scene loaded! Loaded scene was: " + *(space->GetName()) + "should have loaded: " + m_Scene;
 		m_Status = Failed;
