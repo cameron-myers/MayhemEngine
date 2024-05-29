@@ -400,6 +400,7 @@
     <ClInclude Include="Source\InterpolManager.h" />
     <ClInclude Include="Source\LaneManager.h" />
     <ClInclude Include="Source\Log.h" />
+    <ClInclude Include="Source\MEAssert.h" />
     <ClInclude Include="Source\MEAudio.h" />
     <ClInclude Include="Source\MEEditor.h" />
     <ClInclude Include="Source\MEFramerateController.h" />

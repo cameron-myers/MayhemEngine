@@ -563,6 +563,9 @@
     <ClInclude Include="Source\tinyxml2.h">
       <Filter>Headers\Engine</Filter>
     </ClInclude>
+    <ClInclude Include="Source\MEAssert.h">
+      <Filter>Headers\Engine</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Implementations">

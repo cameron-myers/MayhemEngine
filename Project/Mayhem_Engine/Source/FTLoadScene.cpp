@@ -86,6 +86,7 @@ void FTLoadScene::Shutdown()
 	auto _case = suite->InsertNewChildElement("testcase");
 	_case->SetAttribute("name", m_Name.c_str());
 	_case->SetAttribute("classname", "METestSuite.LoadScene");
+	_case->SetAttribute("time", m_Duration);
 	suite->InsertEndChild(_case);
 	if(m_Status == Failed)
 	{
