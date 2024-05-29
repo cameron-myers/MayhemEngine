@@ -23,7 +23,7 @@ class Interpolation
 {
 public:
 
-	Interpolation() {};
+	Interpolation():finalVal(0), timer(nullptr), factor(0), Val(0), type(linear), sinGoUp(true),initialVal(0), shouldUpdate(true){}
 	
 	Interpolation(float valFinal, float time, float input, InterpolType intype);
 	

@@ -390,7 +390,7 @@ void MESerializer::SaveGameObjectTransform(GameObject* Obj)
 
 
 	//wchar_t filename[248];
-	FILE* json = NULL;
+	FILE* json = nullptr;
 
 	//WCHAR path[MAX_PATH];
 	//HRESULT hr = SHGetFolderPath(NULL, CSIDL_PERSONAL, NULL, SHGFP_TYPE_CURRENT, path);
@@ -421,7 +421,7 @@ void MESerializer::SaveGameObjectTransform(GameObject* Obj)
 		return;
 	}
 
-	char writeBuffer[65500];
+	char writeBuffer[65500] = "\0";
 	FileWriteStream os(json, writeBuffer, sizeof(writeBuffer));
 	PrettyWriter<FileWriteStream> writer(os);
 	d.Accept(writer);
@@ -528,7 +528,7 @@ void MESerializer::SaveGameObjectSprite(GameObject* Obj)
 		return;
 	}
 
-	char writeBuffer[65500];
+	char writeBuffer[65500] = "\0";
 	FileWriteStream os(json, writeBuffer, sizeof(writeBuffer));
 	PrettyWriter<FileWriteStream> writer(os);
 	d.Accept(writer);

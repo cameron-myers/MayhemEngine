@@ -245,6 +245,6 @@ void parse_args(PWSTR pCmdLine, int argCount, int& index)
         }
     }
     auto iter = std::find(arguments.begin(), arguments.end(), "/FuncTesting");
-    index = std::distance(arguments.begin(), iter);
+    index = (int)std::distance(arguments.begin(), iter);
 
 }

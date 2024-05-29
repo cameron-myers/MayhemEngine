@@ -1184,3 +1184,38 @@ void GameObject::SetHidden(bool hide)
 {
 	hidden = hide;
 }
+
+std::vector<std::string> GameObject::GetChildrenFromFile(std::string filename)
+{
+	std::string pathName;
+
+#ifdef _DEBUG
+	pathName = "../Assets/GameObjects/" + filename + ".json";
+#endif // _DEBUG
+
+
+#ifdef _DISTRIBUTE
+	pathName = "./Assets/GameObjects/" + filename ".json";
+#endif
+
+	std::string json;
+	std::string clearData(json);
+	json = MESerializer::OpenFileRead(pathName.c_str());
+	const char* bufchar = json.c_str();
+	Document d;
+	d.Parse(bufchar);
+	//load each name, audioID, etc. into each game object
+	const rapidjson::Value& value = d["GameObject"];
+
+	if (d["GameObject"].HasMember("Children"))
+	{
+		const rapidjson::Value& head = value["Children"];
+		std::vector<std::string> result(head.Size());
+		for (rapidjson::SizeType i = 0; i < head.Size(); ++i)
+		{
+			result.emplace_back(head[i].GetString());
+		}
+		return result;
+	}
+	return std::vector<std::string>() = {};
+}

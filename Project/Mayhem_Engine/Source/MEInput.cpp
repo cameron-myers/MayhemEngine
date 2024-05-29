@@ -147,8 +147,8 @@ glm::vec2 Input::GetMouse()
 	int halfW, halfH;
 	double x, y;
 	glfwGetWindowSize(window1, &halfW, &halfH);
-	halfW /= 2.0;
-	halfH /= 2.0;
+	halfW = (int)((double)halfW / 2.0);
+	halfH = (int)((double)halfH / 2.0);
 	glfwGetCursorPos(window1, &x, &y);
 	x = x -halfW;
 	y = y - halfH;

@@ -35,7 +35,7 @@ class MEWindow;
 		static void InputUpdate();//do not touch
 	private:
 		
-		static struct KeyInfo
+		struct KeyInfo
 		{
 			int LastFrame = 0;
 			int CurrentFrame = 0;

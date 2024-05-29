@@ -174,8 +174,8 @@ void MEEditor::Initialize(MEWindow* _window)
 	//fill optional fields here
 	io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
 	io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
-	io.DisplaySize = ImVec2(MEWindow::GetWidth(), MEWindow::GetHeight());
-	io.FontGlobalScale = MEWindow::GetHeight() / 1080;
+	io.DisplaySize = ImVec2((float)MEWindow::GetWidth(), (float)MEWindow::GetHeight());
+	io.FontGlobalScale = (float)MEWindow::GetHeight() / 1080.f;
 
 	io.Fonts->AddFontDefault();
 
@@ -513,7 +513,7 @@ void CollisionDraw(GameObject* obj)
 					if (ImGui::Begin(("collider" + std::to_string(obj->GetID()) + obj->GetName()).c_str(), &colliderDraw.display, colliderDraw.flags))
 					{
 						ImGui::PushItemFlag(ImGuiItemFlags_Disabled, true);
-						ImGui::Image((void*)*boxDraw->GetTexture(), ImVec2(collider->GetBoxWidth(), collider->GetBoxHeight()), ImVec2(0, 0), ImVec2(1, 1), ImVec4(1.0, 0.2, 0.2, 0.3));
+						ImGui::Image((void*)*boxDraw->GetTexture(), ImVec2(collider->GetBoxWidth(), collider->GetBoxHeight()), ImVec2(0, 0), ImVec2(1, 1), ImVec4(1.0, 0.2f, 0.2f, 0.3f));
 						ImGui::PopItemFlag();
 						ImGui::End();
 					}
@@ -529,7 +529,7 @@ void CollisionDraw(GameObject* obj)
 					if (ImGui::Begin(("collider" + obj->GetName()).c_str(), &colliderDraw.display, colliderDraw.flags))
 					{
 						ImGui::PushItemFlag(ImGuiItemFlags_Disabled, true);
-						ImGui::Image((void*)*areaDraw->GetTexture(), ImVec2(collider->GetRadius() * 2, collider->GetRadius() * 2), ImVec2(0, 0), ImVec2(1, 1), ImVec4(1.0, 1.0, 1.0, 0.3));
+						ImGui::Image((void*)*areaDraw->GetTexture(), ImVec2(collider->GetRadius() * 2, collider->GetRadius() * 2), ImVec2(0, 0), ImVec2(1, 1), ImVec4(1.0f, 1.0f, 1.0f, 0.3f));
 						ImGui::PopItemFlag();
 
 						ImGui::End();
@@ -908,7 +908,7 @@ void SpriteSourceImporter(tool* tool)
 				ImGui::NewLine();
 
 				//check if it is a sprite sheet
-				if (source.GetNumRows() >= 2 || source.GetNumCols() >= 2) spritesheet_check == true;
+				if (source.GetNumRows() >= 2 || source.GetNumCols() >= 2) spritesheet_check = true;
 
 				//Check box for sprite sheet or single asset
 				ImGui::SameLine(120.f);
@@ -1016,7 +1016,7 @@ void ComponentManager(tool* tool)
 	{
 
 		ImGui::SetNextWindowPos(tool->start_pos, ImGuiCond_FirstUseEver);
-		ImGui::SetNextWindowSizeConstraints(ImVec2(350, 350), ImVec2(600, window_->GetHeight()));
+		ImGui::SetNextWindowSizeConstraints(ImVec2(350, 350), ImVec2(600.f, (float)window_->GetHeight()));
 		//base imgui window
 		if (ImGui::Begin(tool->name.c_str(), &tool->display, tool->flags))
 		{
@@ -1414,7 +1414,7 @@ void AnimationTool(tool* tool)
 		Animation* animation = object_preview->Has(Animation);
 
 		ImGui::SetNextWindowPos(tool->start_pos, ImGuiCond_FirstUseEver);
-		ImGui::SetNextWindowSizeConstraints(ImVec2(220, 350), ImVec2(600, window_->GetHeight()));
+		ImGui::SetNextWindowSizeConstraints(ImVec2(220, 350), ImVec2(600.f, (float)window_->GetHeight()));
 		//base imgui window
 		if (!ImGui::Begin(tool->name.c_str(), &tool->display, tool->flags))
 		{
@@ -1437,8 +1437,8 @@ void AnimationTool(tool* tool)
 			SpriteSource* sprite_src = selectedObject->Has(Sprite)->GetSpriteSource();
 
 			//should be the same size as the temp buffer's texture
-			float frame_width = *sprite_src->GetWidth() / sprite_src->GetNumCols();
-			float frame_height = *sprite_src->GetHeight() / sprite_src->GetNumRows();
+			float frame_width = (float)*sprite_src->GetWidth() / (float)sprite_src->GetNumCols();
+			float frame_height = (float)*sprite_src->GetHeight() / (float)sprite_src->GetNumRows();
 			/*float uSize = 1.0f / sprite_src->GetNumCols();
 			float vSize = 1.0f / sprite_src->GetNumRows();*/
 
@@ -1560,7 +1560,7 @@ void AnimationTool(tool* tool)
 
 			ImGui::SameLine(135.f);
 			ImGui::PushItemWidth(200.f);
-			ImGui::DragInt("##3", &frame_count, 1.0f, 20000.0f);
+			ImGui::DragInt("##3", &frame_count, 1.0f, 20000);
 			ImGui::SameLine(-200.f, 20.f);
 			ImGui::LabelText("Frame Count", "");
 			anim->SetFrameCount(frame_count);

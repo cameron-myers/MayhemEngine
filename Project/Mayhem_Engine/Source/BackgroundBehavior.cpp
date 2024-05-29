@@ -11,7 +11,6 @@
 /*********************************************************************************************************************/
 /* Includes */
 /*********************************************************************************************************************/
-#include "Log.h"
 #include "BackgroundBehavior.h"
 
 #include "Audio.h"
@@ -32,7 +31,7 @@ typedef enum cBackground { cBackgroundInvalid = -1, cBackgroundIdle, cBackground
 	\brief
 		Creates a new Background behavior
 **********************************************************************************************************************/
-Background::Background():Behavior(cBackgroundInvalid, cBackgroundIdle, "BIG ERROR")
+Background::Background():Behavior(cBackgroundInvalid, cBackgroundIdle, "BIG ERROR"), audio(nullptr),StarData(0)
 {
 	
 }

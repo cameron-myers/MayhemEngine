@@ -104,3 +104,36 @@ void MESpace::Load()
 		Obj3->Has(Transform)->SetTranslation(glm::vec3{ 0,1000,0 });
 	}
 }
+
+std::vector<std::string> MESpace::GetActiveListFromFile(std::string const& filename)
+{
+	std::string prefab = filename;
+
+#ifdef _DEBUG
+	prefab.insert(0, "../Assets/Spaces/");
+#endif // _DEBUG
+
+#ifdef _DISTRIBUTE
+	prefab.insert(0, "./Assets/Spaces/");
+#endif // _DISTRIBUTE
+
+
+	prefab.append(".json");
+
+	//open the prefab json
+	std::string json;
+	std::string clearData(json);
+	json = MESerializer::OpenFileRead(prefab.c_str());
+	const char* bufchar = json.c_str();
+	rapidjson::Document d;
+	d.Parse(bufchar);
+
+	const rapidjson::Value& head = d["Objects"];
+	std::vector<std::string> result(head.Size());
+	for (rapidjson::SizeType i = 0; i < head.Size(); ++i)
+	{
+		result.emplace_back(head[i].GetString());
+	}
+
+	return result;
+}

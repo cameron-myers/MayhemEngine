@@ -11,6 +11,8 @@
 
 #define UNREFERENCED_PARAMETER(P) (P)
 
+#include <list>
+
 #include "GameObjectManager.h"
 
 enum class State
@@ -80,6 +82,8 @@ public:
 
 	void PutInInactive(GameObject* gamObj);
 	void PutInActive(GameObject* gamObj);
+
+	static std::vector<std::string> GetActiveListFromFile(std::string const& filename);
 
 private:
 	
