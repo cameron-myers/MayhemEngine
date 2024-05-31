@@ -240,7 +240,7 @@ void Tower::Take_Damage(float damage)
     }
     else
     {
-        stats->SetHealth(stats->GetHealth() - damage);
+        stats->SetHealth(stats->GetHealth() - (int)damage);
         switch (type)
         {
         case cTowerTypeWood:

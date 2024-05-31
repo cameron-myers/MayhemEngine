@@ -17,6 +17,7 @@
 #include "GameObjectManager.h"
 #include "MEtimer.h"
 #include "Audio.h"
+#include "Engine.h"
 #include "MEAudio.h"
 
 
@@ -45,13 +46,17 @@ Shutdown()
  */
 void MESpaceManager::Init()
 {
-	MESpace* splash = new MESpace("SplashScreen");
-	prev = splash;
-	splash->SetActive(true);
-	spaces.push_back(splash);
-	splash->Init();
-	splash->Load();
+	if(!Engine::isHeadless)
+	{
+		MESpace* splash = new MESpace("SplashScreen");
+		prev = splash;
+		splash->SetActive(true);
+		spaces.push_back(splash);
+		splash->Init();
+		splash->Load();
+	}
 }
+	
 /**
  * Update loop for space manager.
  *
@@ -65,101 +70,104 @@ void MESpaceManager::Update(float dt)
 	std::string Credits = "CreditMenu";
 
 	Localtime += dt;
-
-	if (Input::IsKeyReleased(GLFW_KEY_B))
+	if(!Engine::isHeadless)
 	{
-		Localtime = 0.0f;
-		hasHappened = false;
-		hasHappened2 = false;
-	}
-
-	if (Localtime == 0.0f)
-	{
-		if (GetSpace("SplashScreen"))
+		
+		if (Input::IsKeyReleased(GLFW_KEY_B))
 		{
-			if (!GetSpace("SplashScreen")->IsActive())
+			Localtime = 0.0f;
+			hasHappened = false;
+			hasHappened2 = false;
+		}
+
+		if (Localtime == 0.0f)
+		{
+			if (GetSpace("SplashScreen"))
 			{
-				GetSpace("SplashScreen")->GetActive()->GetObjectByName("DigiSplash")->Has(Audio)->PlayAudio(SOUND(PLAY_SPLASH_SCREEN_DIGI));
-				SetSpaceExclusive("SplashScreen");
+				if (!GetSpace("SplashScreen")->IsActive())
+				{
+					GetSpace("SplashScreen")->GetActive()->GetObjectByName("DigiSplash")->Has(Audio)->PlayAudio(SOUND(PLAY_SPLASH_SCREEN_DIGI));
+					SetSpaceExclusive("SplashScreen");
+				}
 			}
 		}
-	}
 
-	if (Localtime > 5.0f || (Input::IsKeyReleased(GLFW_MOUSE_BUTTON_1) || (Input::IsKeyReleased(GLFW_MOUSE_BUTTON_2) ||
-		(Input::IsKeyReleased(GLFW_KEY_ENTER) || (Input::IsKeyReleased(GLFW_KEY_SPACE) || (Input::IsKeyReleased(GLFW_KEY_ESCAPE) && !MEEditor::IsOpen()))))))
-	{
-		if (!hasHappened2)
+		if (Localtime > 5.0f || (Input::IsKeyReleased(GLFW_MOUSE_BUTTON_1) || (Input::IsKeyReleased(GLFW_MOUSE_BUTTON_2) ||
+			(Input::IsKeyReleased(GLFW_KEY_ENTER) || (Input::IsKeyReleased(GLFW_KEY_SPACE) || (Input::IsKeyReleased(GLFW_KEY_ESCAPE) && !MEEditor::IsOpen()))))))
 		{
-			prev->SetActive(false);
-			SetSpaceExclusive("WwiseSplash");
-			hasHappened2 = true;
+			if (!hasHappened2)
+			{
+				prev->SetActive(false);
+				SetSpaceExclusive("WwiseSplash");
+				hasHappened2 = true;
+			}
 		}
-	}
 
-	if (Localtime > 10.0f || (Input::IsKeyReleased(GLFW_MOUSE_BUTTON_1) || (Input::IsKeyReleased(GLFW_MOUSE_BUTTON_2)
-		|| (Input::IsKeyReleased(GLFW_KEY_ENTER) || (Input::IsKeyReleased(GLFW_KEY_SPACE) || (Input::IsKeyReleased(GLFW_KEY_ESCAPE) && !MEEditor::IsOpen()))))))
-	{
-		if (!hasHappened)
+		if (Localtime > 10.0f || (Input::IsKeyReleased(GLFW_MOUSE_BUTTON_1) || (Input::IsKeyReleased(GLFW_MOUSE_BUTTON_2)
+			|| (Input::IsKeyReleased(GLFW_KEY_ENTER) || (Input::IsKeyReleased(GLFW_KEY_SPACE) || (Input::IsKeyReleased(GLFW_KEY_ESCAPE) && !MEEditor::IsOpen()))))))
 		{
-			prev->SetActive(false);
-			//SetMenuUI();
-			SetSpaceExclusive("MenuUI");
-			hasHappened = true;
+			if (!hasHappened)
+			{
+				prev->SetActive(false);
+				//SetMenuUI();
+				SetSpaceExclusive("MenuUI");
+				hasHappened = true;
+			}
 		}
-	}
 
-	if (Input::IsKeyReleased(GLFW_KEY_R) && !MEEditor::IsOpen())
-	{
-		//RefreshAll();
-	}
-
-	if (GetSpace("AreUSure") && GetSpace("PauseMenu"))
-	{
-		if (GetSpace("AreUSure")->IsActive() && GetSpace("PauseMenu")->IsActive())
+		if (Input::IsKeyReleased(GLFW_KEY_R) && !MEEditor::IsOpen())
 		{
-			GetSpace("PauseMenu")->SetActive(false);
+			//RefreshAll();
 		}
-	}
 
-	if (GetSpace("CreditMenu") && GetSpace("PauseMenu"))
-	{
-		if (GetSpace("CreditMenu")->IsActive() && GetSpace("PauseMenu")->IsActive())
+		if (GetSpace("AreUSure") && GetSpace("PauseMenu"))
 		{
-			GetSpace("PauseMenu")->SetActive(false);
+			if (GetSpace("AreUSure")->IsActive() && GetSpace("PauseMenu")->IsActive())
+			{
+				GetSpace("PauseMenu")->SetActive(false);
+			}
 		}
-	}
 
-	if (GetSpace("AreUSureMain") && GetSpace("PauseMenu"))
-	{
-		if (GetSpace("AreUSureMain")->IsActive() && GetSpace("PauseMenu")->IsActive())
+		if (GetSpace("CreditMenu") && GetSpace("PauseMenu"))
 		{
-			GetSpace("PauseMenu")->SetActive(false);
+			if (GetSpace("CreditMenu")->IsActive() && GetSpace("PauseMenu")->IsActive())
+			{
+				GetSpace("PauseMenu")->SetActive(false);
+			}
 		}
-	}
 
-	if (GetSpace("AreUSure") && GetSpace("MenuUI"))
-	{
-		if (GetSpace("AreUSure")->IsActive() && GetSpace("MenuUI")->IsActive())
+		if (GetSpace("AreUSureMain") && GetSpace("PauseMenu"))
 		{
-			GetSpace("MenuUI")->SetActive(false);
+			if (GetSpace("AreUSureMain")->IsActive() && GetSpace("PauseMenu")->IsActive())
+			{
+				GetSpace("PauseMenu")->SetActive(false);
+			}
 		}
-	}
 
-	if (GetSpace("Tutorial") && GetSpace("PauseMenu"))
-	{
-		if (GetSpace("Tutorial")->IsActive() && GetSpace("PauseMenu")->IsActive())
+		if (GetSpace("AreUSure") && GetSpace("MenuUI"))
 		{
-			GetSpace("PauseMenu")->SetActive(false);
-			GetSpace("Sandbox")->SetActive(false);
-			prev = GetSpace("PauseMenu");
+			if (GetSpace("AreUSure")->IsActive() && GetSpace("MenuUI")->IsActive())
+			{
+				GetSpace("MenuUI")->SetActive(false);
+			}
 		}
-	}
 
-	if (GetSpace("AreUSureMain") && GetSpace("Sandbox"))
-	{
-		if (GetSpace("AreUSureMain")->IsActive() && GetSpace("Sandbox")->IsActive())
+		if (GetSpace("Tutorial") && GetSpace("PauseMenu"))
 		{
-			GetSpace("Sandbox")->SetActive(false);
+			if (GetSpace("Tutorial")->IsActive() && GetSpace("PauseMenu")->IsActive())
+			{
+				GetSpace("PauseMenu")->SetActive(false);
+				GetSpace("Sandbox")->SetActive(false);
+				prev = GetSpace("PauseMenu");
+			}
+		}
+
+		if (GetSpace("AreUSureMain") && GetSpace("Sandbox"))
+		{
+			if (GetSpace("AreUSureMain")->IsActive() && GetSpace("Sandbox")->IsActive())
+			{
+				GetSpace("Sandbox")->SetActive(false);
+			}
 		}
 	}
 

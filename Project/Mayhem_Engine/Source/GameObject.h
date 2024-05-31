@@ -18,6 +18,7 @@
 #include <string>
 #include <deque>
 #include <vector>
+#include <list>
 
 #define Has(type) GetComponent<type>(c##type)
 
@@ -79,6 +80,7 @@ public:
 	std::vector<std::string> GetChildNames();
 	void SetHidden(bool hide);
 
+	static std::vector<std::string> GetChildrenFromFile(std::string filename);
 	
 	//void load();
 

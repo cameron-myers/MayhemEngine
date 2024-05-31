@@ -64,7 +64,7 @@ GameObjectManager::GameObjectManager()
 GameObjectManager::GameObjectManager(std::deque<GameObject*> _objects)
 	:objectList(_objects)
 {
-	objectCount = objectList.size();
+	objectCount = (int)objectList.size();
 	objectMax = 100;
 }
 /// <summary>
@@ -324,7 +324,7 @@ void GameObjectManager::Add(GameObjectPtr gameObject)
 
 	objectList.push_back(gameObject);
 	objectCount += 1;
-	gameObject->SetID(objectList.size());
+	gameObject->SetID((int)objectList.size());
 
 	if (objectCount > objectMax)
 	{
@@ -389,7 +389,7 @@ std::vector<GameObject*> GameObjectManager::GetObjects()
 /// <returns>int of object amount</returns>
 int GameObjectManager::GetObjectCount()
 {
-	return objectList.size();
+	return (int)objectList.size();
 }
 /// <summary>
 /// get IDs of all objects in the list

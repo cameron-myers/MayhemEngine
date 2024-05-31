@@ -291,6 +291,7 @@
     <ClCompile Include="Source\Component.cpp" />
     <ClCompile Include="Source\EmitterBehavior.cpp" />
     <ClCompile Include="Source\Engine.cpp" />
+    <ClCompile Include="Source\FTLoadScene.cpp" />
     <ClCompile Include="Source\GameObject.cpp" />
     <ClCompile Include="Source\GameObjectFactory.cpp" />
     <ClCompile Include="Source\GameObjectManager.cpp" />
@@ -311,6 +312,8 @@
     <ClCompile Include="Source\MEAudio.cpp" />
     <ClCompile Include="Source\MEEditor.cpp" />
     <ClCompile Include="Source\MEFramerateController.cpp" />
+    <ClCompile Include="Source\MEFunctionalTest.cpp" />
+    <ClCompile Include="Source\MEFunctionalTestExecutor.cpp" />
     <ClCompile Include="Source\MEInput.cpp" />
     <ClCompile Include="Source\MERand.cpp" />
     <ClCompile Include="Source\MERendering.cpp" />
@@ -329,6 +332,7 @@
     <ClCompile Include="Source\SpriteSource.cpp" />
     <ClCompile Include="Source\SpriteSourceManager.cpp" />
     <ClCompile Include="Source\Stats.cpp" />
+    <ClCompile Include="Source\tinyxml2.cpp" />
     <ClCompile Include="Source\TowerBehavior.cpp" />
     <ClCompile Include="Source\ZeppelinBehavior.cpp" />
     <ClCompile Include="Source\Transform.cpp" />
@@ -378,6 +382,7 @@
     <ClInclude Include="Source\Component.h" />
     <ClInclude Include="Source\EmitterBehavior.h" />
     <ClInclude Include="Source\Engine.h" />
+    <ClInclude Include="Source\FTLoadScene.h" />
     <ClInclude Include="Source\GameObject.h" />
     <ClInclude Include="Source\GameObjectFactory.h" />
     <ClInclude Include="Source\GameObjectManager.h" />
@@ -395,9 +400,12 @@
     <ClInclude Include="Source\InterpolManager.h" />
     <ClInclude Include="Source\LaneManager.h" />
     <ClInclude Include="Source\Log.h" />
+    <ClInclude Include="Source\MEAssert.h" />
     <ClInclude Include="Source\MEAudio.h" />
     <ClInclude Include="Source\MEEditor.h" />
     <ClInclude Include="Source\MEFramerateController.h" />
+    <ClInclude Include="Source\MEFunctionalTest.h" />
+    <ClInclude Include="Source\MEFunctionalTestExecutor.h" />
     <ClInclude Include="Source\MEInput.h" />
     <ClInclude Include="Source\MERand.h" />
     <ClInclude Include="Source\MERendering.h" />
@@ -407,6 +415,7 @@
     <ClInclude Include="Source\MeshManager.h" />
     <ClInclude Include="Source\MESpace.h" />
     <ClInclude Include="Source\MESpaceManager.h" />
+    <ClInclude Include="Source\METestSuite.h" />
     <ClInclude Include="Source\MEtimer.h" />
     <ClInclude Include="Source\MEWindow.h" />
     <ClInclude Include="Source\OpenGLError.h" />
@@ -417,6 +426,7 @@
     <ClInclude Include="Source\SpriteSource.h" />
     <ClInclude Include="Source\SpriteSourceManager.h" />
     <ClInclude Include="Source\Stats.h" />
+    <ClInclude Include="Source\tinyxml2.h" />
     <ClInclude Include="Source\TowerBehavior.h" />
     <ClInclude Include="Source\ZeppelinBehavior.h" />
     <ClInclude Include="Source\Transform.h" />

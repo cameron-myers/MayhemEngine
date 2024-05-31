@@ -18,7 +18,7 @@ typedef struct Vertex
     glm::vec2 position;         // The position of the vertex relative to the mesh
     glm::vec2 textureCoord;     // The texture coordinate associated with this vertex
     glm::vec4 color;            // The color to be applied to this vertex
-    Vertex()
+    Vertex() :position(0,0),textureCoord(0,0),color(0,0,0,0)
     {
 	    
     }

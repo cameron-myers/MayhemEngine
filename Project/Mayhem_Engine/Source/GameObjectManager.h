@@ -49,7 +49,7 @@ public:
 	void pop(GameObject* gamObj);
 	void push(GameObject* gamObj);
 
-	GameObject* operator[] (int i) { return objectList[i]; }
+	GameObject* operator[](const int i)const { return objectList[i]; }
 	
 private:
 

@@ -11,7 +11,7 @@
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace MayhemEngineTest
+namespace ComponentTesting
 {
 
 	TEST_CLASS(AnimationComponentTest)
@@ -302,25 +302,5 @@ namespace MayhemEngineTest
 
 	};
 
-	TEST_CLASS(SerializationTest)
-	{
-
-		GameObjectPtr game_object = nullptr;
-
-	public:
-
-		TEST_METHOD(AnimationSaveTest)
-		{
-		}
-	};
-
-	TEST_CLASS(DeserializationTest)
-	{
-
-	public:
-		TEST_METHOD(AnimationReadTest)
-		{
-		}
-
-	};
+	
 }
