@@ -16,6 +16,13 @@
 #include <rapidjson/document.h>
 #include "Behavior.h"
 
+MESpace::MESpace(const char* _name) :active(false), name(_name)
+{
+	
+}
+
+
+
 /// <summary>
 /// space constructor
 /// </summary>
