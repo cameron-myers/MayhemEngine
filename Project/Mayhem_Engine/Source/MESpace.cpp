@@ -15,6 +15,7 @@
 #include "MESerializer.h"
 #include <rapidjson/document.h>
 #include "Behavior.h"
+#include "Engine.h"
 
 MESpace::MESpace(const char* _name) :active(false), name(_name)
 {
@@ -115,9 +116,17 @@ void MESpace::Load()
 std::vector<std::string> MESpace::GetActiveListFromFile(std::string const& filename)
 {
 	std::string prefab = filename;
-
 #ifdef _DEBUG
-	prefab.insert(0, "../Assets/Spaces/");
+
+	if(Engine::s_UnitTesting)
+	{
+		prefab.insert(0, "../../Assets/Spaces/");
+
+	}
+	else
+	{
+		prefab.insert(0, "../Assets/Spaces/");
+	}
 #endif // _DEBUG
 
 #ifdef _DISTRIBUTE
@@ -136,7 +145,7 @@ std::vector<std::string> MESpace::GetActiveListFromFile(std::string const& filen
 	d.Parse(bufchar);
 
 	const rapidjson::Value& head = d["Objects"];
-	std::vector<std::string> result(head.Size());
+	std::vector<std::string> result;
 	for (rapidjson::SizeType i = 0; i < head.Size(); ++i)
 	{
 		result.emplace_back(head[i].GetString());

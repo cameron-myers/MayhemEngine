@@ -50,5 +50,5 @@ public:
 	void DestroySystems();
 
 	static MEWindow* GetWindow();
-
+	inline static bool s_UnitTesting = false;
 };

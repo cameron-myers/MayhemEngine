@@ -5,6 +5,7 @@
 #include "Animation.h"
 #include "Sprite.h"
 #include "CppUnitTest.h"
+#include "Engine.h"
 #include "GameObject.h"
 #include "Log.h"
 #include "MEAssert.h"
@@ -34,9 +35,11 @@ namespace Misc_Testing
 		MESpace* m_space = nullptr;
 		GameObject m_object;
 
-		void setup_space(bool spaceCondition)
+		void setup_space(bool spaceCondition, std::vector<const char*> objects = std::vector<const char*>())
 		{
 			m_space = new MESpace("Test");
+
+			if (objects.size() > 0) m_object_list = objects;
 
 			if(spaceCondition == true)
 			{
@@ -70,7 +73,10 @@ namespace Misc_Testing
 
 	public:
 		//This gets called before each test is ran
-		MEAssertTest():m_object_list({ "Zeppelin1", "StoneTower", "Coin Button" }){}
+		MEAssertTest():m_object_list({ "Zeppelin1", "StoneTower", "Coin Button" })
+		{
+			Engine::s_UnitTesting = true;
+		}
 
 		~MEAssertTest() override
 		{
@@ -122,11 +128,29 @@ namespace Misc_Testing
 		}
 		TEST_METHOD(SpaceAuditUsingFileGoodSubjectTest)
 		{
-			
+			setup_space(true, { "MainMenuBackground",
+											"GameLogo",
+											"StartButton",
+											"StartButtonText",
+											"QuitButton2",
+											"BlackSquare"
+			});
+
+			bool result = MEAssert::space_audit(m_space, "TEST_MenuUI");
+
+			Assert::IsTrue(result, L"Space Audit failed when it should have passed!");
 		}
 		TEST_METHOD(SpaceAuditUsingFileBadSubjectTest)
 		{
+			setup_space(true, { "MainMenuBackground",
+											"GameLogo",
+											"StartButtonText",
+											"QuitButton2",
+			});
 
+			bool result = MEAssert::space_audit(m_space, "TEST_MenuUI");
+
+			Assert::IsFalse(result, L"Space Audit passed when it should have failed!");
 		}
 
 		TEST_METHOD(GameObjectAuditUsingListGoodSubjectTest)
