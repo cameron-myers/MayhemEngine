@@ -1,6 +1,7 @@
 #include "MEFunctionalTest.h"
 #include "FTLoadScene.h"
 
+#include "MEAssert.h"
 #include "MESpace.h"
 #include "MESpaceManager.h"
 #include "tinyxml2.h"
@@ -60,6 +61,11 @@ void FTLoadScene::Update(float dt)
 		m_Output += "Assert Error: Scene may not have loaded correctly could not find object: " + m_Object;
 		m_Status = Failed;
 
+	}
+	else if (MEAssert::space_audit(space,m_Scene.c_str()) == false)
+	{
+		m_Output += "Assert Error: AUDIT FAILED! Scene may not have loaded all objects correctly";
+		m_Status = Failed;
 	}
 	else
 	{

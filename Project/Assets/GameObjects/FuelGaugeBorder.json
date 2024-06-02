@@ -1,6 +1,6 @@
 {
   "GameObject": {
-    "name": "FuelGauge",
+    "name": "FuelGaugeBorder",
     "Transform": {
       "translation": [
         0.0,

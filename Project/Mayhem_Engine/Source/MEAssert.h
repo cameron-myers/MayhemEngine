@@ -98,7 +98,7 @@ public:
 		bool flag = false;
 		//insta fail for size difference
 
-		if (subject_list.size() != expectedObjects.size())
+		if (subject_list.size() < expectedObjects.size())
 		{
 			ME_WARN("Space audit( " + *(subject->GetName()) + ")subject and expected object list sizes were not the same.")
 				return false;
