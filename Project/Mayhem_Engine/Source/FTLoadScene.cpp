@@ -24,13 +24,13 @@ std::string FTLoadScene::Read()
 	std::string json;
 	rapidjson::Document doc;
 	std::string clearData(json);
-	std::string path = "../Tests/" + m_Name + +".json";
+	std::string path = "../Tests/" + m_Suite + +".json";
 	json = MESerializer::OpenFileRead(path.c_str());
 	m_json_buffer = json.c_str();
 	doc.Parse(m_json_buffer);
 	//load each name, audioID, etc. into each game object
 	const rapidjson::Value& value = doc["TestCase"];
-
+	
 	m_Scene = value["scene"].GetString();
 	m_Object = value["object"].GetString();
 	return m_json_buffer;
@@ -71,6 +71,7 @@ void FTLoadScene::Update(float dt)
 	{
 		m_Status = Passed;
 	}
+
 }
 
 /**
@@ -79,31 +80,9 @@ void FTLoadScene::Update(float dt)
 void FTLoadScene::Shutdown()
 {
 	MEFunctionalTest::Shutdown();
-	tinyxml2::XMLDocument doc;
-	doc.NewDeclaration(NULL);
 
-	auto root = doc.NewElement("testsuites");
-	doc.InsertFirstChild(root);
-
-	auto suite = root->InsertNewChildElement("testsuite");
-	suite->SetAttribute("name", "Scene Loading");
-	root->InsertEndChild(suite);
-
-	auto _case = suite->InsertNewChildElement("testcase");
-	_case->SetAttribute("name", m_Name.c_str());
-	_case->SetAttribute("classname", "METestSuite.LoadScene");
-	_case->SetAttribute("time", m_Duration);
-	suite->InsertEndChild(_case);
-	if(m_Status == Failed)
-	{
-		auto fail = _case->InsertNewChildElement("failure");
-		fail->SetAttribute("message", m_Output.c_str());
-		fail->SetAttribute("type", "AssertionError");
-		_case->InsertEndChild(fail);
-
-	}
-
-	doc.SaveFile("../Tests/test_report.xml");
+	WriteResults();
+	
 
 	/*FILE* file = nullptr;
 	fopen_s(&file, "../Tests/test_report.xml", "w+");
