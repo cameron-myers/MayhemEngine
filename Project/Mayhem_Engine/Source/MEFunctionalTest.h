@@ -104,12 +104,12 @@ public:
 		doc.InsertFirstChild(root);
 
 		auto suite = root->InsertNewChildElement("testsuite");
-		suite->SetAttribute("name", m_Suite.c_str());
+		suite->SetAttribute("name", "MayhemEngine_Functional_Testing");
 		root->InsertEndChild(suite);
 
 		auto _case = suite->InsertNewChildElement("testcase");
 		_case->SetAttribute("name", m_Name.c_str());
-		_case->SetAttribute("classname", (m_Suite + "." + m_Name).c_str());
+		_case->SetAttribute("classname", m_Suite.c_str());
 		_case->SetAttribute("time", m_Duration);
 		suite->InsertEndChild(_case);
 		if (m_Status == Failed)

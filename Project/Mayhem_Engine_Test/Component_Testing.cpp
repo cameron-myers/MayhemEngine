@@ -11,7 +11,7 @@
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace ComponentTesting
+namespace Mayhem_Engine_Unit_Testing
 {
 
 	TEST_CLASS(AnimationComponentTest)

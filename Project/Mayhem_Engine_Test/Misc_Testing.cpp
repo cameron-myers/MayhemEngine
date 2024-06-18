@@ -13,7 +13,7 @@
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace Misc_Testing
+namespace Mayhem_Engine_Unit_Testing
 {
 	
 	TEST_CLASS(MEAssertTest)

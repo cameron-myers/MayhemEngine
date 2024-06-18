@@ -11,7 +11,7 @@
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace SystemTesting
+namespace Mayhem_Engine_Unit_Testing
 {
 
 	TEST_CLASS(MESpriteSourceManagerTest)
