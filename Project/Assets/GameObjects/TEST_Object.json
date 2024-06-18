@@ -1,0 +1,24 @@
+{
+  "GameObject":
+  { 
+    "name": "TEST_Object",
+    
+    "Transform":
+     {
+      "translation": [ -630 , -420, 1 ],
+      "rotation": 0.0,
+      "scale": [ 150.0, 150 ]
+
+    },
+
+    "Sprite": {
+      "frameIndex": 0,
+      "alpha": 1.0,
+      "RGB": [1.0,1.0,1.0],
+      "Mesh": "MainMesh",
+      "SpriteSource": "CoinButton"
+
+    },
+    "Children":["GoldText", "CoinButtonIcon"]
+  }
+}

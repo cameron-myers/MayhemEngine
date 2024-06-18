@@ -33,7 +33,22 @@ namespace Misc_Testing
 	private:
 		std::vector<const char*> m_object_list;
 		MESpace* m_space = nullptr;
-		GameObject m_object;
+		GameObject* m_object;
+
+		void setup_single_object(bool objectCondition, std::string objName, std::vector<const char*> children = std::vector<const char*>())
+		{
+			m_space = new MESpace(static_cast<const char*>("Test"));
+			m_object = new GameObject();
+			m_object->SetName(objName);
+			m_space->GetActive()->Add(m_object);
+
+			for (auto child : children)
+			{
+				auto chi = new GameObject();
+				chi->SetName(child);
+				m_object->AddChild(chi);
+			}
+		}
 
 		void setup_space(bool spaceCondition, std::vector<const char*> objects = std::vector<const char*>())
 		{
@@ -48,6 +63,7 @@ namespace Misc_Testing
 					//empty objects with names
 					auto obj = new GameObject();
 					obj->SetName(obj_name);
+					
 					m_space->PutInActive(obj);
 				}
 			}
@@ -155,21 +171,41 @@ namespace Misc_Testing
 
 		TEST_METHOD(GameObjectAuditUsingListGoodSubjectTest)
 		{
-			
+			setup_single_object(true, "TEST_Object", { "GoldText", "CoinButtonIcon" });
+
+
+			bool result = MEAssert::object_audit(m_object, { "GoldText", "CoinButtonIcon" });
+
+			Assert::IsTrue(result, L"Game Object Audit failed when it should have passed!");
 		}
 		TEST_METHOD(GameObjectAuditUsingListBadSubjectTest)
 		{
+			setup_single_object(true, "TEST_Object", { "GoldText" });
 
+
+			bool result = MEAssert::object_audit(m_object, {"GoldText", "CoinButtonIcon"});
+
+			Assert::IsFalse(result, L"GameObject Audit passed when it should have failed!");
 		}
 
 		TEST_METHOD(GameObjectAuditUsingFileGoodSubjectTest)
 		{
-			
+			setup_single_object(true, "TEST_Object", { "GoldText", "CoinButtonIcon" });
+
+
+			bool result = MEAssert::object_audit(m_object, "TEST_Object");
+
+			Assert::IsTrue(result, L"Game Object Audit failed when it should have passed!");
 		}
 
 		TEST_METHOD(GameObjectAuditUsingFileBadSubjectTest)
 		{
+			setup_single_object(true, "TEST_Object", {"GoldText"});
 
+
+			bool result = MEAssert::object_audit(m_object, "TEST_Object");
+
+			Assert::IsFalse(result, L"GameObject Audit passed when it should have failed!");
 		}
 
 

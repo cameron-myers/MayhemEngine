@@ -152,7 +152,7 @@ public:
 			return false;
 		}
 
-		for(int i = 0; i <= children.size(); ++i)
+		for(int i = 0; i < children.size(); ++i)
 		{
 			for(auto child : children)
 			{
@@ -194,7 +194,7 @@ public:
 				return false;
 		}
 
-		for (int i = 0; i <= children.size(); ++i)
+		for (int i = 0; i < children.size(); ++i)
 		{
 			for (auto child : children)
 			{
