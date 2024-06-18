@@ -43,6 +43,7 @@ typedef struct
 class MESpace
 {
 public:
+	MESpace(const char* _name);
 
 	MESpace(std::string const& filename);
 

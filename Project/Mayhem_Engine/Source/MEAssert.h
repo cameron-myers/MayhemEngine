@@ -41,7 +41,7 @@ public:
 	 * \param expectedObjects list of objects to look for
 	 * \return true if all is good
 	 */
-	static bool space_audit(MESpace* subject, const std::list<const char*>& expectedObjects)
+	static bool space_audit(MESpace* subject, const std::vector<const char*>& expectedObjects)
 	{
 		auto subject_list =subject->GetActive()->GetObjectNames();
 		bool flag = false;
@@ -75,13 +75,13 @@ public:
 				}
 				if (flag == false)
 				{
-					break;
+					return false;
 				}
 			}
 		}
 
 
-		return false;
+		return true;
 	}
 
 	/**
@@ -98,7 +98,7 @@ public:
 		bool flag = false;
 		//insta fail for size difference
 
-		if (subject_list.size() != expectedObjects.size())
+		if (subject_list.size() < expectedObjects.size())
 		{
 			ME_WARN("Space audit( " + *(subject->GetName()) + ")subject and expected object list sizes were not the same.")
 				return false;
@@ -126,13 +126,13 @@ public:
 				}
 				if (flag == false)
 				{
-					break;
+					return false;
 				}
 			}
 		}
 
 
-		return false;
+		return true;
 	}
 
 	/**
@@ -152,7 +152,7 @@ public:
 			return false;
 		}
 
-		for(int i = 0; i <= children.size(); ++i)
+		for(int i = 0; i < children.size(); ++i)
 		{
 			for(auto child : children)
 			{
@@ -181,7 +181,7 @@ public:
 	static bool object_audit(const GameObject* subject, const char* objectName)
 	{
 
-		auto children = subject->GetChildNames();
+		auto children = const_cast<GameObject*>(subject)->GetChildNames();
 
 		auto expected_children = GameObject::GetChildrenFromFile(objectName);
 
@@ -190,11 +190,11 @@ public:
 
 		if (children.size() != expected_children.size())
 		{
-			ME_WARN("GameObject audit( " + subject->GetName() + ")subject and expected child list sizes were not the same.")
+			ME_WARN("GameObject audit( ", const_cast<GameObject*>(subject)->GetName()," subject and expected child list sizes were not the same.")
 				return false;
 		}
 
-		for (int i = 0; i <= children.size(); ++i)
+		for (int i = 0; i < children.size(); ++i)
 		{
 			for (auto child : children)
 			{

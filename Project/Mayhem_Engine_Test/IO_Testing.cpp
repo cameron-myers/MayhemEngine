@@ -11,7 +11,7 @@
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace IO_Testing
+namespace Mayhem_Engine_Unit_Testing
 {
 
 	TEST_CLASS(SerializationTest)

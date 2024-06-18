@@ -1,8 +1,8 @@
 {
     "TestCase":
     {
-        "name":"Load_Level",
-        "description":"This is a test test",
+        "name":"Load_SandBox",
+        "description":"This is a test load of the Sandbox Level",
         "intended_result":"null",
         "scene":"Sandbox",
         "object":"Zeppelin1"

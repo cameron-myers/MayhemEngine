@@ -71,6 +71,7 @@
 #include "BehaviorVolumeToggle.h"
 #include "BehaviorCreditReturnButton.h"
 #include "BehaviorMainConfirmButton.h"
+#include "Engine.h"
 #pragma warning(disable:4996)
 
 
@@ -1190,13 +1191,23 @@ std::vector<std::string> GameObject::GetChildrenFromFile(std::string filename)
 	std::string pathName;
 
 #ifdef _DEBUG
-	pathName = "../Assets/GameObjects/" + filename + ".json";
+	if (Engine::s_UnitTesting)
+	{
+		pathName.insert(0, "../../Assets/GameObjects/");
+
+	}
+	else
+	{
+		pathName.insert(0, "../Assets/GameObjects/");
+	}
 #endif // _DEBUG
 
 
 #ifdef _DISTRIBUTE
 	pathName = "./Assets/GameObjects/" + filename ".json";
 #endif
+
+	pathName += filename + ".json";
 
 	std::string json;
 	std::string clearData(json);
@@ -1210,10 +1221,10 @@ std::vector<std::string> GameObject::GetChildrenFromFile(std::string filename)
 	if (d["GameObject"].HasMember("Children"))
 	{
 		const rapidjson::Value& head = value["Children"];
-		std::vector<std::string> result(head.Size());
+		std::vector<std::string> result;
 		for (rapidjson::SizeType i = 0; i < head.Size(); ++i)
 		{
-			result.emplace_back(head[i].GetString());
+			result.push_back(head[i].GetString());
 		}
 		return result;
 	}

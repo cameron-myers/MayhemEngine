@@ -15,6 +15,14 @@
 #include "MESerializer.h"
 #include <rapidjson/document.h>
 #include "Behavior.h"
+#include "Engine.h"
+
+MESpace::MESpace(const char* _name) :active(false), name(_name)
+{
+	
+}
+
+
 
 /// <summary>
 /// space constructor
@@ -90,16 +98,16 @@ void MESpace::Load()
 {
 	if (*GetName() == "Sandbox")
 	{
-		GameObject* Obj1 = activeList.FactoryBuild("Zeppelin1");
+		GameObject* Obj1 = activeList.GetObjectByName("Zeppelin1");
 		//sets zeppelin to idle
 		Obj1->Has(Behavior)->SetStateNext(0);
 		Obj1->Has(Transform)->SetTranslation(glm::vec3{ 0,1000,0 });
 
-		GameObject* Obj2 = activeList.FactoryBuild("Zeppelin2");
+		GameObject* Obj2 = activeList.GetObjectByName("Zeppelin2");
 		Obj2->Has(Behavior)->SetStateNext(0);
 		Obj2->Has(Transform)->SetTranslation(glm::vec3{ 0,1000,0 });
 
-		GameObject* Obj3 = activeList.FactoryBuild("Zeppelin3");
+		GameObject* Obj3 = activeList.GetObjectByName("Zeppelin3");
 		Obj3->Has(Behavior)->SetStateNext(0);
 		Obj3->Has(Transform)->SetTranslation(glm::vec3{ 0,1000,0 });
 	}
@@ -108,9 +116,17 @@ void MESpace::Load()
 std::vector<std::string> MESpace::GetActiveListFromFile(std::string const& filename)
 {
 	std::string prefab = filename;
-
 #ifdef _DEBUG
-	prefab.insert(0, "../Assets/Spaces/");
+
+	if(Engine::s_UnitTesting)
+	{
+		prefab.insert(0, "../../Assets/Spaces/");
+
+	}
+	else
+	{
+		prefab.insert(0, "../Assets/Spaces/");
+	}
 #endif // _DEBUG
 
 #ifdef _DISTRIBUTE
@@ -129,7 +145,7 @@ std::vector<std::string> MESpace::GetActiveListFromFile(std::string const& filen
 	d.Parse(bufchar);
 
 	const rapidjson::Value& head = d["Objects"];
-	std::vector<std::string> result(head.Size());
+	std::vector<std::string> result;
 	for (rapidjson::SizeType i = 0; i < head.Size(); ++i)
 	{
 		result.emplace_back(head[i].GetString());

@@ -11,16 +11,23 @@
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace ComponentTesting
+namespace Mayhem_Engine_Unit_Testing
 {
 
 	TEST_CLASS(AnimationComponentTest)
 	{
 
-		 TEST_CLASS_INITIALIZE(Init)
+		TEST_CLASS_INITIALIZE(Init)
 		{
-			Log::Init();
+			if(Log::GetCoreLogger() == nullptr)
+			{
+				Log::Init();
+			}
 		}
+		TEST_CLASS_CLEANUP(Cleanup)
+		 {
+			Log::Free();
+		 }
 
 	private:
 
