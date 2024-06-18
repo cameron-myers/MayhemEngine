@@ -97,6 +97,8 @@ public:
 	//add static/template function that takes in a test and writes to JUNIT
 	void WriteResults(std::string const& vaOutput = "")
 	{
+		std::string test_namespace = "MayhemEngine_Functional_Testing";
+
 		tinyxml2::XMLDocument doc;
 		doc.NewDeclaration(NULL);
 
@@ -104,12 +106,12 @@ public:
 		doc.InsertFirstChild(root);
 
 		auto suite = root->InsertNewChildElement("testsuite");
-		suite->SetAttribute("name", "MayhemEngine_Functional_Testing");
+		suite->SetAttribute("name", test_namespace.c_str());
 		root->InsertEndChild(suite);
 
 		auto _case = suite->InsertNewChildElement("testcase");
 		_case->SetAttribute("name", m_Name.c_str());
-		_case->SetAttribute("classname", m_Suite.c_str());
+		_case->SetAttribute("classname", (test_namespace + "." + m_Suite).c_str());
 		_case->SetAttribute("time", m_Duration);
 		suite->InsertEndChild(_case);
 		if (m_Status == Failed)
