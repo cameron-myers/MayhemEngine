@@ -11,9 +11,9 @@ jobs:
   build:
     name: OnCommit
     runs-on: ubuntu-latest
-    if: github.head_ref == null
     permissions:
       contents: write
+    if: github.head_ref == ''
     steps:
       - name: Trigger OnCommit Jenkins
         uses: cameron-myers/jenkins-githubaction@master
