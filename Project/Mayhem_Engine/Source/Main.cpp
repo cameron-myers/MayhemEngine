@@ -47,7 +47,7 @@ typedef struct GLFWwindow GLFWwindow;
 typedef GLFWwindow* GLFWwindowPtr;
 STICKYKEYS g_StartupStickyKeys = { sizeof(STICKYKEYS), 0 };
 void AllowAccessibilityShortcutKeys(bool bAllowKeys);
-void parse_args(PWSTR pCmdLine, int argCount, int& index);
+void parse_args(PWSTR pCmdLine, int argCount);
 std::string from_Wchar_to_Str(wchar_t* in);
 bool headless = false;
 
@@ -107,8 +107,7 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
     AllowAccessibilityShortcutKeys(false);
     int argCount = 0;
 
-	int index;
-	parse_args(pCmdLine, argCount, index);
+	parse_args(pCmdLine, argCount);
 
 
     //create a new window
@@ -124,11 +123,21 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
     //create the engine
     Engine* engine = new Engine(Window);
 
-    if (!arg_values.empty() && arg_values[index] == "1")
+    //get args into map
+	for (size_t i = 0; i < arguments.size(); ++i)
+    {
+        std::string temp = arguments[i].substr(1, arguments[i].length() - 1);
+
+        Engine::s_TestingArgs[temp] = arg_values[i].c_str();
+    }
+
+    //functesting == "1"
+    if (strcmp( Engine::s_TestingArgs["FuncTesting"], "1") == 0)
     {
         std::cout << "The Engine will now boot in testing mode" << std::endl;
         headless = true;
         engine->isHeadless = true;
+
     }
     if (!engine)
     {
@@ -228,7 +237,7 @@ std::string from_Wchar_to_Str(wchar_t* in)
     return  str;
 }
 
-void parse_args(PWSTR pCmdLine, int argCount, int& index)
+void parse_args(PWSTR pCmdLine, int argCount)
 {
     LPWSTR* args = CommandLineToArgvW(pCmdLine, &argCount);
 
@@ -244,7 +253,5 @@ void parse_args(PWSTR pCmdLine, int argCount, int& index)
             arg_values.push_back(from_Wchar_to_Str(args[i]));
         }
     }
-    auto iter = std::find(arguments.begin(), arguments.end(), "/FuncTesting");
-    index = (int)std::distance(arguments.begin(), iter);
 
 }

@@ -98,14 +98,16 @@ public:
 		bool flag = false;
 		//insta fail for size difference
 
-		if (subject_list.size() < expectedObjects.size())
+		//TODO make toggleable
+		/*if (subject_list.size() < expectedObjects.size())
 		{
 			ME_WARN("Space audit( " + *(subject->GetName()) + ")subject and expected object list sizes were not the same.")
 				return false;
-		}
+		}*/
+
 		//objects in the subject list are usually in the same order so best case is o(n)
 		//iterate through the list
-		for (int i = 0; i < expectedObjects.size(); ++i)
+		for (int i = 0; i < subject_list.size(); ++i)
 		{
 			flag = false;
 			//check for same index
@@ -118,7 +120,7 @@ public:
 			{
 				for (int j = 0; j < expectedObjects.size(); ++j)
 				{
-					if (subject_list[j] == expectedObjects[i])
+					if (subject_list[i] == expectedObjects[j])
 					{
 						flag = true;
 						break;

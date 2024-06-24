@@ -11,6 +11,8 @@
 	interface to add systems to the engine
  */
  /*********************************************************************************************************************/
+#include <string>
+#include <unordered_map>
 #include <Windows.h>
 
 
@@ -51,4 +53,10 @@ public:
 
 	static MEWindow* GetWindow();
 	inline static bool s_UnitTesting = false;
+
+	/**
+	 * \brief Argname to arg value, stored as a char* 
+	 */
+	inline static std::unordered_map<std::string, const char*> s_TestingArgs;
+
 };
