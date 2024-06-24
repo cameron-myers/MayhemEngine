@@ -7,23 +7,25 @@ on:
     branches:
       - '*Dev*'
 jobs:
-  check:
-    name: check
+  prevent-duplicate-checks:
     runs-on: ubuntu-latest
     steps:
-      - name: Get Current Pull Request
-        uses: 8BitJonny/gh-get-current-pr@3.0.0
-        id: PR
+      - uses: insurgent-lab/is-in-pr-action@v0.2.0
+        id: isInPR
+    outputs:
+      should-run: ${{ !(steps.isInPR.outputs.result == 'true' && github.event_name == 'push') }}
 
   # This workflow contains a single job called "build"
   build:
     name: OnCommit
-    needs: check
+    needs: prevent-duplicate-checks
+    if: ${{ needs.prevent-duplicate-checks.outputs.should-run == 'false' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - name: Trigger OnCommit Jenkins
+      
         uses: cameron-myers/jenkins-githubaction@master
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
