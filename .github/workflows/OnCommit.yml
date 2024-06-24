@@ -10,10 +10,11 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     name: OnCommit
+    if: github.event.number > 0
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    if: github.head_ref == ''
+    
     steps:
       - name: Trigger OnCommit Jenkins
         uses: cameron-myers/jenkins-githubaction@master
