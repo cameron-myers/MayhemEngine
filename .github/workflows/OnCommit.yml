@@ -7,11 +7,19 @@ on:
     branches:
       - '*Dev*'
 jobs:
+  check:
+    name: check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Current Pull Request
+        uses: 8BitJonny/gh-get-current-pr@3.0.0
+        id: PR
+
   # This workflow contains a single job called "build"
   build:
     name: OnCommit
+    needs: check
     runs-on: ubuntu-latest
-    if: (contains(github.head_ref, '/pr/') == false)
     permissions:
       contents: write
     steps:
