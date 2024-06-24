@@ -5,8 +5,7 @@ on:
   # Triggers the workflow on push to any branch that includes 'Dev' in its name
   push:
     branches:
-      - '*Dev*'
-      - '!refs/pull/**'
+      - 'refs/heads/Dev_**'
 jobs:
   # This workflow contains a single job called "build"
   build:
@@ -14,7 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    if: github.event.pull_request.synchronize == false
     steps:
       - name: Trigger OnCommit Jenkins
         uses: cameron-myers/jenkins-githubaction@master
