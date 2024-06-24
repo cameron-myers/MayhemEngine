@@ -17,9 +17,9 @@ jobs:
 
   # This workflow contains a single job called "build"
   build:
-    name: OnCommit
     needs: prevent-duplicate-checks
-    if: ${{ needs.prevent-duplicate-checks.outputs.should-run == 'false' }}
+    if: ${{ needs.prevent-duplicate-checks.outputs.should-run == 'true' }}
+    name: OnCommit
     runs-on: ubuntu-latest
     permissions:
       contents: write
