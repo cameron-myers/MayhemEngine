@@ -13,27 +13,14 @@
 void FTLoadScene::Init()
 {
 	MEFunctionalTest::Init();
-	m_json_buffer = MEFunctionalTest::Read().c_str();
-	Read();
+	//m_json_buffer = MEFunctionalTest::Read().c_str();
+	//();
 	MESpaceManager::SetSpaceInclusive(m_Scene);
 }
 
 std::string FTLoadScene::Read()
 {
-
-	std::string json;
-	rapidjson::Document doc;
-	std::string clearData(json);
-	std::string path = "../Tests/" + m_Suite + +".json";
-	json = MESerializer::OpenFileRead(path.c_str());
-	m_json_buffer = json.c_str();
-	doc.Parse(m_json_buffer);
-	//load each name, audioID, etc. into each game object
-	const rapidjson::Value& value = doc["TestCase"];
-	
-	m_Scene = value["scene"].GetString();
-	m_Object = value["object"].GetString();
-	return m_json_buffer;
+	return "bleh";
 }
 
 /**

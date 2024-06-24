@@ -6,13 +6,15 @@
  *********************************************************************/
 
 #pragma once
-#include <map>
+#include <unordered_map>
 #include <memory>
 #include <stack>
 #include <string>
+#include "MEFunctionalTest.h"
+#include "FTLoadScene.h"
 
 class MEFunctionalTest;
-
+class FTLoadScene;
 
 class MEFunctionalTestExecutor
 {
@@ -32,7 +34,12 @@ public:
 private:
 
 	static std::stack<MEFunctionalTest*> s_TestStack;
-	//				test name
-	static std::map<std::string, MEFunctionalTest*> s_TestMap;
+	
+
+	inline const static std::unordered_map<std::string, MEFunctionalTest*> s_TestRegistry
+	{std::make_pair("Load_Sandbox", new FTLoadScene("Load_Sandbox")),std::make_pair("Load_MainMenu", new FTLoadScene("Load_MainMenu"))
+
+	};
+
 
 };

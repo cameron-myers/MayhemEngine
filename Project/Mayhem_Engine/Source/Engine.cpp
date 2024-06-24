@@ -41,6 +41,8 @@ MEWindow* window = NULL;
 MEEditor* editor = NULL;
 #endif
 MEWindow* GetWindow();
+
+
 /// <summary>
 /// constructor
 /// </summary>

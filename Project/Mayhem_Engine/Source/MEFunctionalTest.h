@@ -32,13 +32,13 @@ class MEFunctionalTest
 
 public:
 	MEFunctionalTest() = default;
-	MEFunctionalTest(const char* suite):m_Suite(suite),m_Status(Invalid){};
+	MEFunctionalTest(const char* suite):m_Case(suite),m_Status(Invalid){};
 	MEFunctionalTest(const MEFunctionalTest& rhs)
 	{
-		m_Suite = rhs.m_Suite;
+		m_Case = rhs.m_Case;
 
 		//name of the test case
-		m_Name = rhs.m_Name;
+		m_Class = rhs.m_Class;
 		//description of the test [OPTIONAL]
 		m_Description = rhs.m_Description;
 		//test status
@@ -64,19 +64,24 @@ public:
 	virtual std::string Read()
 	{
 		//do essential reading here, then do extra reading in derived class
-		
 			std::string json;
 			rapidjson::Document doc;
 			std::string clearData(json);
-			std::string path = "../Tests/" + m_Suite + +".json";
+			//TODO GET SUITE VAL FROM COMMAND LINE MAYBE MAKE ENGINE MEMBER
+			std::string path = "../Tests/.json";/*+m_Suite+*/
 			json = MESerializer::OpenFileRead(path.c_str());
 			m_json_buffer = json.c_str();
 			doc.Parse(m_json_buffer);
 			//load each name, audioID, etc. into each game object
-			const rapidjson::Value& value = doc["TestCase"];
-			m_Name = value["name"].GetString();
-			m_Description = value["description"].GetString();
-			m_IntendedResult = value["intended_result"].GetString();
+			const rapidjson::Value& value = doc["TestCases"];
+
+			//NOTE THIS MAY BE FUCKED
+
+			const rapidjson::Value& case_obj = value[m_Case.c_str()];
+
+			m_Description = case_obj["description"].GetString();
+			m_IntendedResult = case_obj["intended_result"].GetString();
+			
 
 			return json;
 
@@ -110,8 +115,8 @@ public:
 		root->InsertEndChild(suite);
 
 		auto _case = suite->InsertNewChildElement("testcase");
-		_case->SetAttribute("name", m_Name.c_str());
-		_case->SetAttribute("classname", (test_namespace + "." + m_Suite).c_str());
+		_case->SetAttribute("name", m_Case.c_str());
+		_case->SetAttribute("classname", (test_namespace + "." + m_Class).c_str());
 		_case->SetAttribute("time", m_Duration);
 		suite->InsertEndChild(_case);
 		if (m_Status == Failed)
@@ -126,9 +131,9 @@ public:
 		doc.SaveFile("../Tests/test_report.xml");
 	};
 
-	std::string m_Suite;
+	std::string m_Class;
 	//name of the test case
-	std::string m_Name;
+	std::string m_Case;
 	//description of the test [OPTIONAL]
 	std::string m_Description;
 	//test status

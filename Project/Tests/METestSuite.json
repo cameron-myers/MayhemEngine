@@ -1,0 +1,19 @@
+{
+    "TestCases":{
+
+        "Load_Sandbox":{
+            
+            "description":"This is a test load of the Sandbox Level",
+            "intended_result":"null",
+            "scene":"Sandbox",
+            "object":"Zeppelin1"
+        },
+        "Load_MainMenu":{
+            
+            "description":"This is a test load of the MainMenu",
+            "intended_result":"null",
+            "scene":"MenuUI",
+            "object":"StartButton"
+        }
+    }
+}
