@@ -66,6 +66,7 @@ void FTLoadScene::Update(float dt)
  */
 void FTLoadScene::Shutdown()
 {
+	MESpaceManager::Remove(m_Scene);
 	MEFunctionalTest::Shutdown();
 
 	WriteResults();

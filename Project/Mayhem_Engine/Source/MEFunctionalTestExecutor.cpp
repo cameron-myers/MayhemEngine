@@ -15,6 +15,12 @@ std::stack<MEFunctionalTest*> MEFunctionalTestExecutor::s_TestStack;
 void MEFunctionalTestExecutor::Init()
 {
 
+	tinyxml2::XMLDocument doc;
+	doc.LoadFile("../Tests/test_report.xml");
+	doc.Clear();
+	doc.SaveFile("../Tests/test_report.xml");
+	
+
 	//read in Test Suite file from command arg
 	const std::string suite = Engine::s_TestingArgs.at("TestingSuite");
 	if(suite.empty()) ME_CORE_ERROR("No testing suite declared!!!")
@@ -41,11 +47,13 @@ void MEFunctionalTestExecutor::Init()
 
 				//fill memebers
 				MEFunctionalTest* test = s_TestRegistry.at(name);
+				test->m_Case = name;
 				test->m_Description = object["description"].GetString();
 				test->m_IntendedResult = object["intended_result"].GetString();
 
 				if (name.find("Load_") == 0)
 				{
+					test->m_Class = "Load_Scene";
 
 					dynamic_cast<FTLoadScene*>(test)->m_Scene = object["scene"].GetString();
 					dynamic_cast<FTLoadScene*>(test)->m_Object = object["object"].GetString();
@@ -62,7 +70,7 @@ void MEFunctionalTestExecutor::Init()
 
 		}
 	}
-
+	s_TestStack.top()->Init();
 }
 
 

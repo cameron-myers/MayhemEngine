@@ -63,27 +63,8 @@ public:
 	};
 	virtual std::string Read()
 	{
-		//do essential reading here, then do extra reading in derived class
-			std::string json;
-			rapidjson::Document doc;
-			std::string clearData(json);
-			//TODO GET SUITE VAL FROM COMMAND LINE MAYBE MAKE ENGINE MEMBER
-			std::string path = "../Tests/.json";/*+m_Suite+*/
-			json = MESerializer::OpenFileRead(path.c_str());
-			m_json_buffer = json.c_str();
-			doc.Parse(m_json_buffer);
-			//load each name, audioID, etc. into each game object
-			const rapidjson::Value& value = doc["TestCases"];
-
-			//NOTE THIS MAY BE FUCKED
-
-			const rapidjson::Value& case_obj = value[m_Case.c_str()];
-
-			m_Description = case_obj["description"].GetString();
-			m_IntendedResult = case_obj["intended_result"].GetString();
-			
-
-			return json;
+		
+			return "bleh";
 
 			
 	};
@@ -104,28 +85,41 @@ public:
 	{
 		std::string test_namespace = "MayhemEngine_Functional_Testing";
 
+		
+
 		tinyxml2::XMLDocument doc;
-		doc.NewDeclaration(NULL);
-
-		auto root = doc.NewElement("testsuites");
-		doc.InsertFirstChild(root);
-
-		auto suite = root->InsertNewChildElement("testsuite");
-		suite->SetAttribute("name", test_namespace.c_str());
-		root->InsertEndChild(suite);
-
-		auto _case = suite->InsertNewChildElement("testcase");
-		_case->SetAttribute("name", m_Case.c_str());
-		_case->SetAttribute("classname", (test_namespace + "." + m_Class).c_str());
-		_case->SetAttribute("time", m_Duration);
-		suite->InsertEndChild(_case);
-		if (m_Status == Failed)
+		doc.LoadFile("../Tests/test_report.xml");
+		auto root = doc.RootElement();
+		if(root == nullptr)
 		{
-			auto fail = _case->InsertNewChildElement("failure");
-			fail->SetAttribute("message", (m_Output + vaOutput).c_str());
-			fail->SetAttribute("type", "AssertionError");
-			_case->InsertEndChild(fail);
+			
 
+			doc.NewDeclaration(NULL);
+			tinyxml2::XMLElement* suite = root;
+			root = doc.NewElement("testsuites");
+			doc.InsertFirstChild(root);
+			suite = root->InsertNewChildElement("testsuite");
+			suite->SetAttribute("name", test_namespace.c_str());
+			root->InsertEndChild(suite);
+			
+		}
+
+		auto suite = root->FirstChildElement();
+		if(suite != nullptr)
+		{
+			auto _case = suite->InsertNewChildElement("testcase");
+			_case->SetAttribute("name", m_Case.c_str());
+			_case->SetAttribute("classname", m_Class.c_str());
+			_case->SetAttribute("time", m_Duration);
+			suite->InsertEndChild(_case);
+			if (m_Status == Failed)
+			{
+				auto fail = _case->InsertNewChildElement("failure");
+				fail->SetAttribute("message", (m_Output + vaOutput).c_str());
+				fail->SetAttribute("type", "AssertionError");
+				_case->InsertEndChild(fail);
+
+			}
 		}
 
 		doc.SaveFile("../Tests/test_report.xml");
