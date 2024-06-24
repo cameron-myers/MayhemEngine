@@ -4,7 +4,7 @@ name: OnPullRequest-Jenkins
 on:
   # Triggers the workflow on pull request to any branch that includes 'Dev' in its name
   pull_request:
-    types: [opened, reopened,ready_for_review, edited]
+    types: [opened, reopened,ready_for_review, synchronize]
 
 jobs:
   # This workflow contains a single job called "build"
