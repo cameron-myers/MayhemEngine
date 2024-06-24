@@ -6,6 +6,13 @@
             "intended_result":"null",
             "scene":"MenuUI",
             "object":"StartButton"
+        },
+        "Load_Sandbox":
+        {
+            "description":"This is a test load of Sandbox",
+            "intended_result":"null",
+            "scene":"Sandbox",
+            "object":"Zeppelin2"
         }
     }
 }
