@@ -161,7 +161,7 @@ namespace Mayhem_Engine_Unit_Testing
 			setup_space(true, { "MainMenuBackground",
 											"GameLogo",
 											"StartButtonText",
-											"QuitButton2",
+											"QuitButton",
 			});
 
 			bool result = MEAssert::space_audit(m_space, "TEST_MenuUI");
