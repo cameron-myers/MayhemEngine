@@ -5,12 +5,13 @@ on:
   # Triggers the workflow on push to any branch that includes 'Dev' in its name
   push:
     branches:
-      - 'refs/heads/*Dev_*'
+      - '*Dev*'
 jobs:
   # This workflow contains a single job called "build"
   build:
     name: OnCommit
     runs-on: ubuntu-latest
+    if: (contains(github.head_ref, '/pr/') == false)
     permissions:
       contents: write
     steps:
