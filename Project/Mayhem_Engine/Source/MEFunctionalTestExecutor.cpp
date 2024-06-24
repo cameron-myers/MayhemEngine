@@ -23,8 +23,12 @@ void MEFunctionalTestExecutor::Init()
 
 	//read in Test Suite file from command arg
 	const std::string suite = Engine::s_TestingArgs.at("TestingSuite");
-	if(suite.empty()) ME_CORE_ERROR("No testing suite declared!!!")
-	else
+	if (suite.empty())
+	{
+		ME_CORE_ERROR("No testing suite declared!!!")
+		glfwSetWindowShouldClose(MEWindow::GetWindow(), true);
+	}
+		else
 	{
 		//parse json
 		std::string json;

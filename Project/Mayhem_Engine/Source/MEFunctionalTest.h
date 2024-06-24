@@ -109,7 +109,7 @@ public:
 		{
 			auto _case = suite->InsertNewChildElement("testcase");
 			_case->SetAttribute("name", m_Case.c_str());
-			_case->SetAttribute("classname", m_Class.c_str());
+			_case->SetAttribute("classname", (test_namespace + "." + m_Class).c_str());
 			_case->SetAttribute("time", m_Duration);
 			suite->InsertEndChild(_case);
 			if (m_Status == Failed)
