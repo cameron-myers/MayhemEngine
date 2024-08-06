@@ -31,6 +31,8 @@ class MEFunctionalTest
 {
 
 public:
+	static MEFunctionalTest* CreateTest();
+
 	MEFunctionalTest() = default;
 	MEFunctionalTest(const char* suite):m_Case(suite),m_Status(Invalid){};
 	MEFunctionalTest(const MEFunctionalTest& rhs)

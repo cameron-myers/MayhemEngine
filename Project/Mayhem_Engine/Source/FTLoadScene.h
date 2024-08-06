@@ -16,6 +16,10 @@ class FTLoadScene : public MEFunctionalTest
 {
 
 public:
+	static FTLoadScene* CreateTest(const char* suite)
+	{
+		return new FTLoadScene(suite);
+	};
 	FTLoadScene() = default;
 	FTLoadScene(const char* suite):MEFunctionalTest(suite){};
 	FTLoadScene(const FTLoadScene& rhs):MEFunctionalTest(rhs)

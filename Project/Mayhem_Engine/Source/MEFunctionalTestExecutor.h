@@ -36,8 +36,8 @@ private:
 	static std::stack<MEFunctionalTest*> s_TestStack;
 	
 
-	inline const static std::unordered_map<std::string, MEFunctionalTest*> s_TestRegistry
-	{std::make_pair("Load_Sandbox", new FTLoadScene("Load_Sandbox")),std::make_pair("Load_MainMenu", new FTLoadScene("Load_MainMenu"))
+	inline const static std::unordered_map<std::string, MEFunctionalTest* > s_TestRegistry
+	{std::make_pair("Load_Sandbox", FTLoadScene::CreateTest("Load_Sandbox")),std::make_pair("Load_MainMenu", FTLoadScene::CreateTest("Load_MainMenu"))
 
 	};
 
