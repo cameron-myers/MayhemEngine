@@ -12,9 +12,8 @@
 #include <string>
 #include "MEFunctionalTest.h"
 #include "FTLoadScene.h"
+#include "SFTMainMenuUI.h"
 
-class MEFunctionalTest;
-class FTLoadScene;
 
 class MEFunctionalTestExecutor
 {
@@ -37,7 +36,8 @@ private:
 	
 
 	inline const static std::unordered_map<std::string, MEFunctionalTest* > s_TestRegistry
-	{std::make_pair("Load_Sandbox", FTLoadScene::CreateTest("Load_Sandbox")),std::make_pair("Load_MainMenu", FTLoadScene::CreateTest("Load_MainMenu"))
+	{std::make_pair("Load_Sandbox", FTLoadScene::CreateTest("Load_Sandbox")),std::make_pair("Load_MainMenu", FTLoadScene::CreateTest("Load_MainMenu")),
+		std::make_pair("Interact_MainMenu", SFTMainMenuUI::CreateTest("Interact_MainMenu"))
 
 	};
 

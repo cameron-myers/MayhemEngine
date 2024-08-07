@@ -11,12 +11,15 @@
 #include <string>
 #include <rapidjson/document.h>
 #include <rapidjson/rapidjson.h>
-
 #include "MEFramerateController.h"
 #include "MESerializer.h"
 #include "tinyxml2.h"
 
+#define FT_WAIT_FOR(_case) if (_case != true) return;
+
 class MEFunctionalTest;
+
+
 
 enum TestStatus
 {
@@ -31,7 +34,7 @@ class MEFunctionalTest
 {
 
 public:
-	static MEFunctionalTest* CreateTest();
+	static MEFunctionalTest* CreateTest(const char* suite);
 
 	MEFunctionalTest() = default;
 	MEFunctionalTest(const char* suite):m_Case(suite),m_Status(Invalid){};
@@ -126,6 +129,7 @@ public:
 
 		doc.SaveFile("../Tests/test_report.xml");
 	};
+
 
 	std::string m_Class;
 	//name of the test case

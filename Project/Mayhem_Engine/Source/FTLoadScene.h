@@ -9,6 +9,7 @@
 #include <map>
 #include <stack>
 #include <string>
+#include <variant>
 
 class MEFunctionalTest;
 
@@ -16,9 +17,9 @@ class FTLoadScene : public MEFunctionalTest
 {
 
 public:
-	static FTLoadScene* CreateTest(const char* suite)
+	static FTLoadScene* CreateTest(const char* _suite)
 	{
-		return new FTLoadScene(suite);
+		return new FTLoadScene(_suite);
 	};
 	FTLoadScene() = default;
 	FTLoadScene(const char* suite):MEFunctionalTest(suite){};

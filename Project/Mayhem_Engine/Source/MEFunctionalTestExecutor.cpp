@@ -1,6 +1,5 @@
-#include "MEFunctionalTestExecutor.h"
 
-#include <vector>
+#include "MEFunctionalTestExecutor.h"
 
 #include "Engine.h"
 #include "Log.h"
@@ -65,7 +64,9 @@ void MEFunctionalTestExecutor::Init()
 				}
 				else if (name.find("Interact_") == 0)
 				{
-					//insert sub_class specific member read here
+					test->m_Class = "Interact_UI";
+
+
 				}
 				//push to stack
 				s_TestStack.push(test);

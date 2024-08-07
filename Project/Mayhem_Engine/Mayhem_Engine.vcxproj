@@ -292,6 +292,7 @@
     <ClCompile Include="Source\EmitterBehavior.cpp" />
     <ClCompile Include="Source\Engine.cpp" />
     <ClCompile Include="Source\FTLoadScene.cpp" />
+    <ClCompile Include="Source\SFTMainMenuUI.cpp" />
     <ClCompile Include="Source\GameObject.cpp" />
     <ClCompile Include="Source\GameObjectFactory.cpp" />
     <ClCompile Include="Source\GameObjectManager.cpp" />
@@ -328,6 +329,7 @@
     <ClCompile Include="Source\OpenGLError.cpp" />
     <ClCompile Include="Source\ParticleSystem.cpp" />
     <ClCompile Include="Source\Physics.cpp" />
+    <ClCompile Include="Source\SFT_Base.cpp" />
     <ClCompile Include="Source\Sprite.cpp" />
     <ClCompile Include="Source\SpriteSource.cpp" />
     <ClCompile Include="Source\SpriteSourceManager.cpp" />
@@ -383,6 +385,7 @@
     <ClInclude Include="Source\EmitterBehavior.h" />
     <ClInclude Include="Source\Engine.h" />
     <ClInclude Include="Source\FTLoadScene.h" />
+    <ClInclude Include="Source\SFTMainMenuUI.h" />
     <ClInclude Include="Source\GameObject.h" />
     <ClInclude Include="Source\GameObjectFactory.h" />
     <ClInclude Include="Source\GameObjectManager.h" />
@@ -421,6 +424,7 @@
     <ClInclude Include="Source\OpenGLError.h" />
     <ClInclude Include="Source\ParticleSystem.h" />
     <ClInclude Include="Source\Physics.h" />
+    <ClInclude Include="Source\SFT_Base.h" />
     <ClInclude Include="Source\SpaceSandbox.h" />
     <ClInclude Include="Source\Sprite.h" />
     <ClInclude Include="Source\SpriteSource.h" />
