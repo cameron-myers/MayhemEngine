@@ -123,22 +123,26 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
     //create the engine
     Engine* engine = new Engine(Window);
 
-    //get args into map
-	for (size_t i = 0; i < arguments.size(); ++i)
+    if (arguments.size() > 1)
     {
-        std::string temp = arguments[i].substr(1, arguments[i].length() - 1);
+        //get args into map
+        for (size_t i = 0; i < arguments.size(); ++i)
+        {
+            std::string temp = arguments[i].substr(1, arguments[i].length() - 1);
 
-        Engine::s_TestingArgs[temp] = arg_values[i].c_str();
+            Engine::s_TestingArgs[temp] = arg_values[i].c_str();
+        }
+
+        //functesting == "1"
+        if (strcmp(Engine::s_TestingArgs["FuncTesting"], "1") == 0)
+        {
+            std::cout << "The Engine will now boot in testing mode" << std::endl;
+            headless = true;
+            engine->isHeadless = true;
+
+        }
     }
-
-    //functesting == "1"
-    if (strcmp( Engine::s_TestingArgs["FuncTesting"], "1") == 0)
-    {
-        std::cout << "The Engine will now boot in testing mode" << std::endl;
-        headless = true;
-        engine->isHeadless = true;
-
-    }
+    
     if (!engine)
     {
         assert("Failed to initialize the Engine");
