@@ -602,6 +602,7 @@ std::string MESerializer::OpenFileRead(const char* filename)
 	}
 	else
 	{
+		ME_CORE_ERROR("File Error: " + stream.exceptions());
 		ME_CORE_ERROR("File:" + static_cast<std::string>(filename) + " could not be opened");
 		return "\0";
 	}
