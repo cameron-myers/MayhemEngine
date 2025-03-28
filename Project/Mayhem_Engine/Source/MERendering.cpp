@@ -7,12 +7,14 @@
  * \brief
  * 
  *********************************************************************/
+#include <filesystem>
 #include <glad/glad.h>
 #include <MERendering.h>
 #include <glm/glm.hpp>
 #include "glm/gtc/type_ptr.hpp"
 #include <glm/gtx/transform.hpp>
 
+#include "Engine.h"
 #include "Log.h"
 #include "OpenGLError.h"
 #include "MEEditor.h"
@@ -51,9 +53,9 @@ void InitRenderer(GLFWwindow* windowHandle)
 
 #ifdef _DEBUG
 
-	CreateShader(&objectShaderID, "../Assets/VShader.shader", "../Assets/PShaderTexture.shader");
+	CreateShader(&objectShaderID, MAYHEM_DIR("\\Assets\\VShader.shader"), MAYHEM_DIR("\\Assets\\PShaderTexture.shader"));
 
-	CreateShader(&viewportShaderID, "../Assets/ViewportShader.shader", "../Assets/ViewportPixelShader.shader");
+	CreateShader(&viewportShaderID, MAYHEM_DIR("\\Assets\\ViewportShader.shader"), MAYHEM_DIR("\\Assets\\ViewportPixelShader.shader"));
 
 #endif // _DEBUG
 

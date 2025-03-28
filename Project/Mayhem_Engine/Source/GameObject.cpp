@@ -18,6 +18,9 @@
 /*********************************************************************************************************************/
 #include "Log.h"
 #include "GameObject.h"
+
+#include <filesystem>
+
 #include "MESerializer.h"
 #include "Sprite.h"
 #include "rapidjson/document.h"
@@ -979,7 +982,7 @@ GameObject* GameObject::ChildBuild(const char* objectName)
 			char pathName[FILENAME_MAX] = "";
 
 #ifdef _DEBUG
-			sprintf_s(pathName, _countof(pathName), "../Assets/GameObjects/Children/%s.json", objectName);
+			sprintf_s(pathName, _countof(pathName), MAYHEM_DIR("\\Assets\\GameObjects\\Children\\%s.json"), objectName);
 #endif // _DEBUG
 
 #ifdef _DISTRIBUTE
@@ -1198,7 +1201,7 @@ std::vector<std::string> GameObject::GetChildrenFromFile(std::string filename)
 	}
 	else
 	{
-		pathName.insert(0, "../Assets/GameObjects/");
+		pathName.insert(0, MAYHEM_DIR("\\Assets\\GameObjects\\"));
 	}
 #endif // _DEBUG
 

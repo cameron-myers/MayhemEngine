@@ -11,8 +11,10 @@
 #include "stdafx.h"
 #include "SpriteSourceManager.h"
 
+#include <filesystem>
 #include <vector>
 
+#include "Engine.h"
 #include "SpriteSource.h"
 
 std::vector<SpriteSource*> SpriteSourceManager::spriteSourceList;
@@ -33,11 +35,12 @@ SpriteSource* SpriteSourceManager::Build(std::string& spriteSourceName)
 		SpriteSource* newSource = new SpriteSource();
 
 #ifdef _DEBUG
-		spriteSourceName.insert(0, "../Assets/Art/");
+		spriteSourceName.insert(0, MAYHEM_DIR("\\Assets\\Art\\"));
 #endif // _DEBUG
 
 #ifdef _DISTRIBUTE
-		spriteSourceName.insert(0, "./Assets/Art/");
+		const auto path = MAYHEM_DIR + "/Assets/Art/";
+		spriteSourceName.insert(0, path);
 #endif // _DISTRIBUTE
 		spriteSourceName.append(".json");
 		const char* filename = spriteSourceName.c_str();
@@ -64,11 +67,12 @@ SpriteSource* SpriteSourceManager::ReBuild(std::string spriteSourceName)
 	if(source)
 	{
 #ifdef _DEBUG
-		spriteSourceName.insert(0, "../Assets/Art/");
+		spriteSourceName.insert(0, MAYHEM_DIR("\\Assets\\Art\\"));
 #endif // _DEBUG
 
 #ifdef _DISTRIBUTE
-		spriteSourceName.insert(0, "./Assets/Art/");
+		const auto path = MAYHEM_DIR + "/Assets/Art/";
+		spriteSourceName.insert(0, path);
 #endif // _DISTRIBUTE
 
 

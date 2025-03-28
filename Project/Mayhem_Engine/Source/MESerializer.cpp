@@ -43,6 +43,8 @@
 #include "rapidjson/filewritestream.h"
 #include <Shlobj_core.h>
 #include <filesystem>
+
+#include "Engine.h"
 #include "stdio.h"
 #include "rapidjson/pointer.h"
 
@@ -174,7 +176,7 @@ SpriteSource MESerializer::LoadSpriteSource(const char* filepath)
 
 // insert relative pathing for texture files
 #ifdef _DEBUG
-	file.insert(0, "../Assets/Art/");
+	file.insert(0, MAYHEM_DIR("\\Assets\\Art\\"));
 #endif // _DEBUG
 
 #ifdef _DISTRIBUTE

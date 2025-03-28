@@ -15,7 +15,7 @@
 #include <unordered_map>
 #include <Windows.h>
 
-
+#define MAYHEM_DIR(cstr) (std::filesystem::current_path().parent_path().string() + cstr).c_str()
 /*#define NDEBUGONLY(func) {
 #ifdef _DEBUG 
 func

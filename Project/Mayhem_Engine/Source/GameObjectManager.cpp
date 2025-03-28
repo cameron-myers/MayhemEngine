@@ -16,6 +16,9 @@
 /*********************************************************************************************************************/
 #include "Log.h"
 #include "GameObjectManager.h"
+
+#include <filesystem>
+
 #include "MESerializer.h"
 #include "Sprite.h"
 #include "rapidjson/document.h"
@@ -41,6 +44,7 @@
 #include <boost/uuid/uuid_io.hpp>
 
 #include "BehaviorEmitterTest.h"
+#include "Engine.h"
 #include "boost/lexical_cast.hpp"
 #pragma warning(disable:4996)
 
@@ -433,7 +437,7 @@ GameObjectPtr GameObjectManager::FactoryBuild(const char* objectName)
 			char pathName[FILENAME_MAX] = "";
 
 #ifdef _DEBUG
-			sprintf_s(pathName, _countof(pathName), "../Assets/GameObjects/%s.json", objectName);
+			sprintf_s(pathName, _countof(pathName), MAYHEM_DIR("\\Assets\\GameObjects\\%s.json"), objectName);
 #endif // _DEBUG
 
 
@@ -524,7 +528,7 @@ GameObjectPtr GameObjectManager::ZeppelinBuild(glm::vec3 startPos, cZeppelinType
 		gamObj = new GameObject;
 		std::string pathName;
 #ifdef _DEBUG
-		pathName = "../Assets/GameObjects/Zeppelin";
+		pathName = MAYHEM_DIR("\\Assets\\GameObjects\\Zeppelin");
 #endif // _DEBUG
 
 
