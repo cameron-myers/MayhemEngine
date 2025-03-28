@@ -41,6 +41,8 @@ float MEAudio::main_volume;
 float MEAudio::sfx_volume;
 std::vector<AkGameObjectID>MEAudio::MEAudioEmitters;
 std::vector<AkGameObjectID>MEAudio::MEAudioListeners;
+AkOSChar* MEAudio::basepath = nullptr;
+
 
 static bool isMuted = false;
 

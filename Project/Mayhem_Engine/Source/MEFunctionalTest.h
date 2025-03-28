@@ -13,6 +13,7 @@
 #include <rapidjson/document.h>
 #include <rapidjson/rapidjson.h>
 
+#include "Engine.h"
 #include "MEFramerateController.h"
 #include "MESerializer.h"
 #include "tinyxml2.h"
