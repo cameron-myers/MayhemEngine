@@ -1,5 +1,6 @@
 #include "MEFunctionalTestExecutor.h"
 
+#include <filesystem>
 #include <vector>
 
 #include "Engine.h"
@@ -16,9 +17,9 @@ void MEFunctionalTestExecutor::Init()
 {
 
 	tinyxml2::XMLDocument doc;
-	doc.LoadFile("../Tests/test_report.xml");
+	doc.LoadFile(MAYHEM_DIR("\\Tests\\test_report.xml"));
 	doc.Clear();
-	doc.SaveFile("../Tests/test_report.xml");
+	doc.SaveFile(MAYHEM_DIR("\\Tests\\test_report.xml"));
 	
 
 	//read in Test Suite file from command arg
@@ -34,7 +35,7 @@ void MEFunctionalTestExecutor::Init()
 		std::string json;
 		rapidjson::Document doc;
 		std::string clearData(json);
-		std::string path = "../Tests/" + suite + ".json";
+		std::string path = MAYHEM_DIR("\\Tests\\") + suite + ".json";
 		json = MESerializer::OpenFileRead(path.c_str());
 		doc.Parse(json.c_str());
 		//load each name, audioID, etc. into each game object

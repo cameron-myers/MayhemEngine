@@ -23,6 +23,8 @@
 #include <iostream>
 #include <Shlobj_core.h>
 
+#include "Engine.h"
+
 /**
  * \brief SpriteSource constructor
  * \param numCols coloumns in the sprite sheet
@@ -116,7 +118,7 @@ void SpriteSource::Save()
 {
 	FILE* json = NULL;
 	char path[256];
-	sprintf_s(path, "../Assets/Art/%s.json", this->name.c_str());
+	sprintf_s(path, MAYHEM_DIR("\\Assets\\Art\\%s.json"), this->name.c_str());
 
 	 fopen_s(&json, path, "w+");
 	

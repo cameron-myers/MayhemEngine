@@ -10,6 +10,7 @@
 
 #include "Sprite.h"
 
+#include <filesystem>
 #include <iostream>
 
 #include "MERendering.h"
@@ -21,6 +22,8 @@
 #include "Mesh.h"
 #include "GameObject.h"
 #include <glm/gtc/matrix_transform.hpp>
+
+#include "Engine.h"
 #include "rapidjson/document.h"
 #include "rapidjson/writer.h"
 #include "rapidjson/stringbuffer.h"
@@ -162,7 +165,7 @@ void Sprite::Save()
 	if (Parent()->HasParent())
 	{
 #ifdef _DEBUG
-		sprintf_s(pathName, _countof(pathName), "../Assets/GameObjects/Children/%s.json", Parent()->GetName().c_str());
+		sprintf_s(pathName, _countof(pathName), MAYHEM_DIR("\\Assets\\GameObjects\\Children\\%s.json"), Parent()->GetName().c_str());
 #endif // _DEBUG
 
 #ifdef _DISTRIBUTE
@@ -172,7 +175,7 @@ void Sprite::Save()
 	else
 	{
 #ifdef _DEBUG
-		sprintf_s(pathName, _countof(pathName), "../Assets/GameObjects/%s.json", Parent()->GetName().c_str());
+		sprintf_s(pathName, _countof(pathName), MAYHEM_DIR("\\Assets\\GameObjects\\%s.json"), Parent()->GetName().c_str());
 #endif // _DEBUG
 
 #ifdef _DISTRIBUTE
@@ -224,12 +227,12 @@ void Sprite::Save()
 	{
 		//swprintf_s(itt, L"Assets\\GameObjects\\Children\\%S.json", (Obj->GetName()).c_str());
 		
-		(itt, "../Assets/GameObjects/Children/%s.json", (Parent()->GetName()).c_str());
+		(itt, MAYHEM_DIR("\\Assets\\GameObjects\\Children\\%s.json"), (Parent()->GetName()).c_str());
 	}
 	else
 	{
 		//swprintf_s(itt, L"Assets\\GameObjects\\%S.json", (Obj->GetName()).c_str());
-		sprintf_s(itt, "../Assets/GameObjects/%s.json", (Parent()->GetName()).c_str());
+		sprintf_s(itt, MAYHEM_DIR("\\Assets\\GameObjects\\%s.json"), (Parent()->GetName()).c_str());
 	}
 
 	//_wfopen_s(&json, itt, L"w+");

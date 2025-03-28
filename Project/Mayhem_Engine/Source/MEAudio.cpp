@@ -15,6 +15,7 @@
 /*********************************************************************************************************************/
 /* Includes */
 /*********************************************************************************************************************/
+#include <filesystem>
 #include <MEAudio.h>
 #include <Log.h>
 
@@ -22,6 +23,7 @@
 #include <SoundEngine/Common/AkQueryParameters.h>
 #include "Plugin/AkSilenceSourceFactory.h"
 #include "Component.h"
+#include "Engine.h"
 #include "GameObject.h"
 
 CAkFilePackageLowLevelIOBlocking g_lowLevelIO;
@@ -154,7 +156,19 @@ void MEAudio::Load()
     /*Set base path for the banks*/
 
 #ifdef _DEBUG
-    g_lowLevelIO.SetBasePath(AKTEXT("../Mayhem_Wwise/Banks"));
+    const auto path = MAYHEM_DIR("\\Mayhem_Wwise\\Banks");
+    // Step 1: Determine the length of the wide-character string
+    size_t wideLen = std::mbstowcs(nullptr, path, 0) + 1; // +1 for null terminator
+
+    // Step 2: Allocate memory for the AkOSChar* (wchar_t*)
+    basepath = new AkOSChar[wideLen];
+
+    // Step 3: Convert the const char* to AkOSChar* (wchar_t*)
+    std::mbstowcs(basepath, path, wideLen);
+
+
+    g_lowLevelIO.SetBasePath(basepath);
+
 #endif // _DEBUG
 
 
@@ -272,7 +286,7 @@ void MEAudio::Shutdown()
     AK::MemoryMgr::Term();
     ME_CORE_INFO("MEAudio: Terminated Wwise Memory Manager");
 
-
+    delete[] basepath;
 
 }
 

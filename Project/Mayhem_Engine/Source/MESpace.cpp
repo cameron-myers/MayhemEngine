@@ -8,6 +8,9 @@
  * 
  *********************************************************************/
 #include "MESpace.h"
+
+#include <filesystem>
+
 #include "GameObjectManager.h"
 #include "Log.h"
 #include "Physics.h"
@@ -37,7 +40,7 @@ MESpace::MESpace(std::string const& filename)
 	std::string prefab = filename;
 
 #ifdef _DEBUG
-	prefab.insert(0, "../Assets/Spaces/");
+	prefab.insert(0, MAYHEM_DIR("\\Assets\\Spaces\\"));
 #endif // _DEBUG
 
 #ifdef _DISTRIBUTE
@@ -120,12 +123,12 @@ std::vector<std::string> MESpace::GetActiveListFromFile(std::string const& filen
 
 	if(Engine::s_UnitTesting)
 	{
-		prefab.insert(0, "../../Assets/Spaces/");
+		prefab.insert(0, MAYHEM_DIR_PARENT("\\Assets\\Spaces\\"));
 
 	}
 	else
 	{
-		prefab.insert(0, "../Assets/Spaces/");
+		prefab.insert(0, MAYHEM_DIR("\\Assets\\Spaces\\"));
 	}
 #endif // _DEBUG
 

@@ -6,6 +6,7 @@
  *********************************************************************/
 
 #pragma once
+#include <filesystem>
 #include <map>
 #include <stack>
 #include <string>
@@ -90,7 +91,7 @@ public:
 		
 
 		tinyxml2::XMLDocument doc;
-		doc.LoadFile("../Tests/test_report.xml");
+		doc.LoadFile(MAYHEM_DIR("\\Tests\\test_report.xml"));
 		auto root = doc.RootElement();
 		if(root == nullptr)
 		{
@@ -124,7 +125,7 @@ public:
 			}
 		}
 
-		doc.SaveFile("../Tests/test_report.xml");
+		doc.SaveFile(MAYHEM_DIR("\\Tests\\test_report.xml"));
 	};
 
 	std::string m_Class;

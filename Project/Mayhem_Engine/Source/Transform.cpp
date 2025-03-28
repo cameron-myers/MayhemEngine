@@ -18,8 +18,11 @@
 #include "Log.h"
 #include "Transform.h"
 
+#include <filesystem>
 #include <iostream>
 #include <glm/gtx/transform.hpp>
+
+#include "Engine.h"
 #include "glm/glm.hpp"
 #include "rapidjson/document.h"
 #include "rapidjson/writer.h"
@@ -150,7 +153,7 @@ void Transform::Save()
 	if (Parent()->HasParent())
 	{
 #ifdef _DEBUG
-		sprintf_s(pathName, _countof(pathName), "../Assets/GameObjects/Children/%s.json", Parent()->GetName().c_str());
+		sprintf_s(pathName, _countof(pathName), MAYHEM_DIR("\\Assets\\GameObjects\\Children\\%s.json"), Parent()->GetName().c_str());
 #endif // _DEBUG
 
 #ifdef _DISTRIBUTE
@@ -160,7 +163,7 @@ void Transform::Save()
 	else
 	{
 #ifdef _DEBUG
-		sprintf_s(pathName, _countof(pathName), "../Assets/GameObjects/%s.json", Parent()->GetName().c_str());
+		sprintf_s(pathName, _countof(pathName), MAYHEM_DIR("\\Assets\\GameObjects\\%s.json"), Parent()->GetName().c_str());
 #endif // _DEBUG
 
 #ifdef _DISTRIBUTE
@@ -217,12 +220,12 @@ void Transform::Save()
 	if (Parent()->HasParent())
 	{
 		//swprintf_s(itt, L"Assets\\GameObjects\\Children\\%S.json", (Obj->GetName()).c_str());
-		sprintf_s(itt, "../Assets/GameObjects/Children/%s.json", (Parent()->GetName()).c_str());
+		sprintf_s(itt, MAYHEM_DIR("\\Assets\\GameObjects\\Children\\%s.json"), (Parent()->GetName()).c_str());
 	}
 	else
 	{
 		//swprintf_s(itt, L"Assets\\GameObjects\\%S.json", (Obj->GetName()).c_str());
-		sprintf_s(itt, "../Assets/GameObjects/%s.json", (Parent()->GetName()).c_str());
+		sprintf_s(itt, MAYHEM_DIR("\\Assets\\GameObjects\\%s.json"), (Parent()->GetName()).c_str());
 	}
 
 	//_wfopen_s(&json, itt, L"w+");
