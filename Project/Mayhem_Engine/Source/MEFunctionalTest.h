@@ -92,7 +92,7 @@ public:
 		
 
 		tinyxml2::XMLDocument doc;
-		doc.LoadFile(MAYHEM_DIR("\\Tests\\test_report.xml"));
+		doc.LoadFile(Engine::MAYHEM_DIR("\\Tests\\test_report.xml").c_str());
 		auto root = doc.RootElement();
 		if(root == nullptr)
 		{
@@ -126,7 +126,7 @@ public:
 			}
 		}
 
-		doc.SaveFile(MAYHEM_DIR("\\Tests\\test_report.xml"));
+		doc.SaveFile(Engine::MAYHEM_DIR("\\Tests\\test_report.xml").c_str());
 	};
 
 	std::string m_Class;

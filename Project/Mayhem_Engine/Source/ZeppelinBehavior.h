@@ -37,7 +37,7 @@ public:
 	void Update(float dt);
 	void Exit();
 	void CollisionHandler(GameObjectPtr other);
-	void Take_Damage(float damage);
+	void Take_Damage(int damage);
 private:
 
 
@@ -51,7 +51,7 @@ private:
 	void SetVelocity(float speed);
 	void MouseFollow();
 	cZeppelinType type;
-	bool JustDead;
+	bool JustDead = false;
 	Timer* dead_timer = nullptr;
 	Timer* spawn_timer = nullptr;
 

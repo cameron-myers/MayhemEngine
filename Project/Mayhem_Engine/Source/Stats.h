@@ -62,8 +62,8 @@ public:
 	//setters
 	void SetHealth(int health);
 	void SetMaxSpeed(int MaxSpeed);
-	void SetReloadTimer(int reloadTimer);
-	void SetRespawnTimer(int _respawnTimer);
+	void SetReloadTimer(float reloadTimer);
+	void SetRespawnTimer(float _respawnTimer);
 	void SetIsHurt(bool status);
 	void SetIsDead(bool status);
 	void SetReload(bool status);
@@ -118,6 +118,6 @@ private:
 		//the type of object, ex zeppelin,tower,etc.
 		const char* ObjectType;
 		//upgrade level
-		int Level;
+		int Level = 0;
 		
 };

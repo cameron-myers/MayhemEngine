@@ -36,7 +36,7 @@ Mesh* MeshManager::Build(std::string& meshName)
 		Mesh* meshSrc = new Mesh();
 
 #ifdef _DEBUG
-		meshName.insert(0, MAYHEM_DIR("\\Assets\\Mesh\\"));
+		meshName.insert(0, Engine::MAYHEM_DIR("\\Assets\\Mesh\\"));
 #endif // _DEBUG
 
 #ifdef _DISTRIBUTE

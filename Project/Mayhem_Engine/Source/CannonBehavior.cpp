@@ -274,8 +274,7 @@ void Cannon::Update(float dt)
     }
     case cCannonDead:
     {
-        int timer = stats->GetCurrentRespawnTimer();
-        if (timer <= 0.0f)
+        if (stats->GetCurrentRespawnTimer() <= 0.0f)
         {
             if (animation->GetRowOfCurrentIndex() != this->Parent()->GetComponent<Sprite>(cSprite)->GetSpriteSource()->GetNumRows() - 1)
             {

@@ -28,7 +28,7 @@ public:
 	void Update(float dt);
 	void Exit();
 	void CollisionHandler(GameObjectPtr other);
-	void Take_Damage(float damage);
+	void Take_Damage(int damage);
 	void Stun(float time);
 	const cTowerType GetType();
 
@@ -40,8 +40,8 @@ private:
 	void do_dead();
 	void aim_cannon(GameObjectPtr target);
 
-	bool currently_hurt;
-	bool JustDead;
-	cTowerType type;
+	//bool currently_hurt = false;
+	bool JustDead = false;
+	cTowerType type = cTowerTypeInvalid;
 };
 

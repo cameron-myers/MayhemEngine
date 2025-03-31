@@ -209,7 +209,7 @@ void City::Exit()
 
 }
 
-void City::Take_Damage(float damage)
+void City::Take_Damage(int damage)
 {
     Stats* stats = this->Parent()->GetComponent<Stats>(cStats);
     stats->SetHealth(stats->GetHealth() - damage);
@@ -259,13 +259,13 @@ void City::idle()
 
 void City::do_attack(GameObjectPtr target)
 {
-    Stats* stats = this->Parent()->GetComponent<Stats>(cStats);
+    auto* stats = this->Parent()->GetComponent<Stats>(cStats);
 
 
     if (Parent()->GetComponent<Stats>(cStats)->GetIsReloading() == false)
     {
         //get attack and health
-        int attackDamage = Parent()->GetComponent<Stats>(cStats)->GetAttackDamage();
+        const auto attackDamage = Parent()->GetComponent<Stats>(cStats)->GetAttackDamage();
         //do damage
         target->GetComponent<Zeppelin>(cBehavior)->Take_Damage(attackDamage);
 
@@ -275,7 +275,7 @@ void City::do_attack(GameObjectPtr target)
         Parent()->Has(Audio)->PlaySoundEffect(SOUND(PLAY_STONETOWER_ATTACK));
         stats->SetReload(true);
 
-        for (auto child : Parent()->GetChildren())
+        for (auto* child : Parent()->GetChildren())
         {
             
 	        if(child->GetComponent<Cannon>(cBehavior))

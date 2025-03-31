@@ -1836,7 +1836,7 @@ std::string get_image_name_ext(std::string path)
 
 std::vector<std::string> get_all_spritesources_json()
 {
-	std::string path = MAYHEM_DIR("Assets\\Art");
+	std::string path = Engine::MAYHEM_DIR("\\Assets\\Art");
 	std::vector<std::string> source_list;
 	source_list.push_back(" ");
 	

@@ -29,7 +29,7 @@ public:
 	void SetDirectionForChildCannon(Transform* transform);
 
 private:
-	bool currentlyhurt;
+	//bool mIsHurt = false;
 
 };
 

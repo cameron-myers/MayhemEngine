@@ -49,7 +49,7 @@ typedef enum cTower { cTowerInvalid = -1, cTowerIdle, cTowerAttack, cTowerDamage
 /// constructor
 /// </summary>
 /// <param name="_type"></param>
-Tower::Tower(cTowerType _type) :Behavior(cTowerInvalid, cTowerIdle, "BIG ERROR"), type(_type)
+Tower::Tower(cTowerType _type) :Behavior(cTowerInvalid, cTowerIdle, "BIG ERROR"), type(_type), JustDead(false)
 {
 }
 /// <summary>
@@ -222,7 +222,7 @@ void Tower::idle()
     }
 }
 
-void Tower::Take_Damage(float damage)
+void Tower::Take_Damage(int damage)
 {
     //if dead - cant take damage
     Stats* stats = this->Parent()->Has(Stats);
@@ -333,7 +333,7 @@ void Tower::do_dead()
     if (stats->GetIsDead() == false)
     {
         animation->SetRowForMultiAnimation(0);
-        stats->SetRespawnTimer(stats->GetRespawnRate());
+        stats->SetRespawnTimer(static_cast<float>(stats->GetRespawnRate()));
         stats->SetHealth(stats->GetMaxHealth());
         stats->SetIsDead(false);
         //@todo get the respawn sound effect

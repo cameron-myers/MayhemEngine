@@ -118,7 +118,7 @@ void SpriteSource::Save()
 {
 	FILE* json = NULL;
 	char path[256];
-	sprintf_s(path, MAYHEM_DIR("\\Assets\\Art\\%s.json"), this->name.c_str());
+	sprintf_s(path, Engine::MAYHEM_DIR("\\Assets\\Art\\%s.json").c_str(), this->name.c_str());
 
 	 fopen_s(&json, path, "w+");
 	

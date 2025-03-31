@@ -153,7 +153,7 @@ void Transform::Save()
 	if (Parent()->HasParent())
 	{
 #ifdef _DEBUG
-		sprintf_s(pathName, _countof(pathName), MAYHEM_DIR("\\Assets\\GameObjects\\Children\\%s.json"), Parent()->GetName().c_str());
+		sprintf_s(pathName, _countof(pathName), Engine::MAYHEM_DIR("\\Assets\\GameObjects\\Children\\%s.json").c_str(), Parent()->GetName().c_str());
 #endif // _DEBUG
 
 #ifdef _DISTRIBUTE
@@ -163,7 +163,7 @@ void Transform::Save()
 	else
 	{
 #ifdef _DEBUG
-		sprintf_s(pathName, _countof(pathName), MAYHEM_DIR("\\Assets\\GameObjects\\%s.json"), Parent()->GetName().c_str());
+		sprintf_s(pathName, _countof(pathName), Engine::MAYHEM_DIR("\\Assets\\GameObjects\\%s.json").c_str(), Parent()->GetName().c_str());
 #endif // _DEBUG
 
 #ifdef _DISTRIBUTE
@@ -220,12 +220,12 @@ void Transform::Save()
 	if (Parent()->HasParent())
 	{
 		//swprintf_s(itt, L"Assets\\GameObjects\\Children\\%S.json", (Obj->GetName()).c_str());
-		sprintf_s(itt, MAYHEM_DIR("\\Assets\\GameObjects\\Children\\%s.json"), (Parent()->GetName()).c_str());
+		sprintf_s(itt, Engine::MAYHEM_DIR("\\Assets\\GameObjects\\Children\\%s.json").c_str(), (Parent()->GetName()).c_str());
 	}
 	else
 	{
 		//swprintf_s(itt, L"Assets\\GameObjects\\%S.json", (Obj->GetName()).c_str());
-		sprintf_s(itt, MAYHEM_DIR("\\Assets\\GameObjects\\%s.json"), (Parent()->GetName()).c_str());
+		sprintf_s(itt, Engine::MAYHEM_DIR("\\Assets\\GameObjects\\%s.json").c_str(), (Parent()->GetName()).c_str());
 	}
 
 	//_wfopen_s(&json, itt, L"w+");
@@ -297,7 +297,7 @@ glm::vec3 Transform::GetTranslation()
 	{
 		if (this->Parent()->HasParent())
 		{
-			glm::vec3 _translation = this->Parent()->GetParent()->Has(Transform)->GetTranslation() + this->translation;
+			const auto _translation = this->Parent()->GetParent()->Has(Transform)->GetTranslation() + this->translation;
 			return _translation;
 		}
 	}
@@ -310,8 +310,7 @@ glm::vec3& Transform::GetTranslationRef()
 	{
 		if (this->Parent()->HasParent())
 		{
-			glm::vec3 _translation = this->Parent()->GetParent()->Has(Transform)->GetTranslation() + this->translation;
-			return _translation;
+			this->translation = this->Parent()->GetParent()->Has(Transform)->GetTranslation() + this->translation;
 		}
 	}
 	return (this->translation);

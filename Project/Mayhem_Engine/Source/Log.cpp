@@ -51,5 +51,8 @@
 		//s_ClientLogger = spdlog::stdout_color_mt("APP");
 		s_ClientLogger->set_level(spdlog::level::trace);
 		s_ClientLogger->flush_on(spdlog::level::trace);
+
+		spdlog::flush_every(std::chrono::milliseconds(500));
+
 #endif // _DEBUG
 	}

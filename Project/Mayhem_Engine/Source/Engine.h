@@ -11,13 +11,10 @@
 	interface to add systems to the engine
  */
  /*********************************************************************************************************************/
+#include <filesystem>
 #include <string>
 #include <unordered_map>
 #include <Windows.h>
-
-#define MAYHEM_DIR_BASE(cstr) (std::filesystem::current_path().string() + cstr).c_str()
-#define MAYHEM_DIR(cstr) (std::filesystem::current_path().parent_path().string() + cstr).c_str()
-#define MAYHEM_DIR_PARENT(cstr) (std::filesystem::current_path().parent_path().parent_path().string() + cstr).c_str()
 
 /*#define NDEBUGONLY(func) {
 #ifdef _DEBUG 
@@ -44,6 +41,19 @@ public:
 
 	bool isRunning = true;
 	inline static bool isHeadless = false;
+
+	static std::string MAYHEM_DIR(const char* relPath)
+	{
+		return std::filesystem::current_path().parent_path().string() + std::string(relPath);
+	};
+	static std::string MAYHEM_DIR_BASE(const char* relPath)
+	{
+		return std::filesystem::current_path().string() + std::string(relPath);
+	};
+	static std::string MAYHEM_DIR_PARENT(const char* relPath)
+	{
+		return std::filesystem::current_path().parent_path().parent_path().string() + std::string(relPath);
+	};
 	// Public Event Handlers
 public:
 	// Windows message event handler.

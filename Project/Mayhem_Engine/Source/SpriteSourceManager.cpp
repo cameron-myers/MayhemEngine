@@ -35,11 +35,11 @@ SpriteSource* SpriteSourceManager::Build(std::string& spriteSourceName)
 		SpriteSource* newSource = new SpriteSource();
 
 #ifdef _DEBUG
-		spriteSourceName.insert(0, MAYHEM_DIR("\\Assets\\Art\\"));
+		spriteSourceName.insert(0, Engine::MAYHEM_DIR("\\Assets\\Art\\"));
 #endif // _DEBUG
 
 #ifdef _DISTRIBUTE
-		const auto path = MAYHEM_DIR + "/Assets/Art/";
+		const auto path = Engine::MAYHEM_DIR + "/Assets/Art/";
 		spriteSourceName.insert(0, path);
 #endif // _DISTRIBUTE
 		spriteSourceName.append(".json");
@@ -67,11 +67,11 @@ SpriteSource* SpriteSourceManager::ReBuild(std::string spriteSourceName)
 	if(source)
 	{
 #ifdef _DEBUG
-		spriteSourceName.insert(0, MAYHEM_DIR("\\Assets\\Art\\"));
+		spriteSourceName.insert(0, Engine::MAYHEM_DIR("\\Assets\\Art\\"));
 #endif // _DEBUG
 
 #ifdef _DISTRIBUTE
-		const auto path = MAYHEM_DIR + "/Assets/Art/";
+		const auto path = Engine::MAYHEM_DIR( "/Assets/Art/");
 		spriteSourceName.insert(0, path);
 #endif // _DISTRIBUTE
 

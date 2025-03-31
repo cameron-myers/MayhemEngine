@@ -205,8 +205,8 @@ void Zeppelin::Update( float dt)
     case cZeppelinMove:
     {
         Parent()->Has(Audio)->PlaySoundEffect(SOUND(PLAY_ZEPPELINHOVER));
-        SetVelocity(stats->GetMaxSpeed());
-        auto transform = this->Parent()->GetComponent<Transform>(cTransform);
+        SetVelocity(static_cast<float>(stats->GetMaxSpeed()));
+        auto* transform = this->Parent()->GetComponent<Transform>(cTransform);
         if (transform->GetTranslation().x>750.0f)
         {
             this->stateNext = cZeppelinIdle;
@@ -218,7 +218,7 @@ void Zeppelin::Update( float dt)
     case cZeppelinAttack:
     {
         if (stats->GetIsDead() == true) break;
-        auto transform = this->Parent()->GetComponent<Transform>(cTransform);
+        auto* transform = this->Parent()->GetComponent<Transform>(cTransform);
 
     		//this needs to be based on zeppelin type
 
@@ -371,7 +371,7 @@ void Zeppelin::play_explosion()
 
 }
 
-void Zeppelin::Take_Damage(float damage)
+void Zeppelin::Take_Damage(int damage)
 {
     Stats* stats = this->Parent()->Has(Stats);
     if (stats->GetIsDead()) return;
@@ -500,6 +500,8 @@ void Zeppelin::do_attack(GameObjectPtr target)
             break;
         case cZeppelinTypeL:
             Parent()->Has(Audio)->PlayAudio(SOUND(CANNON_FIRE_TYRANT));
+            break;
+        default:
             break;
         }
         //set state to attack

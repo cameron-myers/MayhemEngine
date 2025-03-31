@@ -982,11 +982,11 @@ GameObject* GameObject::ChildBuild(const char* objectName)
 			char pathName[FILENAME_MAX] = "";
 
 #ifdef _DEBUG
-			sprintf_s(pathName, _countof(pathName), MAYHEM_DIR("\\Assets\\GameObjects\\Children\\%s.json"), objectName);
+			sprintf_s(pathName, _countof(pathName), Engine::MAYHEM_DIR("\\Assets\\GameObjects\\Children\\%s.json").c_str(), objectName);
 #endif // _DEBUG
 
 #ifdef _DISTRIBUTE
-			sprintf_s(pathName, _countof(pathName), MAYHEM_DIR_BASE("\\Assets\\GameObjects\\Children\\%s.json"), objectName);
+			sprintf_s(pathName, _countof(pathName), Engine::MAYHEM_DIR_BASE("\\Assets\\GameObjects\\Children\\%s.json").c_str(), objectName);
 #endif // _DISTRIBUTE
 
 			//sprintf_s(pathName, _countof(pathName), "../Assets/GameObjects/%s.json", objectName);
@@ -1196,12 +1196,12 @@ std::vector<std::string> GameObject::GetChildrenFromFile(std::string filename)
 #ifdef _DEBUG
 	if (Engine::s_UnitTesting)
 	{
-		pathName.insert(0, MAYHEM_DIR_PARENT("\\Assets\\GameObjects\\"));
+		pathName.insert(0, Engine::MAYHEM_DIR_PARENT("\\Assets\\GameObjects\\"));
 
 	}
 	else
 	{
-		pathName.insert(0, MAYHEM_DIR("\\Assets\\GameObjects\\"));
+		pathName.insert(0, Engine::MAYHEM_DIR("\\Assets\\GameObjects\\"));
 	}
 #endif // _DEBUG
 

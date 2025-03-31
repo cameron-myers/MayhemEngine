@@ -27,7 +27,7 @@ public:
 	void Init();
 	void Update(float dt);
 	void Exit();
-	void Take_Damage(float damage);
+	void Take_Damage(int damage);
 	void Stun(float time);
 	void CollisionHandler(GameObjectPtr other);
 
@@ -37,7 +37,7 @@ private:
 	void do_dead();
 	void play_explosion();
 
-	bool JustDead;
+	bool JustDead = false;
 	Timer* city_dead_timer = nullptr;
 
 };

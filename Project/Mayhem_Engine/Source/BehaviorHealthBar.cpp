@@ -116,7 +116,7 @@ void HealthBar::Exit()
 
 void HealthBar::ScaleToHealth(float health)
 {
-    float max_health = Parent()->GetParent()->Has(Stats)->GetMaxHealth();
+    const auto max_health = static_cast<float>(Parent()->GetParent()->Has(Stats)->GetMaxHealth());
     Parent()->Has(Sprite)->GetMesh()->ScaleX(max_health/health);
 
 }

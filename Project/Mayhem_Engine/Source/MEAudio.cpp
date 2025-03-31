@@ -158,15 +158,16 @@ void MEAudio::Load()
     /*Set base path for the banks*/
 
 #ifdef _DEBUG
-    const auto path = MAYHEM_DIR("\\Mayhem_Wwise\\Banks");
+    const auto path = Engine::MAYHEM_DIR("\\Mayhem_Wwise\\Banks");
+ 
     // Step 1: Determine the length of the wide-character string
-    size_t wideLen = std::mbstowcs(nullptr, path, 0) + 1; // +1 for null terminator
+    size_t wideLen = std::mbstowcs(nullptr, path.c_str(), 0) + 1; // +1 for null terminator
 
     // Step 2: Allocate memory for the AkOSChar* (wchar_t*)
     basepath = new AkOSChar[wideLen];
 
     // Step 3: Convert the const char* to AkOSChar* (wchar_t*)
-    std::mbstowcs(basepath, path, wideLen);
+    std::mbstowcs(basepath, path.c_str(), wideLen);
 
 
     g_lowLevelIO.SetBasePath(basepath);
@@ -201,8 +202,8 @@ void MEAudio::Load()
      */
 
      /*register the first GO, which becomes the listener*/
-    AkGameObjectID DEFAULT_LISTENER;
-    AkGameObjectID DEFAULT_EMITTER;
+    AkGameObjectID DEFAULT_LISTENER = -1;
+    AkGameObjectID DEFAULT_EMITTER = -1;
 
     //make default listener
     MEAudioListeners.insert(MEAudioListeners.begin(), DEFAULT_LISTENER);

@@ -19,26 +19,26 @@
 /// </summary>
 Stats::Stats()
 :Component(cStats),
-Health(0),
-PrevHealth(0),
 MaxHealth(0),
-ReloadTimer(0.0f),
+ReloadTime(0),
 RespawnRate(0),
 AttackDamage(0),
 MaxSpeed(0),
 Cost(0),
 ListCount(0),
-ReloadTime(0),
+Health(0),
+PrevHealth(0),
+ReloadTimer(0.0f),
 RespawnTimer(-90.0f),
-IsAttacking(FALSE),
-IsHurt(FALSE),
-IsDead(FALSE),
-Reload(FALSE),
-ObjectType(""),
+IsHurt(false),
+IsAttacking(false),
+IsDead(false),
+Reload(false),
 AttackDamageLvls(0),
 MaxHealthLvls(0),
-MaxSpeedLvls(0)
-
+MaxSpeedLvls(0),
+ObjectType(""),
+Level(0)
 {
 }
 /// <summary>
@@ -169,13 +169,13 @@ void Stats::Read(const char* bufchar)
 					{
 						const Value& respawn = currentStats["RespawnRate"];
 						RespawnRate = respawn.GetInt();
-						RespawnTimer = RespawnRate;
+						RespawnTimer = static_cast<float>(RespawnRate);
 					}
 					if (currentStats.HasMember("ReloadTime"))
 					{
 						const Value& reload = currentStats["ReloadTime"];
 						ReloadTime = reload.GetInt();
-						ReloadTimer = ReloadTime;
+						ReloadTimer = static_cast<float>(ReloadTime);
 					}
 					if (currentStats.HasMember("Cost"))
 					{
@@ -226,7 +226,7 @@ void Stats::Update(float dt)
 			this->ReloadTimer -=dt;
 			if (ReloadTimer < 0.0f)
 			{
-				ReloadTimer = ReloadTime;
+				ReloadTimer = static_cast<float>(ReloadTime);
 				this->Reload = false;
 			}
 		}
@@ -295,7 +295,7 @@ void Stats::UpgradeMaxSpeed()
 		MaxSpeed = MaxSpeedLvls.at(GetMaxSpeedLvlIndex() + 1);
 	}
 	catch (const std::out_of_range& error) {
-		ME_CORE_INFO("Speed Is Maximum Level, Cannot Upgrade");
+		ME_CORE_INFO("Speed Is Maximum Level, Cannot Upgrade:");
 	}
 }
 /// <summary>
@@ -511,12 +511,12 @@ void Stats::SetMaxSpeed(int maxSpeed)
 /// set the reload timer
 /// </summary>
 /// <param name="reloadTimer"></param>
-void Stats::SetReloadTimer(int reloadTimer)
+void Stats::SetReloadTimer(float reloadTimer)
 {
 	ReloadTimer = reloadTimer;
 }
 
-void Stats::SetRespawnTimer(int _respawnTimer)
+void Stats::SetRespawnTimer(float _respawnTimer)
 {
 	RespawnTimer = _respawnTimer;
 }
