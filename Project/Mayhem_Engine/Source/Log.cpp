@@ -15,7 +15,9 @@
 /*********************************************************************************************************************/
 /* Includes */
 /*********************************************************************************************************************/
+#include <iostream>
 #include <Log.h>
+#include <ostream>
 #include <spdlog/sinks/basic_file_sink.h>
 #include <spdlog/sinks/stdout_color_sinks.h>
 
@@ -41,13 +43,20 @@
 		logSinks[1]->set_pattern("%^[%r] %n: %v%$");
 
 		s_CoreLogger = std::make_shared<spdlog::logger>("MAYHEM", begin(logSinks), end(logSinks));
+		std::cout << "core init" << std::endl;
+
 		spdlog::register_logger(s_CoreLogger);
+		std::cout << "core reg" << std::endl;
+
 		//s_CoreLogger = spdlog::stdout_color_mt("MAYHEM");
 		s_CoreLogger->set_level(spdlog::level::trace);
 		s_CoreLogger->flush_on(spdlog::level::trace);
 
 		s_ClientLogger = std::make_shared<spdlog::logger>("APP", begin(logSinks), end(logSinks));
+		std::cout << "client init" << std::endl;
+
 		spdlog::register_logger(s_ClientLogger);
+		std::cout << "client reg" << std::endl;
 		//s_ClientLogger = spdlog::stdout_color_mt("APP");
 		s_ClientLogger->set_level(spdlog::level::trace);
 		s_ClientLogger->flush_on(spdlog::level::trace);
