@@ -106,8 +106,10 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
     //disable sticky keys
     AllowAccessibilityShortcutKeys(false);
     int argCount = 0;
+    std::cout << "pre log init" << std::endl;
 
 	parse_args(pCmdLine, argCount);
+    std::cout << "post arg parse" << std::endl;
     Log::Init();
     std::cout << "log init" << std::endl;
 
