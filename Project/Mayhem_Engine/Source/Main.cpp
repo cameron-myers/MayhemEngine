@@ -108,7 +108,7 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
     int argCount = 0;
 
 	parse_args(pCmdLine, argCount);
-
+    Log::Init();
 
     //create a new window
     MEWindow* Window = new MEWindow((char*)"Mayhem_Engine");

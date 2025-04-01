@@ -69,7 +69,7 @@ MEWindow* Engine::GetWindow()
  */
 void Engine::Initialize()
 {
-	Log::Init();
+	
 
 	//glfwMaximizeWindow(window->GetWindow());
 
