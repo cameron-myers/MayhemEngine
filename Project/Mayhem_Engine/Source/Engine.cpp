@@ -152,7 +152,7 @@ void Engine::Render()
 	MESpaceManager::Render();
 	
 #ifdef _DEBUG
-	MEEditor::Render();
+	//MEEditor::Render();
 #endif
 
 	PresentFrame();
@@ -175,7 +175,7 @@ void Engine::DestroySystems()
 	MESpaceManager::Shutdown();
 	MEAudio::Shutdown();
 #ifdef _DEBUG
-	MEEditor::Shutdown();
+	//MEEditor::Shutdown();
 #endif
 
 	ShutdownRenderer();
