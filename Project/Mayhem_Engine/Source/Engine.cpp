@@ -72,10 +72,14 @@ void Engine::Initialize()
 	
 
 	//glfwMaximizeWindow(window->GetWindow());
+	ME_CORE_INFO("start engine init")
 
 	InitRenderer(window->GetWindow());
+	ME_CORE_INFO("render initialized")
 
 	MEAudio::Init();
+	ME_CORE_INFO("audio init")
+
 	MEAudio::Load();
 
 	MESpaceManager::Init();

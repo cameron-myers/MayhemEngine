@@ -43,7 +43,7 @@ void drop_callback(GLFWwindow* window, int count, const char** paths);
  */
 MEWindow::MEWindow( char* title)
 {
-
+	ME_CORE_INFO("Cpnstruct Window")
 	Init(title);
 
 }
@@ -81,6 +81,7 @@ bool MEWindow::Init(char* title)
 
 	GLFWwindow* windowHandle = glfwCreateWindow(vidmode->width, vidmode->height, title, glfwGetPrimaryMonitor(), nullptr);
 
+	ME_CORE_INFO("window created")
 
 	if (!windowHandle)
 	{
@@ -125,6 +126,7 @@ bool MEWindow::Init(char* title)
 	glfwSetDropCallback(window, drop_callback);
 #endif
 
+	ME_CORE_INFO("collect window data")
 
 	window_data = { vidmode->width, vidmode->height, x, y };
 

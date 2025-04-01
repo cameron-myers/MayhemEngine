@@ -117,7 +117,9 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
         assert("Failed to Create a window");
         return -1;
     }
+
 	Input::GrabWindow(Window);
+    ME_CORE_INFO("registered window with input")
 
     //create the engine
     Engine* engine = new Engine(Window);

@@ -56,6 +56,7 @@ void InitRenderer(GLFWwindow* windowHandle)
 	CreateShader(&objectShaderID, Engine::MAYHEM_DIR("\\Assets\\VShader.shader").c_str(), Engine::MAYHEM_DIR("\\Assets\\PShaderTexture.shader").c_str());
 
 	CreateShader(&viewportShaderID, Engine::MAYHEM_DIR("\\Assets\\ViewportShader.shader").c_str(), Engine::MAYHEM_DIR("\\Assets\\ViewportPixelShader.shader").c_str());
+	ME_CORE_INFO("shaders created")
 
 #endif // _DEBUG
 
