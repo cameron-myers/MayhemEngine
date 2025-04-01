@@ -73,13 +73,14 @@ void Engine::Initialize()
 
 	//glfwMaximizeWindow(window->GetWindow());
 	ME_CORE_INFO("start engine init")
+	std::cout << "registered window with input" << std::endl;
 
 	InitRenderer(window->GetWindow());
 	ME_CORE_INFO("render initialized")
-
+	std::cout << "registered window with input" << std::endl;
 	MEAudio::Init();
 	ME_CORE_INFO("audio init")
-
+		std::cout << "registered window with input" << std::endl;
 	MEAudio::Load();
 
 	MESpaceManager::Init();
@@ -88,7 +89,7 @@ void Engine::Initialize()
 	//if debug toggle to windowed on boot
 #ifdef _DEBUG
 	MEWindow::ToggleFullscreen();
-	MEEditor::Initialize(window);
+	//MEEditor::Initialize(window);
 
 #endif
 	if(isHeadless)MEFunctionalTestExecutor::Init();
@@ -131,7 +132,7 @@ void Engine::Update(float dt)
 	}
 
 
-	MEEditor::Update(dt);
+	//MEEditor::Update(dt);
 #endif
 	if (Input::IsKeyPressed(GLFW_KEY_LEFT_BRACKET))
 	{

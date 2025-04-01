@@ -12,6 +12,8 @@
 #include "Log.h"
 #include "MEWindow.h"
 
+#include <iostream>
+
 #include "Engine.h"
 #include "MEAudio.h"
 #include "MEEditor.h"
@@ -82,6 +84,7 @@ bool MEWindow::Init(char* title)
 	GLFWwindow* windowHandle = glfwCreateWindow(vidmode->width, vidmode->height, title, glfwGetPrimaryMonitor(), nullptr);
 
 	ME_CORE_INFO("window created")
+		std::cout << "window created" << std::endl;
 
 	if (!windowHandle)
 	{
@@ -127,6 +130,7 @@ bool MEWindow::Init(char* title)
 #endif
 
 	ME_CORE_INFO("collect window data")
+		std::cout << "collect window data" << std::endl;
 
 	window_data = { vidmode->width, vidmode->height, x, y };
 

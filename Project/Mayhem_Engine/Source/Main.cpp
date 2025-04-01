@@ -109,6 +109,7 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
 
 	parse_args(pCmdLine, argCount);
     Log::Init();
+    std::cout << "log init" << std::endl;
 
     //create a new window
     MEWindow* Window = new MEWindow((char*)"Mayhem_Engine");
@@ -120,6 +121,7 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
 
 	Input::GrabWindow(Window);
     ME_CORE_INFO("registered window with input")
+	std::cout << "registered window with input" << std::endl;
 
     //create the engine
     Engine* engine = new Engine(Window);
