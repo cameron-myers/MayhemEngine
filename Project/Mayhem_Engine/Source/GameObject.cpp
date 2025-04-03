@@ -981,7 +981,7 @@ GameObject* GameObject::ChildBuild(const char* objectName)
 		{
 			char pathName[FILENAME_MAX] = "";
 
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 			sprintf_s(pathName, _countof(pathName), Engine::MAYHEM_DIR("\\Assets\\GameObjects\\Children\\%s.json").c_str(), objectName);
 #endif // _DEBUG
 
@@ -1193,7 +1193,7 @@ std::vector<std::string> GameObject::GetChildrenFromFile(std::string filename)
 {
 	std::string pathName;
 
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 	if (Engine::s_UnitTesting)
 	{
 		pathName.insert(0, Engine::MAYHEM_DIR_PARENT("\\Assets\\GameObjects\\"));

@@ -51,7 +51,7 @@ void InitRenderer(GLFWwindow* windowHandle)
 
 	//create the shader for sprites
 
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 
 	CreateShader(&objectShaderID, Engine::MAYHEM_DIR("\\Assets\\VShader.shader").c_str(), Engine::MAYHEM_DIR("\\Assets\\PShaderTexture.shader").c_str());
 

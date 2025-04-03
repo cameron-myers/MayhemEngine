@@ -43,7 +43,7 @@
 #include <AK/MusicEngine/Common/AkMusicEngine.h>
 
 //debug mode thing
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 	#include <Comm/AkCommunication.h>
 #endif
 

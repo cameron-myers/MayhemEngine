@@ -87,7 +87,7 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
     UNREFERENCED(prevInstance);
 	UNREFERENCED(cmdShow);
 
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
     //THIS opens a console window to print to
     //prolly the bad way but it works for now
     FILE* fpstdin = stdin, * fpstdout = stdout, * fpstderr = stderr;
@@ -196,8 +196,7 @@ int WINAPI wWinMain(HINSTANCE instance, HINSTANCE prevInstance, PWSTR pCmdLine, 
     delete Window;
     //re-enable sticky keys
     AllowAccessibilityShortcutKeys(true);
-
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 	FreeConsole();
 #endif
     return 0;

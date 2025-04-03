@@ -1814,7 +1814,7 @@ void get_image_width_height(const char* img, int* width, int* height)
 	in.seekg(16);
 	in.read((char*)width, 4);
 	in.read((char*)height, 4);
-#ifdef _DEBUG 
+#ifdef _DEBUG
 	*width = ntohl(*width);
 	*height = ntohl(*height);
 #endif

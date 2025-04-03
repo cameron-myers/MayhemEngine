@@ -125,7 +125,7 @@ bool MEWindow::Init(char* title)
 	glfwSetWindowFocusCallback(window, focused);
 #endif
 
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 	glfwSetDropCallback(window, drop_callback);
 #endif
 

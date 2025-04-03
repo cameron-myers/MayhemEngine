@@ -175,7 +175,7 @@ SpriteSource MESerializer::LoadSpriteSource(const char* filepath)
 	std::string file = path.GetString();
 
 // insert relative pathing for texture files
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 	file.insert(0, Engine::MAYHEM_DIR("\\Assets\\Art\\"));
 #endif // _DEBUG
 
@@ -338,7 +338,7 @@ void MESerializer::SaveGameObjectTransform(GameObject* Obj)
 
 	if(Obj->HasParent())
 	{
-		#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 				sprintf_s(pathName, _countof(pathName), Engine::MAYHEM_DIR("\\Assets\\GameObjects\\Children\\%s.json").c_str(), Obj->GetName().c_str());
 		#endif // _DEBUG
 
@@ -348,7 +348,7 @@ void MESerializer::SaveGameObjectTransform(GameObject* Obj)
 	}
 	else
 	{
-		#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 				sprintf_s(pathName, _countof(pathName), Engine::MAYHEM_DIR("\\Assets\\GameObjects\\%s.json").c_str(), Obj->GetName().c_str());
 		#endif // _DEBUG
 
@@ -450,7 +450,7 @@ void MESerializer::SaveGameObjectSprite(GameObject* Obj)
 
 	if (Obj->HasParent())
 	{
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 		sprintf_s(pathName, _countof(pathName), Engine::MAYHEM_DIR("\\Assets\\GameObjects\\Children\\%s.json").c_str(), Obj->GetName().c_str());
 #endif // _DEBUG
 
@@ -460,7 +460,7 @@ void MESerializer::SaveGameObjectSprite(GameObject* Obj)
 	}
 	else
 	{
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 		sprintf_s(pathName, _countof(pathName), Engine::MAYHEM_DIR("\\Assets\\GameObjects\\%s.json").c_str(), Obj->GetName().c_str());
 #endif // _DEBUG
 

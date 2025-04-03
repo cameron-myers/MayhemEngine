@@ -34,7 +34,8 @@ SpriteSource* SpriteSourceManager::Build(std::string& spriteSourceName)
 	{
 		SpriteSource* newSource = new SpriteSource();
 
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
+
 		spriteSourceName.insert(0, Engine::MAYHEM_DIR("\\Assets\\Art\\"));
 #endif // _DEBUG
 
@@ -66,7 +67,7 @@ SpriteSource* SpriteSourceManager::ReBuild(std::string spriteSourceName)
 
 	if(source)
 	{
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 		spriteSourceName.insert(0, Engine::MAYHEM_DIR("\\Assets\\Art\\"));
 #endif // _DEBUG
 

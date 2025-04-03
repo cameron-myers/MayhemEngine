@@ -36,7 +36,7 @@
 
 float total = 0.f;
 MEWindow* window = NULL;
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 #include "MEEditor.h"
 MEEditor* editor = NULL;
 #endif
@@ -87,7 +87,7 @@ void Engine::Initialize()
 
 
 	//if debug toggle to windowed on boot
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 	MEWindow::ToggleFullscreen();
 	//MEEditor::Initialize(window);
 
@@ -124,7 +124,7 @@ void Engine::Update(float dt)
 	METimerManager::Update(dt);
 
 	MESpaceManager::Update(dt);
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 
 	if (Input::IsKeyPressed(GLFW_KEY_MINUS))
 	{
@@ -150,8 +150,8 @@ void Engine::Render()
 	StartRenderFrame();
 
 	MESpaceManager::Render();
-	
-#ifdef _DEBUG
+
+#ifndef _DISTRIBUTE
 	//MEEditor::Render();
 #endif
 
@@ -174,7 +174,7 @@ void Engine::DestroySystems()
 	MeshManager::FreeAll();
 	MESpaceManager::Shutdown();
 	MEAudio::Shutdown();
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 	//MEEditor::Shutdown();
 #endif
 

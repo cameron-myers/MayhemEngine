@@ -39,7 +39,7 @@ MESpace::MESpace(std::string const& filename)
 	this->name = filename;
 	std::string prefab = filename;
 
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 	prefab.insert(0, Engine::MAYHEM_DIR("\\Assets\\Spaces\\"));
 #endif // _DEBUG
 
@@ -119,7 +119,7 @@ void MESpace::Load()
 std::vector<std::string> MESpace::GetActiveListFromFile(std::string const& filename)
 {
 	std::string prefab = filename;
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 
 	if(Engine::s_UnitTesting)
 	{

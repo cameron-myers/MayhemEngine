@@ -436,7 +436,7 @@ GameObjectPtr GameObjectManager::FactoryBuild(const char* objectName)
 		{
 			char pathName[FILENAME_MAX] = "";
 
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 			sprintf_s(pathName, _countof(pathName), Engine::MAYHEM_DIR("\\Assets\\GameObjects\\%s.json").c_str(), objectName);
 #endif // _DEBUG
 
@@ -527,7 +527,7 @@ GameObjectPtr GameObjectManager::ZeppelinBuild(glm::vec3 startPos, cZeppelinType
 	{
 		gamObj = new GameObject;
 		std::string pathName;
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 		pathName = Engine::MAYHEM_DIR("\\Assets\\GameObjects\\Zeppelin");
 #endif // _DEBUG
 

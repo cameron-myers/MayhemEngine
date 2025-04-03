@@ -32,7 +32,7 @@
 
 	void Log::Init()
 	{
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 		//set text pattern, wiki page: https://github.com/gabime/spdlog/wiki/3.-Custom-formatting
 		//we use: [date and time] "name of system" (log level): text/variable to be logged
 

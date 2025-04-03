@@ -164,7 +164,7 @@ void Sprite::Save()
 
 	if (Parent()->HasParent())
 	{
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 		sprintf_s(pathName, _countof(pathName), Engine::MAYHEM_DIR("\\Assets\\GameObjects\\Children\\%s.json").c_str(), Parent()->GetName().c_str());
 #endif // _DEBUG
 
@@ -174,7 +174,7 @@ void Sprite::Save()
 	}
 	else
 	{
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 		sprintf_s(pathName, _countof(pathName), Engine::MAYHEM_DIR("\\Assets\\GameObjects\\%s.json").c_str(), Parent()->GetName().c_str());
 #endif // _DEBUG
 

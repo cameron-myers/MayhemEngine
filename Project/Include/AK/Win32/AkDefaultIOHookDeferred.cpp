@@ -198,7 +198,7 @@ AKRESULT CAkDefaultIOHookDeferred::Open(
 VOID CALLBACK CAkDefaultIOHookDeferred::FileIOCompletionRoutine(
   DWORD dwErrorCode,
   DWORD 
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
   dwNumberOfBytesTransfered
 #endif
   ,

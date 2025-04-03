@@ -20,7 +20,7 @@
  */
 void CheckError()
 {
-#ifdef _DEBUG 
+#ifndef _DISTRIBUTE
 	GLenum error = glGetError();
 
 	if (error != GL_NO_ERROR)

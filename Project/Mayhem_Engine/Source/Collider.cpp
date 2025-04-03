@@ -446,7 +446,8 @@ bool ColliderIsColliding(ColliderPtr collider1, ColliderPtr collider2)
 
 		return (collider1->BoxCheck(tran->GetTranslation()));
 	}
-	
+
+	return false;
 }
 /**
  * the width of the box collider.
@@ -501,7 +502,7 @@ void Collider::Save()
 
 	if (Parent()->HasParent())
 	{
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 		sprintf_s(pathName, _countof(pathName), Engine::MAYHEM_DIR("\\Assets\\GameObjects\\Children\\%s.json").c_str(), Parent()->GetName().c_str());
 #endif // _DEBUG
 
@@ -511,7 +512,7 @@ void Collider::Save()
 	}
 	else
 	{
-#ifdef _DEBUG
+#ifndef _DISTRIBUTE
 		sprintf_s(pathName, _countof(pathName), Engine::MAYHEM_DIR("\\Assets\\GameObjects\\%s.json").c_str(), Parent()->GetName().c_str());
 #endif // _DEBUG
 
@@ -593,7 +594,7 @@ void Collider::Save()
 		return;
 	}
 
-	char writeBuffer[65500];
+	char writeBuffer[65500]{};
 	FileWriteStream os(json, writeBuffer, sizeof(writeBuffer));
 	PrettyWriter<FileWriteStream> writer(os);
 	d.Accept(writer);
