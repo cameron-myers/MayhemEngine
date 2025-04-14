@@ -105,8 +105,8 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalLibraryDirectories>$(SolutionDir)Libraries;$(SolutionDir)Libraries\$(configuration)\lib;$(SolutionDir)Libraries\$(configuration)\bin;$(VCInstallDir)UnitTest\lib;$(SolutionDir)Mayhem_Engine;$(SolutionDir)Mayhem_Engine\Intermediate\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>AkSoundEngine.lib;AkMemoryMgr.lib;AkStreamMgr.lib;AkMusicEngine.lib;AkSpatialAudio.lib;AkSilenceSource.lib;AkAudioInputSource.lib;Shell32.lib;CommunicationCentral.lib;ws2_32.lib;glfw3.lib;opengl32.lib;$(CoreLibraryDependencies);$(SolutionDir)Mayhem_Engine\Intermediate\Debug\*.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries;$(SolutionDir)Libraries\$(configuration)\lib;$(SolutionDir)Libraries\$(configuration)\bin;$(VCInstallDir)UnitTest\lib;$(SolutionDir)Mayhem_Engine;$(SolutionDir)Mayhem_Engine\Intermediate\$(ConfigurationName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>AkSoundEngine.lib;AkMemoryMgr.lib;AkStreamMgr.lib;AkMusicEngine.lib;AkSpatialAudio.lib;AkSilenceSource.lib;AkAudioInputSource.lib;Shell32.lib;CommunicationCentral.lib;ws2_32.lib;glfw3.lib;opengl32.lib;$(CoreLibraryDependencies);$(SolutionDir)Mayhem_Engine\Intermediate\$(ConfigurationName)\*.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
